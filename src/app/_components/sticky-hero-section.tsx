@@ -1,32 +1,33 @@
-"use client"
+"use client";
 
-import { FC } from "react"
-import { useMotionValueEvent, useScroll } from "framer-motion"
-import { useRef, useState } from "react"
-import { cn } from "@/lib/utils"
-import SvgAnimation from "@/app/_components/svg-animation"
+import { FC } from "react";
+import { useMotionValueEvent, useScroll } from "framer-motion";
+import { useRef, useState } from "react";
+import { cn } from "@/lib/utils";
+import SvgAnimation from "@/app/_components/svg-animation";
+import SvgTransition from "@/app/_components/svg-animation";
 
 interface StickyHeroSectionProps {}
 
 const StickyHeroSection: FC<StickyHeroSectionProps> = ({}) => {
-  const sectionRef = useRef<HTMLDivElement | null>(null)
-  const [scrollValue, setScrollValue] = useState<number>(0)
-  const { scrollY } = useScroll()
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const [scrollValue, setScrollValue] = useState<number>(0);
+  const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (sectionRef.current) {
-      const primaryCondition = latest > sectionRef.current.offsetTop
+      const primaryCondition = latest > sectionRef.current.offsetTop;
       if (primaryCondition) {
         const value =
           (latest - sectionRef.current.offsetTop) /
           (sectionRef.current.clientHeight -
-            document.documentElement.clientHeight)
-        const filteredValue = Math.min(100, value * 100)
-        setScrollValue(filteredValue)
-        console.log(filteredValue, scrollValue)
+            document.documentElement.clientHeight);
+        const filteredValue = Math.min(100, value * 100);
+        setScrollValue(filteredValue);
+        console.log(filteredValue, scrollValue);
       }
     }
-  })
+  });
 
   return (
     <section
@@ -37,13 +38,13 @@ const StickyHeroSection: FC<StickyHeroSectionProps> = ({}) => {
         <div
           className={cn(
             "absolute bottom-0 left-1/2 top-full h-0.5 bg-foreground  -translate-x-1/2 transition-all duration-700 ease-out",
-            scrollValue < 5 ? "w-1/12" : "w-full"
+            scrollValue < 3 ? "w-1/12" : "w-full"
           )}
         />
         <div
           className={cn(
             "w-full h-full flex items-end justify-center transition-all duration-200 ease-out py-5 md:py-8 absolute top-0 left-0",
-            scrollValue < 5
+            scrollValue < 3
               ? "opacity-1 translate-y-0"
               : "opacity-0 translate-y-5"
           )}
@@ -75,10 +76,12 @@ const StickyHeroSection: FC<StickyHeroSectionProps> = ({}) => {
             </h1>
           </div>
         </div>
-        <SvgAnimation scrollValue={scrollValue} />
+        {scrollValue > 6 ? (
+          <SvgTransition scrollProgress={scrollValue} />
+        ) : null}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default StickyHeroSection
+export default StickyHeroSection;
