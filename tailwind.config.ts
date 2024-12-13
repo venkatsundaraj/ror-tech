@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export default {
   content: [
@@ -28,6 +28,10 @@ export default {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+          foreground: "hsl(var(--tertiary-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -67,9 +71,10 @@ export default {
         heading: ["var(--heading)"],
       },
       fontSize: {
-        extra_paragraph_heading: "clamp(20px,2.2vw,24px)",
+        paragraph_heading: "clamp(16px,1.2vw,20px)",
         our_text_heading: "clamp(28px,2.4vw,36px)",
-        secondary_heading: "clamp(48px,7.2vw, 74px)",
+        secondary_heading: "clamp(24px,2vw, 38px)",
+        primary_heading: "clamp(36px,7.2vw, 68px)",
         tertiary_heading: "clamp(28px, 4.2vw, 58px)",
         subtitle_heading: "clamp(16px,1.8vw,20px)",
         extra_subtitle_heading: "clamp(14px,1.6vw,18px)",
@@ -77,4 +82,4 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config
