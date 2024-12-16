@@ -195,7 +195,7 @@ const StickyHeroSection: FC<StickyHeroSectionProps> = ({}) => {
         ) : null}
       </div>
 
-      <RandomCircles />
+      {/* <RandomCircles /> */}
     </section>
   );
 };

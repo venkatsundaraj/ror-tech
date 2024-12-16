@@ -6,7 +6,7 @@ import { useCircleAnimation } from "@/hooks/use-circle-animation";
 const RandomCircles: React.FC = () => {
   const containerWidth = 1800;
   const containerHeight = 1000;
-  const circleCount = 500;
+  const circleCount = 50;
 
   const circles = useCircleAnimation(
     circleCount,

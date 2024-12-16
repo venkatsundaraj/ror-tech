@@ -21,6 +21,11 @@ import {
   Menu,
   UserRoundCog,
   LoaderCircle,
+  Instagram,
+  Facebook,
+  Twitter,
+  Youtube,
+  Linkedin,
   Play,
 } from "lucide-react";
 
@@ -28,6 +33,11 @@ export const Icons = {
   User,
   Snail,
   ChevronRight,
+  Instagram,
+  Facebook,
+  Twitter,
+  Youtube,
+  Linkedin,
   UserRoundCog,
   LoaderCircle,
   Sliders,

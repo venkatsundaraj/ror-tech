@@ -1,4 +1,4 @@
-import { EndToEndData, MainNavItems } from "@/types";
+import { EndToEndData, MainNavItems, SocialMediaIcons } from "@/types";
 
 export const mainNavContents: MainNavItems = [
   {
@@ -109,5 +109,83 @@ export const caseStudyData: EndToEndData = [
     title: "Title",
     description: "Digital solution that help you to engage clients better",
     link: "#",
+  },
+];
+
+export const socialMediaIcons: SocialMediaIcons = [
+  {
+    image: "Instagram",
+    url: "#",
+  },
+  {
+    image: "Facebook",
+    url: "#",
+  },
+  {
+    image: "Twitter",
+    url: "#",
+  },
+  {
+    image: "Youtube",
+    url: "#",
+  },
+];
+
+export const menuLinks = [
+  {
+    title: "Solutions",
+    url: "#",
+  },
+  {
+    title: "Resources",
+    url: "#",
+  },
+  {
+    title: "Services",
+    url: "#",
+  },
+  {
+    title: "About Us",
+    url: "#",
+  },
+  {
+    title: "Partnerships",
+    url: "#",
+  },
+  {
+    title: "Contact us",
+    url: "#",
+  },
+];
+
+export const heroSectionData: {
+  title: string;
+  description: string;
+  subText: string;
+}[] = [
+  {
+    title: "Raw Data",
+    description: "Structured and Unstructured",
+    subText: "Textual | Tabular | Voice | Pictures | Emails | Videos",
+  },
+  {
+    title: "Information",
+    description: "Organised and Interpreted Raw Data",
+    subText: "Textual | Tabular | Voice | Pictures | Emails | Videos",
+  },
+  {
+    title: "Intelligence",
+    description: "Answers to WHAT Happened",
+    subText: "Data Visualization | Descriptive Analysis",
+  },
+  {
+    title: "Insights",
+    description: "WHAT and also WHY it happened",
+    subText: "Diagnotic Analysis",
+  },
+  {
+    title: "Foresights",
+    description: "WHAT might happen in the Future.",
+    subText: "Predictive Analysis",
   },
 ];
