@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 export default {
   content: [
@@ -75,11 +75,12 @@ export default {
         our_text_heading: "clamp(28px,2.4vw,36px)",
         secondary_heading: "clamp(24px,2vw, 38px)",
         primary_heading: "clamp(36px,7.2vw, 68px)",
-        tertiary_heading: "clamp(28px, 4.2vw, 58px)",
+        tertiary_heading: "clamp(20px, 2vw, 28px)",
         subtitle_heading: "clamp(16px,1.8vw,20px)",
         extra_subtitle_heading: "clamp(14px,1.6vw,18px)",
+        extra_paragraph_heading: "clamp(14px,1.3vw,15px)",
       },
     },
   },
   plugins: [],
-} satisfies Config
+} satisfies Config;
