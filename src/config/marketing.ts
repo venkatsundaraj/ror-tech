@@ -31,7 +31,7 @@ export const mainNavContents: MainNavItems = [
 export const endToEndData: EndToEndData = [
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoBHyWn8pn9TX8jAg1KsG2erN3mS6aChv5qWU7",
+      "https://utfs.io/f/QRaE9TmLS8Jo5nwI83ExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
     title: "Advisory and Consulting",
     description:
       "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
@@ -39,7 +39,23 @@ export const endToEndData: EndToEndData = [
   },
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoBHyWn8pn9TX8jAg1KsG2erN3mS6aChv5qWU7",
+      "https://utfs.io/f/QRaE9TmLS8JoYjLwuxBK2udhgFkc9pfroZsCYNOQUvqaylij",
+    title: "Development and Product Implementations",
+    description:
+      "Full life cycle development or implementation, customization, upgrades and migrations",
+    link: "#",
+  },
+  {
+    imageUrl:
+      "https://utfs.io/f/QRaE9TmLS8JoS6K0aEfD5btxVm4sdUgOiLWYcuMaIwpv8eSh",
+    title: "Application Support and Maintenance",
+    description:
+      "Innovative support models to ensure you get best out of your digital investments",
+    link: "#",
+  },
+  {
+    imageUrl:
+      "https://utfs.io/f/QRaE9TmLS8Jo5nwI83ExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
     title: "Advisory and Consulting",
     description:
       "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
@@ -47,65 +63,54 @@ export const endToEndData: EndToEndData = [
   },
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoBHyWn8pn9TX8jAg1KsG2erN3mS6aChv5qWU7",
-    title: "Advisory and Consulting",
+      "https://utfs.io/f/QRaE9TmLS8JoYjLwuxBK2udhgFkc9pfroZsCYNOQUvqaylij",
+    title: "Development and Product Implementations",
     description:
-      "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
+      "Full life cycle development or implementation, customization, upgrades and migrations",
     link: "#",
   },
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoBHyWn8pn9TX8jAg1KsG2erN3mS6aChv5qWU7",
-    title: "Advisory and Consulting",
+      "https://utfs.io/f/QRaE9TmLS8JoS6K0aEfD5btxVm4sdUgOiLWYcuMaIwpv8eSh",
+    title: "Application Support and Maintenance",
     description:
-      "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
-    link: "#",
-  },
-  {
-    imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoBHyWn8pn9TX8jAg1KsG2erN3mS6aChv5qWU7",
-    title: "Advisory and Consulting",
-    description:
-      "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
-    link: "#",
-  },
-  {
-    imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoBHyWn8pn9TX8jAg1KsG2erN3mS6aChv5qWU7",
-    title: "Advisory and Consulting",
-    description:
-      "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
+      "Innovative support models to ensure you get best out of your digital investments",
     link: "#",
   },
 ];
 
 export const caseStudyData: EndToEndData = [
   {
-    imageUrl: "",
+    imageUrl:
+      "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
     description: "Digital solution that help you to engage clients better",
     link: "#",
   },
   {
-    imageUrl: "",
+    imageUrl:
+      "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
     description: "Digital solution that help you to engage clients better",
     link: "#",
   },
   {
-    imageUrl: "",
+    imageUrl:
+      "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
     description: "Digital solution that help you to engage clients better",
     link: "#",
   },
   {
-    imageUrl: "",
+    imageUrl:
+      "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
     description: "Digital solution that help you to engage clients better",
     link: "#",
   },
   {
-    imageUrl: "",
+    imageUrl:
+      "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
     description: "Digital solution that help you to engage clients better",
     link: "#",

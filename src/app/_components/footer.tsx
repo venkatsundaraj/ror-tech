@@ -5,6 +5,7 @@ import Image from "next/image";
 import { menuLinks, socialMediaIcons } from "@/config/marketing";
 import { Icons } from "./icons";
 import Link from "next/link";
+import WavePattern from "./wave-pattern";
 
 interface FooterProps {}
 
@@ -27,13 +28,16 @@ const Footer: FC<FooterProps> = ({}) => {
             9389 0383 to know more.
           </span>
         </div>
-        <div className="w-full flex items-center justify-between flex-wrap md:flex-nowrap py-8 md:py-12">
+      </div>
+      <WavePattern />
+      <div className="container flex items-start justify-start flex-col">
+        <div className="w-full gap-4 flex items-center justify-between flex-wrap md:flex-nowrap py-8 md:py-12">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-xl">
             Join our newsletter to stay updated.
           </h4>
           <form className="flex items-center justify-center flex-row h-12">
             <Input
-              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-background placeholder:text-secondary font-medium font-heading min-w-[360px]"
+              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-background placeholder:text-secondary font-medium font-heading min-w-[260px] md:min-w-[360px]"
               type="email"
               placeholder="Enter your email address"
             />
@@ -42,7 +46,7 @@ const Footer: FC<FooterProps> = ({}) => {
             </Button>
           </form>
         </div>
-        <div className="flex items-start justify-between flex-wrap md:flex-nowrap py-12 md:py-16 border-y border-foreground w-full">
+        <div className="flex gap-4 items-start justify-between flex-wrap md:flex-nowrap py-12 md:py-16 border-y border-foreground w-full">
           <div className="flex flex-col items-start justify-between gap-4">
             <Image
               height={100}

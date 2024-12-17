@@ -63,7 +63,7 @@ const EndToEndServices: FC<EndToEndServicesProps> = ({ endToEndData }) => {
             ? Array.from(endToEndData).map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center justify-center rounded-lg shadow-lg min-w-[250px] md:min-w-[450px]"
+                  className="flex flex-col items-center justify-center rounded-lg shadow-lg min-w-[340px] md:min-w-[450px]"
                 >
                   <Image
                     src={item.imageUrl}
@@ -81,7 +81,7 @@ const EndToEndServices: FC<EndToEndServicesProps> = ({ endToEndData }) => {
                       {item.description}
                     </span>
                     <Link
-                      className="underline font-paragraph font-normal text-popover"
+                      className="underline hidden font-paragraph font-normal text-popover"
                       href={item.link}
                     >
                       Know More

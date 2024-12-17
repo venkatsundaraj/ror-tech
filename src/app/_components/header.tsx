@@ -27,15 +27,16 @@ const Header: FC<HeaderProps> = ({}) => {
         href="/"
         className="inline-flex z-40 font-semibold items-center justify-center flex-nowrap gap-2"
       >
-        <Image
-          height={100}
-          width={200}
+        {/* <Image
+          height={200}
+          width={300}
           className="w-[100px] md:w-[200px]"
           src={
             "https://utfs.io/f/QRaE9TmLS8JoW0GskAzV93iJm0k54l8QjZnxIufGLthXdgER"
           }
           alt="Logo"
-        />
+        /> */}
+        <Icons.RORLogo className="w-[300px] h-auto" />
       </Link>
       {mainNavContents.length ? (
         <nav className="hidden xl:flex min-h-16 items-center justify-center overflow-hidden relative gradient-border-t border-gradient-r-purple-blue p-3">

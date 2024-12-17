@@ -59,23 +59,22 @@ const ResourcesCard: FC<ResourcesCardProps> = ({}) => {
           <CarouselItem key={i} className=" pl-0">
             <div
               className={cn(
-                "w-full h-full border-b-primary-foreground flex items-center justify-center py-16 md:py-24",
-                colors[i]
+                "w-full h-full border-b-primary-foreground flex items-center justify-center py-16 md:py-24 bg-cover bg-no-repeat bg-center absolute"
               )}
             >
-              <div className="container h-full flex items-start justify-end flex-col">
+              <Image
+                src={item.imageUrl}
+                alt={item.title}
+                width={1900}
+                draggable="false"
+                height={900}
+                className="w-full h-full object-cover absolute"
+              />
+              <div className="container h-full flex items-start justify-end flex-col z-10">
                 <div
                   key={i}
                   className="flex flex-col items-center justify-center"
                 >
-                  {/* <Image
-                    src={item.imageUrl}
-                    alt={item.title}
-                    width={300}
-                    draggable="false"
-                    height={200}
-                    className="w-full max-h-[220px] object-cover"
-                  /> */}
                   <div className="flex items-start justify-between gap-2 flex-col px-4 py-8">
                     <h4 className="text-paragraph_heading leading-tight font-heading font-normal text-foreground">
                       {item.title}

@@ -65,7 +65,7 @@ const CarouselStickyContainer: FC<CarouselStickyContainerProps> = ({}) => {
               : "opacity-0 translate-y-5"
           )}
         >
-          <h1 className="max-w-lg font-normal leading-tight text-center text-foreground font-heading text-secondary_heading px-4 md:px-0">
+          <h1 className="max-w-xl font-normal leading-tight text-center text-foreground font-heading text-secondary_heading px-4 md:px-0">
             We help you derive maximum value from your ecosystem data.
           </h1>
         </div>
@@ -77,11 +77,11 @@ const CarouselStickyContainer: FC<CarouselStickyContainerProps> = ({}) => {
               : "opacity-0 translate-x-0"
           )}
         >
-          <h1 className="max-w-lg font-normal leading-tight text-left text-foreground font-heading text-secondary_heading">
+          <h1 className="max-w-xl font-normal leading-tight text-left text-foreground font-heading text-secondary_heading">
             Get into an exciting data journey.
           </h1>
           <span className="text-subtitle_heading font-paragraph text-left font-normal text-foreground">
-            Textual | Tabular | Voice | Pictures | Emails | Videos
+            Simple. Scaleable. Secure. Compliant. Cost-Effective.
           </span>
         </div>
 
