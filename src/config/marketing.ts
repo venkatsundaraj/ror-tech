@@ -1,19 +1,15 @@
+import { Icons } from "@/app/_components/icons";
 import { EndToEndData, MainNavItems, SocialMediaIcons } from "@/types";
 
 export const mainNavContents: MainNavItems = [
   {
-    href: "#solutions",
+    href: "#our-solution",
     title: "Solutions",
     subItems: [],
   },
   {
-    href: "#services",
+    href: "#end-to-end-services",
     title: "Services",
-    subItems: [],
-  },
-  {
-    href: "#who-we-are",
-    title: "Who We Are",
     subItems: [],
   },
   {
@@ -22,12 +18,20 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "#about-us",
-    title: "About Us",
+    href: "#who-we-are",
+    title: "Who We Are",
     subItems: [],
   },
 ];
 
+export const artData: { title: string; icon: keyof typeof Icons }[] = [
+  { title: "Search", icon: "Search" },
+  { title: "Store", icon: "Database" },
+  { title: "Compile and Consolidate", icon: "Merge" },
+  { title: "Validate and Reconcile", icon: "FileCheck" },
+  { title: "Analyse and Predice", icon: "ChartColumnIncreasing" },
+  { title: "Upload and Update", icon: "CloudUpload" },
+];
 export const endToEndData: EndToEndData = [
   {
     imageUrl:
@@ -56,25 +60,9 @@ export const endToEndData: EndToEndData = [
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8Jo5nwI83ExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
-    title: "Advisory and Consulting",
+    title: "Managed Services",
     description:
-      "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
-    link: "#",
-  },
-  {
-    imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoYjLwuxBK2udhgFkc9pfroZsCYNOQUvqaylij",
-    title: "Development and Product Implementations",
-    description:
-      "Full life cycle development or implementation, customization, upgrades and migrations",
-    link: "#",
-  },
-  {
-    imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoS6K0aEfD5btxVm4sdUgOiLWYcuMaIwpv8eSh",
-    title: "Application Support and Maintenance",
-    description:
-      "Innovative support models to ensure you get best out of your digital investments",
+      "Outsource your non-critical and expensive processes to be handled efficiently using next-gen technologies",
     link: "#",
   },
 ];

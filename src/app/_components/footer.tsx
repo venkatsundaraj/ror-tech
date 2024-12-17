@@ -11,7 +11,10 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <footer className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24">
+    <footer
+      id="who-we-are"
+      className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24"
+    >
       <div className="container flex items-start justify-start flex-col">
         <div className="flex items-start justify-between gap-2 flex-col  py-8">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
@@ -35,7 +38,10 @@ const Footer: FC<FooterProps> = ({}) => {
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-xl">
             Join our newsletter to stay updated.
           </h4>
-          <form className="flex items-center justify-center flex-row h-12">
+          <form
+            id="form"
+            className="flex items-center justify-center flex-row h-12"
+          >
             <Input
               className="h-full px-2 rounded-none text-extra_paragraph_heading bg-background placeholder:text-secondary font-medium font-heading min-w-[260px] md:min-w-[360px]"
               type="email"

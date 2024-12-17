@@ -15,25 +15,47 @@ import {
   Sun,
   Pencil,
   Moon,
+  Search,
+  Box,
   ArrowLeft,
   CircleX,
   EllipsisVertical,
   Laptop,
+  Brain,
   Menu,
   UserRoundCog,
   LoaderCircle,
   Instagram,
   Facebook,
+  Database,
+  Merge,
+  FileCheck,
+  ChartColumnIncreasing,
+  CloudUpload,
   Twitter,
   Youtube,
   Linkedin,
+  ChartPie,
+  MonitorCog,
+  Scale,
   Play,
-} from "lucide-react"
+} from "lucide-react";
 
 export const Icons = {
   User,
   Snail,
+  Scale,
+  Brain,
+  Merge,
+  ChartPie,
+  FileCheck,
+  MonitorCog,
+  ChartColumnIncreasing,
+  CloudUpload,
+  Box,
+  Database,
   ChevronRight,
+  Search,
   Instagram,
   Facebook,
   Twitter,
@@ -66,6 +88,7 @@ export const Icons = {
       width="169"
       height="70"
       viewBox="0 0 169 70"
+      className="scale-125"
     >
       <defs>
         <linearGradient
@@ -361,6 +384,6 @@ export const Icons = {
       </g>
     </svg>
   ),
-}
+};
 
-export type Icon = keyof typeof Icons
+export type Icon = keyof typeof Icons;

@@ -46,6 +46,7 @@ const ResourcesCard: FC<ResourcesCardProps> = ({}) => {
 
   return (
     <Carousel
+      id="resources"
       className=""
       setApi={setApi}
       opts={{
