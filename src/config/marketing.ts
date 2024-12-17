@@ -2,18 +2,13 @@ import { EndToEndData, MainNavItems, SocialMediaIcons } from "@/types";
 
 export const mainNavContents: MainNavItems = [
   {
-    href: "#solutions",
+    href: "#our-solution",
     title: "Solutions",
     subItems: [],
   },
   {
-    href: "#services",
+    href: "#end-to-end-services",
     title: "Services",
-    subItems: [],
-  },
-  {
-    href: "#who-we-are",
-    title: "Who We Are",
     subItems: [],
   },
   {
@@ -22,8 +17,8 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "#about-us",
-    title: "About Us",
+    href: "#who-we-are",
+    title: "Who We Are",
     subItems: [],
   },
 ];

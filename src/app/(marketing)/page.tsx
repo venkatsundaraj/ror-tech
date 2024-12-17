@@ -4,6 +4,7 @@ import EndToEndServices from "@/app/_components/end-to-end-services";
 import ResourcesCard from "@/app/_components/resources-card";
 import CarouselStickyContainer from "@/app/_components/carousel-sticky-container";
 import { cn } from "@/lib/utils";
+import { ScrollToHash } from "@/app/_components/scroll-to-hash";
 
 const artData = [
   "Search",
@@ -18,7 +19,11 @@ export default function Home() {
   return (
     <>
       <CarouselStickyContainer />
-      <section className="w-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative ">
+      <ScrollToHash />
+      <section
+        id="our-solution"
+        className="w-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative "
+      >
         <div className="container flex flex-col items-start">
           <h2 className="max-w-3xl font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
             Using cutting edge digital technologies for state-of-the-art

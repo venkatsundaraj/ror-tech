@@ -21,7 +21,7 @@ const CarouselStickyContainer: FC<CarouselStickyContainerProps> = ({}) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentState((prevState) => (prevState + 1) % heroSectionData.length);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);

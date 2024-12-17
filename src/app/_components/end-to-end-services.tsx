@@ -42,7 +42,7 @@ const EndToEndServices: FC<EndToEndServicesProps> = ({ endToEndData }) => {
   };
   return (
     <section
-      id="our-terrain"
+      id="end-to-end-services"
       className="w-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative"
     >
       <div className="container flex items-start">

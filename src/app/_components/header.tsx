@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({}) => {
           }
           alt="Logo"
         /> */}
-        <Icons.RORLogo className="w-[300px] h-auto" />
+        <Icons.RORLogo className="w-[400px] h-auto" />
       </Link>
       {mainNavContents.length ? (
         <nav className="hidden xl:flex min-h-16 items-center justify-center overflow-hidden relative gradient-border-t border-gradient-r-purple-blue p-3">
@@ -87,9 +87,10 @@ const Header: FC<HeaderProps> = ({}) => {
           </ul>
         </nav>
       ) : null}
-      <button
+      <Link
         className="flex items-center space-x-2 xl:hidden"
-        onClick={() => setShowMobileMenu(!showMobileMenu)}
+        href={"#form"}
+        // onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
         {showMobileMenu ? (
           <Icons.CircleX className="text-foreground" />
@@ -97,7 +98,7 @@ const Header: FC<HeaderProps> = ({}) => {
           <Icons.Menu className="text-foreground" />
         )}
         <span className="font-bold hidden">Menu</span>
-      </button>
+      </Link>
       {showMobileMenu && mainNavContents && (
         <MobileNav
           removeHandler={() => setShowMobileMenu(!showMobileMenu)}
