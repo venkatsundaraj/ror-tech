@@ -1,9 +1,10 @@
-import StickyHeroSection from "@/app/_components/sticky-hero-section";
-import { endToEndData } from "@/config/marketing";
-import EndToEndServices from "@/app/_components/end-to-end-services";
-import ResourcesCard from "@/app/_components/resources-card";
-import CarouselStickyContainer from "@/app/_components/carousel-sticky-container";
-import { cn } from "@/lib/utils";
+import StickyHeroSection from "@/app/_components/sticky-hero-section"
+import { endToEndData } from "@/config/marketing"
+import EndToEndServices from "@/app/_components/end-to-end-services"
+import ResourcesCard from "@/app/_components/resources-card"
+import CarouselStickyContainer from "@/app/_components/carousel-sticky-container"
+import { cn } from "@/lib/utils"
+import AnimatedIcon from "@/app/_components/animated-icon"
 
 const artData = [
   "Search",
@@ -12,7 +13,7 @@ const artData = [
   "Validate and Reconcile",
   "Analyse and Predice",
   "Upload and Update",
-];
+]
 
 export default function Home() {
   return (
@@ -26,11 +27,14 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-6 gap-4 w-full py-6">
             {Array.from({ length: 6 }).map((_, i) => (
-              <div className="flex relative items-center justify-center w-full  min-h-[260px]">
+              <div
+                key={i}
+                className="flex relative items-center justify-center w-full  min-h-[260px]"
+              >
                 <div
                   key={i}
                   className="min-w-[140px] rounded-full border border-primary min-h-[140px]"
-                />
+                ></div>
                 <span
                   className={cn(
                     "text-subtitle_heading text-center font-paragraph font-bold text-primary absolute left-1/2 -translate-x-1/2",
@@ -120,5 +124,5 @@ export default function Home() {
       <EndToEndServices endToEndData={endToEndData} />
       <ResourcesCard />
     </>
-  );
+  )
 }
