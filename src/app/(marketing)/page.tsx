@@ -27,11 +27,11 @@ export default function Home() {
             {Array.from(artData).map((item, i) => {
               const Icon = Icons[item.icon];
               return (
-                <div className="flex relative items-center justify-center w-full  min-h-[260px]">
-                  <div
-                    key={i}
-                    className="min-w-[140px] rounded-full border border-primary min-h-[140px] flex items-center justify-center"
-                  >
+                <div
+                  key={i}
+                  className="flex relative items-center justify-center w-full  min-h-[260px]"
+                >
+                  <div className="min-w-[140px] rounded-full border border-primary min-h-[140px] flex items-center justify-center">
                     <Icon className="w-16 h-16 stroke-secondary" />
                   </div>
                   <span
