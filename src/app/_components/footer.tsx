@@ -16,7 +16,7 @@ const Footer: FC<FooterProps> = ({}) => {
       className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24"
     >
       <div className="container flex items-start justify-start flex-col">
-        <div className="flex items-start justify-between gap-2 flex-col  py-8">
+        <div className="flex items-start justify-between gap-4 flex-col  py-8">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
             We specialize in end-to-end data management using next generation
             digital solution
@@ -26,7 +26,7 @@ const Footer: FC<FooterProps> = ({}) => {
             premier global digital transformation company over 500 consultants,
             HQ in UAE and a global presence.
           </span>
-          <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
+          <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-lg">
             Get in touch with us at rortechnology@gmail.com or call us at +871
             9389 0383 to know more.
           </span>
@@ -43,7 +43,7 @@ const Footer: FC<FooterProps> = ({}) => {
             className="flex items-center justify-center flex-row h-12"
           >
             <Input
-              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-background placeholder:text-secondary font-medium font-heading min-w-[260px] md:min-w-[360px]"
+              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-[#EEDCF2] placeholder:text-secondary font-medium font-heading min-w-[260px] md:min-w-[360px]"
               type="email"
               placeholder="Enter your email address"
             />

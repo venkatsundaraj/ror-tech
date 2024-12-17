@@ -78,7 +78,7 @@ const CarouselStickyContainer: FC<CarouselStickyContainerProps> = ({}) => {
           )}
         >
           <h1 className="max-w-xl font-normal leading-tight text-left text-foreground font-heading text-secondary_heading">
-            Get into an exciting data journey.
+            By Navigating from Raw Data to Information and Insights.
           </h1>
           <span className="text-subtitle_heading font-paragraph text-left font-normal text-foreground">
             Simple. Scaleable. Secure. Compliant. Cost-Effective.
