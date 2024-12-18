@@ -1,25 +1,25 @@
-"use client";
+"use client"
 
-import { FC, useState } from "react";
-import { cn } from "@/lib/utils";
-import { useSelectedLayoutSegment } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
-import { mainNavContents } from "@/config/marketing";
-import { buttonVariants } from "@/app/_components/ui/button";
-import MobileNav from "@/app/_components/mobile-nav";
-import { Icons } from "@/app/_components/icons";
+import { FC, useState } from "react"
+import { cn } from "@/lib/utils"
+import { useSelectedLayoutSegment } from "next/navigation"
+import Link from "next/link"
+import Image from "next/image"
+import { mainNavContents } from "@/config/marketing"
+import { buttonVariants } from "@/app/_components/ui/button"
+import MobileNav from "@/app/_components/mobile-nav"
+import { Icons } from "@/app/_components/icons"
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
-  const segment = useSelectedLayoutSegment();
-  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
+  const segment = useSelectedLayoutSegment()
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
 
   return (
     <header
       className={cn(
-        "flex flex-row items-center justify-between gap-8 py-4 z-20 px-10 border-b fixed w-screen top-0 ",
+        "flex flex-row backdrop-blur  items-center justify-between gap-8 py-4 z-20 px-10 border-b fixed w-screen top-0 ",
         true && "justify-between"
       )}
     >
@@ -106,7 +106,7 @@ const Header: FC<HeaderProps> = ({}) => {
         />
       )}
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
