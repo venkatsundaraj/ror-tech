@@ -1,13 +1,13 @@
-import StickyHeroSection from "@/app/_components/sticky-hero-section";
-import { endToEndData } from "@/config/marketing";
-import EndToEndServices from "@/app/_components/end-to-end-services";
-import ResourcesCard from "@/app/_components/resources-card";
-import CarouselStickyContainer from "@/app/_components/carousel-sticky-container";
-import { cn } from "@/lib/utils";
-import { ScrollToHash } from "@/app/_components/scroll-to-hash";
-import { Icons } from "@/app/_components/icons";
+import StickyHeroSection from "@/app/_components/sticky-hero-section"
+import { endToEndData } from "@/config/marketing"
+import EndToEndServices from "@/app/_components/end-to-end-services"
+import ResourcesCard from "@/app/_components/resources-card"
+import CarouselStickyContainer from "@/app/_components/carousel-sticky-container"
+import { cn } from "@/lib/utils"
+import { ScrollToHash } from "@/app/_components/scroll-to-hash"
+import { Icons } from "@/app/_components/icons"
 
-import { artData } from "@/config/marketing";
+import { artData } from "@/config/marketing"
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-6 gap-4 w-full py-6">
             {Array.from(artData).map((item, i) => {
-              const Icon = Icons[item.icon];
+              const Icon = Icons[item.icon]
               return (
                 <div
                   key={i}
@@ -37,13 +37,13 @@ export default function Home() {
                   <span
                     className={cn(
                       "text-subtitle_heading text-center font-paragraph font-bold text-primary absolute left-1/2 -translate-x-1/2",
-                      i % 2 === 0 ? "top-[5px]" : "bottom-[5px]"
+                      i % 2 === 0 ? "bottom-[5px] md:top-[5px]" : "bottom-[5px]"
                     )}
                   >
                     {item.title}
                   </span>
                 </div>
-              );
+              )
             })}
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Home() {
             Transformational Solutions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex items-center justify-between w-full flex-wrap md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
+            <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
               <div className="min-w-[300px] flex items-center justify-center">
                 <Icons.Brain className="w-48 h-48 stroke-background" />
               </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="flex items-center justify-between w-full flex-wrap md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
+            <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
               <div className="min-w-[300px] flex items-center justify-center">
                 <Icons.MonitorCog className="w-48 h-48 stroke-background" />
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="flex items-center justify-between w-full flex-wrap md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
+            <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
               <div className="min-w-[300px] flex items-center justify-center">
                 <Icons.ChartPie className="w-48 h-48 stroke-background" />
               </div>
@@ -112,7 +112,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="flex items-center justify-between w-full flex-wrap md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
+            <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
               <div className="min-w-[300px] flex items-center justify-center">
                 <Icons.Scale className="w-48 h-48 stroke-background" />
               </div>
@@ -136,5 +136,5 @@ export default function Home() {
       <EndToEndServices endToEndData={endToEndData} />
       <ResourcesCard />
     </>
-  );
+  )
 }
