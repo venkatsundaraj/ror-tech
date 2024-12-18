@@ -1,31 +1,35 @@
-import StickyHeroSection from "@/app/_components/sticky-hero-section"
-import { endToEndData } from "@/config/marketing"
-import EndToEndServices from "@/app/_components/end-to-end-services"
-import ResourcesCard from "@/app/_components/resources-card"
-import CarouselStickyContainer from "@/app/_components/carousel-sticky-container"
-import { cn } from "@/lib/utils"
-import { ScrollToHash } from "@/app/_components/scroll-to-hash"
-import { Icons } from "@/app/_components/icons"
+import StickyHeroSection from "@/app/_components/sticky-hero-section";
+import { endToEndData } from "@/config/marketing";
+import EndToEndServices from "@/app/_components/end-to-end-services";
+import ResourcesCard from "@/app/_components/resources-card";
+import CarouselStickyContainer from "@/app/_components/carousel-sticky-container";
+import { cn } from "@/lib/utils";
+import { ScrollToHash } from "@/app/_components/scroll-to-hash";
+import { Icons } from "@/app/_components/icons";
 
-import { artData } from "@/config/marketing"
+import { artData } from "@/config/marketing";
+import StickyScaleContainer from "@/app/_components/sticky-scale-container";
+import AnimatedIcon from "@/app/_components/animated-icon";
+import BackgroundSVG from "@/app/_components/background-svg";
 
 export default function Home() {
   return (
     <>
-      <CarouselStickyContainer />
+      <StickyScaleContainer />
       <ScrollToHash />
+      {/* <AnimatedIcon /> */}
       <section
         id="our-solution"
-        className="w-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative "
+        className="w-screen min-h-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative "
       >
-        <div className="container flex flex-col items-start">
-          <h2 className="max-w-3xl font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
+        <div className="container flex flex-col items-start justify-start">
+          <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-32">
             Using cutting-edge technologies to build state-of-the-art solutions
             and services to
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-6 gap-4 w-full py-6">
             {Array.from(artData).map((item, i) => {
-              const Icon = Icons[item.icon]
+              const Icon = Icons[item.icon];
               return (
                 <div
                   key={i}
@@ -43,7 +47,7 @@ export default function Home() {
                     {item.title}
                   </span>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -55,8 +59,8 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
-              <div className="min-w-[300px] flex items-center justify-center">
-                <Icons.Brain className="w-48 h-48 stroke-background" />
+              <div className=" flex items-center justify-center">
+                <Icons.Brain className="w-32 h-32 stroke-background" />
               </div>
               <div className="flex flex-col items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
@@ -73,8 +77,8 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
-              <div className="min-w-[300px] flex items-center justify-center">
-                <Icons.MonitorCog className="w-48 h-48 stroke-background" />
+              <div className=" flex items-center justify-center">
+                <Icons.MonitorCog className="w-32 h-32 stroke-background" />
               </div>
               <div className="flex flex-col items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
@@ -93,8 +97,8 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
-              <div className="min-w-[300px] flex items-center justify-center">
-                <Icons.ChartPie className="w-48 h-48 stroke-background" />
+              <div className=" flex items-center justify-center">
+                <Icons.ChartPie className="w-32 h-32 stroke-background" />
               </div>
               <div className="flex flex-col items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
@@ -113,8 +117,8 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
-              <div className="min-w-[300px] flex items-center justify-center">
-                <Icons.Scale className="w-48 h-48 stroke-background" />
+              <div className=" flex items-center justify-center">
+                <Icons.Scale className="w-32 h-32 stroke-background" />
               </div>
               <div className="flex flex-col items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
@@ -136,5 +140,5 @@ export default function Home() {
       <EndToEndServices endToEndData={endToEndData} />
       <ResourcesCard />
     </>
-  )
+  );
 }

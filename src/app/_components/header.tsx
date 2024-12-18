@@ -1,25 +1,25 @@
-"use client"
+"use client";
 
-import { FC, useState } from "react"
-import { cn } from "@/lib/utils"
-import { useSelectedLayoutSegment } from "next/navigation"
-import Link from "next/link"
-import Image from "next/image"
-import { mainNavContents } from "@/config/marketing"
-import { buttonVariants } from "@/app/_components/ui/button"
-import MobileNav from "@/app/_components/mobile-nav"
-import { Icons } from "@/app/_components/icons"
+import { FC, useState } from "react";
+import { cn } from "@/lib/utils";
+import { useSelectedLayoutSegment } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import { mainNavContents } from "@/config/marketing";
+import { buttonVariants } from "@/app/_components/ui/button";
+import MobileNav from "@/app/_components/mobile-nav";
+import { Icons } from "@/app/_components/icons";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
-  const segment = useSelectedLayoutSegment()
-  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
+  const segment = useSelectedLayoutSegment();
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
   return (
     <header
       className={cn(
-        "flex flex-row backdrop-blur  items-center justify-between gap-8 py-4 z-20 px-10 border-b fixed w-screen top-0 ",
+        "flex flex-row backdrop-blur bg-foreground items-center justify-between gap-8 py-4 z-20 px-10 border-b fixed w-screen top-0 ",
         true && "justify-between"
       )}
     >
@@ -42,24 +42,24 @@ const Header: FC<HeaderProps> = ({}) => {
         <nav className="hidden xl:flex min-h-16 items-center justify-center overflow-hidden relative gradient-border-t border-gradient-r-purple-blue p-3">
           {/* I shouldn't have learnt the CSS at all */}
 
-          <div className="absolute top-0 w-1/12 h-0.5 left-0 bg-foreground z-10" />
-          <div className="absolute top-0 w-11/12 -me-1 h-0.5 right-0 bg-foreground z-10" />
+          <div className="absolute top-0 w-1/12 h-0.5 left-0 bg-tertiary z-10" />
+          <div className="absolute top-0 w-11/12 -me-1 h-0.5 right-0 bg-tertiary z-10" />
 
-          <div className="absolute bottom-0 w-11/12 -ms-1 h-0.5 left-0 bg-foreground z-10" />
-          <div className="absolute bottom-0 w-1/12   h-0.5 right-0 bg-foreground z-10" />
+          <div className="absolute bottom-0 w-11/12 -ms-1 h-0.5 left-0 bg-tertiary z-10" />
+          <div className="absolute bottom-0 w-1/12   h-0.5 right-0 bg-tertiary z-10" />
 
-          <div className="absolute left-0 w-0.5 h-2/6 top-0 bg-foreground z-10" />
-          <div className="absolute left-0 w-0.5  h-4/6 -mb-1 bottom-0 bg-foreground z-10" />
+          <div className="absolute left-0 w-0.5 h-2/6 top-0 bg-tertiary z-10" />
+          <div className="absolute left-0 w-0.5  h-4/6 -mb-1 bottom-0 bg-tertiary z-10" />
 
-          <div className="absolute right-0 w-0.5 h-4/6 top-0 bg-foreground z-10" />
-          <div className="absolute right-0 w-0.5  h-2/6 -mb-1 bottom-0 bg-foreground z-10" />
+          <div className="absolute right-0 w-0.5 h-4/6 top-0 bg-tertiary z-10" />
+          <div className="absolute right-0 w-0.5  h-2/6 -mb-1 bottom-0 bg-tertiary z-10" />
 
-          <ul className="flex items-center justify-between gap-6 backdrop-blur bg-foreground/5 ps-4">
+          <ul className="flex items-center justify-between gap-6 backdrop-blur bg-tertiary/5 ps-4">
             {mainNavContents.map((item, i) => (
               <li key={i}>
                 <Link
                   className={cn(
-                    "inline-flex bg-transparent items-center text-foreground flex-row justify-center hover:text-primary-foreground/60 text-sm font-medium font-paragraph",
+                    "inline-flex bg-transparent items-center !text-tertiary flex-row justify-center hover:text-primary-foreground/60 text-sm font-medium font-paragraph",
                     {
                       "cursor-not-allowed text-foreground/50": item.disabled,
                     },
@@ -76,7 +76,7 @@ const Header: FC<HeaderProps> = ({}) => {
             <li>
               <Link
                 className={cn(
-                  "inline-flex bg-transparent items-center text-foreground flex-row justify-center text-sm font-medium font-paragraph  !rounded-none",
+                  "inline-flex !bg-secondary items-center !text-foreground flex-row justify-center text-sm font-medium font-paragraph  !rounded-none",
                   buttonVariants({ variant: "secondary" })
                 )}
                 href={"#contact-us"}
@@ -106,7 +106,7 @@ const Header: FC<HeaderProps> = ({}) => {
         />
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
