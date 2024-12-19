@@ -82,7 +82,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
 
         <div
           className={cn(
-            "w-full h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 left-0 mt-32",
+            "w-full h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 mt-32",
             scrollValue > 40
               ? "opacity-1 translate-x-0"
               : "opacity-0 translate-x-0"
@@ -91,7 +91,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
           <h1 className="w-[300px] md:w-[800px] font-normal leading-tight text-left text-primary font-heading text-secondary_heading">
             By Navigating from Raw Data to Information and Insights.
           </h1>
-          <span className="w-[300px] md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
+          <span className="w-[300px] hidden md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
             Simple. Scaleable. Secure. Compliant. Cost-Effective.
           </span>
         </div>
@@ -100,7 +100,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
           <section
             key={index}
             className={cn(
-              "w-full h-[95%] self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[20px] rounded-3xl",
+              "w-full h-[95%]  self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl",
               scrollValue < 40
                 ? "scale-0 translate-y-full"
                 : "scale-1 translate-y-0",
@@ -112,7 +112,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
             <div className="w-full">
               <div
                 className={cn(
-                  "flex items-center w-full justify-between transition-all bg-gradient-to-tr from-primary to-secondary py-8 md:py-12 rounded-3xl flex-wrap md:flex-nowrap",
+                  "flex items-center w-full justify-between transition-all bg-gradient-to-tr from-primary to-secondary  rounded-3xl flex-wrap md:flex-nowrap",
                   scrollValue < 40 ? "" : ""
                 )}
               >

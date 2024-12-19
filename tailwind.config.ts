@@ -73,7 +73,7 @@ export default {
       fontSize: {
         paragraph_heading: "clamp(16px,1.2vw,20px)",
         our_text_heading: "clamp(28px,2.4vw,36px)",
-        secondary_heading: "clamp(24px,4.2vw, 56px)",
+        secondary_heading: "clamp(24px,4.2vw, 52px)",
         primary_heading: "clamp(36px,7.2vw, 68px)",
         tertiary_heading: "clamp(20px, 2vw, 28px)",
         subtitle_heading: "clamp(16px,1.8vw,20px)",
