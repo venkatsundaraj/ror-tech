@@ -46,7 +46,7 @@ const EndToEndServices: FC<EndToEndServicesProps> = ({ endToEndData }) => {
       className="w-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative"
     >
       <div className="container flex items-start">
-        <h2 className="max-w-lg font-semibold mb-6 md:mb-12 leading-tight text-left text-primary font-heading text-secondary_heading px-4 md:px-0">
+        <h2 className="w-full font-normal mb-6 md:mb-12 leading-tight text-left text-primary font-heading text-secondary_heading px-4 md:px-0">
           End-to-End Services
         </h2>
       </div>

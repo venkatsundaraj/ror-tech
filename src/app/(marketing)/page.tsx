@@ -1,6 +1,8 @@
 import StickyHeroSection from "@/app/_components/sticky-hero-section";
 import { endToEndData } from "@/config/marketing";
+
 import EndToEndServices from "@/app/_components/end-to-end-services";
+import EndToEndCarousel from "@/app/_components/end-to-end-carousel";
 import ResourcesCard from "@/app/_components/resources-card";
 import CarouselStickyContainer from "@/app/_components/carousel-sticky-container";
 import { cn } from "@/lib/utils";
@@ -24,8 +26,9 @@ export default function Home() {
       >
         <div className="container flex flex-col items-start justify-start">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-32">
-            Using cutting-edge technologies to build state-of-the-art <br />{" "}
-            solutions and services to to manage data
+            Using cutting-edge technologies to build state-of-the-art{" "}
+            <br className="hidden md:flex" /> solutions and services to manage
+            data
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-2 md:gap-4 w-full py-6">
             {Array.from(artData).map((item, i) => {
@@ -42,8 +45,8 @@ export default function Home() {
                     className={cn(
                       "w-full h-[100px] flex items-center justify-center  absolute",
                       i % 2 === 0
-                        ? "bottom-[5px] md:top-[-15px]"
-                        : "bottom-[-15px]"
+                        ? "bottom-[-44px] md:top-[-15px]"
+                        : "bottom-[-44px] md:bottom-[-15px]"
                     )}
                   >
                     <span
@@ -54,14 +57,6 @@ export default function Home() {
                       {item.title}
                     </span>
                   </div>
-                  <span
-                    className={cn(
-                      "text-subtitle_heading hidden text-center font-paragraph leading-tight text-primary absolute left-1/2 -translate-x-1/2",
-                      i !== 5 ? "hidden" : " flex bottom-[-30px]"
-                    )}
-                  >
-                    to manage data
-                  </span>
                 </div>
               );
             })}
@@ -70,8 +65,8 @@ export default function Home() {
       </section>
       <section className="w-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative bg-gradient-to-r from-primary to-secondary">
         <div className="container flex flex-col items-start">
-          <h2 className="max-w-xl font-normal leading-tight text-left text-foreground font-heading text-secondary_heading mb-6 md:mb-12">
-            Transformational Solutions
+          <h2 className="w-full font-normal leading-tight text-left text-foreground font-heading text-secondary_heading mb-6 md:mb-12">
+            Transformational Solutions using Next-Gen Digital Technologies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap min-h-[400px] shadow-lg backdrop-blur bg-foreground/5 p-4 md:p-8 rounded-md">
@@ -153,7 +148,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <EndToEndServices endToEndData={endToEndData} />
+      <EndToEndCarousel endToEndData={endToEndData} />
       <ResourcesCard />
     </>
   );

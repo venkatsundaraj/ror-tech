@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import Lottie from "lottie-react";
-import icon from "@/config/animated-svg/data33.json";
+import icon from "@/config/animated-svg/datajumpbox.json";
 
 interface AnimatedIconProps {}
 

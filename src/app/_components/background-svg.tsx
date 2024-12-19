@@ -4,6 +4,11 @@ import { FC, useRef, useEffect } from "react";
 
 interface BackgroundSVGProps {}
 
+const getRandomColor = () => {
+  const colors = ["#565C99", "#904E99", "#635C8F"];
+  return colors[Math.floor(Math.random() * colors.length)];
+};
+
 const BackgroundSVG: FC<BackgroundSVGProps> = () => {
   const pathRef = useRef<SVGPathElement>(null);
 
@@ -19,7 +24,7 @@ const BackgroundSVG: FC<BackgroundSVGProps> = () => {
     <div className="w-screen h-screen absolute top-0 left-0">
       <svg
         viewBox="0 0 1500 900"
-        className="w-full h-full sticky top-0 left-0"
+        className="w-full h-full sticky top-0 left-0 scale-125"
         style={{ background: "white" }}
       >
         {/* Main horizontal lines */}
@@ -60,7 +65,7 @@ const BackgroundSVG: FC<BackgroundSVGProps> = () => {
           />
         ))}
 
-        {/* Static dots with varying radii */}
+        {/* Static dots with varying radii and random colors */}
         {[
           ...[200, 400, 600, 800].flatMap((y) =>
             [200, 500, 800, 1100, 1400].map((x) => [x, y])
@@ -77,12 +82,13 @@ const BackgroundSVG: FC<BackgroundSVGProps> = () => {
               cx={cx}
               cy={cy}
               r={radius}
-              className="fill-[#E5E7EB] opacity-75"
+              fill={getRandomColor()}
+              className="opacity-75"
             />
           );
         })}
 
-        {/* Moving dots with varying radii */}
+        {/* Moving dots with varying radii and random colors */}
         {[
           { path: "M 100,200 L 1400,200", duration: "15s" },
           { path: "M 100,400 L 1400,400", duration: "18s" },
@@ -95,7 +101,7 @@ const BackgroundSVG: FC<BackgroundSVGProps> = () => {
         ].map((animPath, i) => {
           const radius = 3 + (i % 4); // Vary radius between 3, 4, 5, and 6
           return (
-            <circle key={`anim-dot-${i}`} className="fill-[#E5E7EB]" r={radius}>
+            <circle key={`anim-dot-${i}`} fill={getRandomColor()} r={radius}>
               <animateMotion
                 dur={animPath.duration}
                 repeatCount="indefinite"

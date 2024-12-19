@@ -7,7 +7,13 @@ import { cn } from "@/lib/utils";
 import SvgAnimation from "@/app/_components/svg-animation";
 import RandomCircles from "@/app/_components/random-circle";
 import { heroSectionData } from "@/config/marketing";
-import BackgroundSVG from "@/app/_components/background-svg";
+
+import dynamic from "next/dynamic";
+
+const BackgroundSVG = dynamic(
+  () => import("@/app/_components/background-svg"),
+  { ssr: false }
+);
 
 interface StickyScaleContainerProps {}
 
@@ -21,7 +27,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentState((prevState) => (prevState + 1) % heroSectionData.length);
-    }, 5000);
+    }, 2500);
 
     return () => clearInterval(interval);
   }, []);

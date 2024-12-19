@@ -96,7 +96,7 @@ const ResourcesCard: FC<ResourcesCardProps> = ({}) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="flex items-center justify-center gap-2 absolute bottom-[24px] right-[24px]">
+      <div className="flex items-center justify-center gap-2 absolute bottom-[24px] right-[24px] z-10">
         <CarouselPrevious className="translate-y-0 left-0 right-initial top-initial relative border-none bg-transparent text-white" />
         <h2 className="text-white">{`${current}/${count}`}</h2>
         <CarouselNext className="translate-y-0 left-0 right-initial top-initial relative border-none bg-transparent text-white" />

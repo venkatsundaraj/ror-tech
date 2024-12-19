@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { useSelectedLayoutSegment } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/app/_components/ui/button";
 import { mainNavContents } from "@/config/marketing";
 import { buttonVariants } from "@/app/_components/ui/button";
 import MobileNav from "@/app/_components/mobile-nav";
@@ -87,18 +88,17 @@ const Header: FC<HeaderProps> = ({}) => {
           </ul>
         </nav>
       ) : null}
-      <Link
-        className="flex items-center space-x-2 xl:hidden"
-        href={"#form"}
-        // onClick={() => setShowMobileMenu(!showMobileMenu)}
+      <Button
+        className="flex items-center space-x-2 xl:hidden !bg-transparent"
+        onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
         {showMobileMenu ? (
-          <Icons.CircleX className="text-foreground" />
+          <Icons.CircleX className="text-popover !w-6 !h-6" />
         ) : (
-          <Icons.Menu className="text-foreground" />
+          <Icons.Menu className="text-popover !w-6 !h-6" />
         )}
         <span className="font-bold hidden">Menu</span>
-      </Link>
+      </Button>
       {showMobileMenu && mainNavContents && (
         <MobileNav
           removeHandler={() => setShowMobileMenu(!showMobileMenu)}
