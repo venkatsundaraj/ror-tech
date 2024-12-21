@@ -23,6 +23,12 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
   const [currentStage, setcurrentStage] = useState<number>(0);
   const [currentState, setCurrentState] = useState<number>(0);
   const { scrollY } = useScroll();
+  const [windowHeight, setWindowHeight] = useState<number>(0);
+
+  // Handle window height on client-side only
+  useEffect(() => {
+    setWindowHeight(document.documentElement.clientHeight);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,16 +41,14 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (sectionRef.current) {
+    if (sectionRef.current && windowHeight > 0) {
       const primaryCondition = latest > sectionRef.current.offsetTop;
       if (primaryCondition) {
         const value =
           (latest - sectionRef.current.offsetTop) /
-          (sectionRef.current.clientHeight -
-            document.documentElement.clientHeight);
+          (sectionRef.current.clientHeight - windowHeight);
         const filteredValue = Math.min(100, value * 100);
         setScrollValue(filteredValue);
-        console.log(scrollValue);
       }
     }
   });
