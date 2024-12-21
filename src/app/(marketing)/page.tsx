@@ -29,10 +29,8 @@ const iconArray = [Icon3, Icon4, Icon2, Icon1, Icon1, Icon5];
 export default function Home() {
   return (
     <>
-      <StickyScaleContainer />
+      {/* <StickyScaleContainer /> */}
       <ScrollToHash />
-      {/* <AnimatedIcon /> */}
-      {/* <StateOfTheArtSolutionSection /> */}
       <section
         id="our-solution"
         className="w-screen flex min-h-screen flex-col items-center justify-center bg-background py-16 md:py-24 relative "

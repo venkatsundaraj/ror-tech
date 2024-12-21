@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import SvgAnimation from "@/app/_components/svg-animation";
-import RandomCircles from "@/app/_components/random-circle";
 import { heroSectionData } from "@/config/marketing";
 
 import dynamic from "next/dynamic";
