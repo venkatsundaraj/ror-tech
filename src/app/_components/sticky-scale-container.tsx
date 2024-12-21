@@ -38,6 +38,18 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    // Only run on client
+    setWindowHeight(window.innerHeight);
+
+    const handleResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -52,7 +64,6 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
       }
     }
   });
-
   const valueHandler = function (value: number) {
     setcurrentStage(value);
   };
