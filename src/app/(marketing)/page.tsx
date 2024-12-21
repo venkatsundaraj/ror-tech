@@ -52,10 +52,10 @@ export default function Home() {
                   className="flex relative items-center justify-center w-full min-h-[200px] md:min-h-[260px]"
                 >
                   <div className="p-8 rounded-full border border-primary  flex items-center justify-center">
-                    {/* <AnimatedIcon
+                    <AnimatedIcon
                       icon={iconArray[i]}
                       className="min-w-[80px] md:min-w-[120px]"
-                    /> */}
+                    />
                   </div>
                   <div
                     className={cn(
@@ -88,10 +88,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center group justify-between w-full flex-wrap gap-4 md:flex-nowrap py-16 md:py-16 shadow-lg backdrop-blur bg-[#263C7B] p-4 md:p-8 rounded-md">
               <div className=" flex items-center justify-center">
-                {/* <AnimatedIcon
+                <AnimatedIcon
                   icon={ExperienceAndEngage}
                   className="max-w-[300px] md:max-w-[600px]"
-                /> */}
+                />
               </div>
               <div className="flex flex-col items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
@@ -115,10 +115,10 @@ export default function Home() {
             </div>
             <div className="flex group items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap py-16 md:py-16 shadow-lg backdrop-blur bg-[#322A5E] p-4 md:p-8 rounded-md">
               <div className=" flex items-center justify-center">
-                {/* <AnimatedIcon
+                <AnimatedIcon
                   icon={AutomateAndOptimise}
                   className="max-w-[300px] md:max-w-[600px]"
-                /> */}
+                />
               </div>
               <div className="flex flex-col items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
