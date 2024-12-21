@@ -29,7 +29,7 @@ export const artData: { title: string; icon: keyof typeof Icons }[] = [
   { title: "Store", icon: "Database" },
   { title: "Compile and Consolidate", icon: "Merge" },
   { title: "Validate and Reconcile", icon: "FileCheck" },
-  { title: "Analyse and Predice", icon: "ChartColumnIncreasing" },
+  { title: "Analyse and Predict", icon: "ChartColumnIncreasing" },
   { title: "Upload and Update", icon: "CloudUpload" },
 ];
 export const endToEndData: EndToEndData = [
@@ -180,5 +180,61 @@ export const heroSectionData: {
     title: "Foresights",
     description: "WHAT might happen in the Future.",
     subText: "Predictive Analysis",
+  },
+];
+
+export const transformationSolution = [
+  {
+    title: "Experience and Engage",
+    id: "experience-and-engage",
+    items: [
+      "SmartCafe: Virtual Employee Hangout Place",
+      "Marketplaces",
+      "Portals",
+      "Mobile App Development",
+      "ChatBots",
+      "Low Code",
+      "GenAI",
+    ],
+  },
+  {
+    title: "Automate and Optimize",
+    id: "automate-and-optimize",
+    items: [
+      "Insurance Claims Settlement Platform",
+      " Automation Hub",
+      "Automation Command and Control center",
+      "RPA",
+      "Intelligent",
+      "Document Processing",
+      "Process Mining",
+      "Communications Mining",
+      "Automated Testing",
+    ],
+  },
+  {
+    title: "Analyse and predict",
+    id: "analyse-and-predict",
+    items: [
+      "SmartLytics HR: Pre-packaged HR Analytics",
+      "Professional Services Analytics",
+      "CFO Cockpit Data",
+      "Engineering Data Science",
+      "Data Visualization",
+      "Enterprise Performance Management",
+    ],
+  },
+  {
+    title: "Scale , Secure and Test",
+    id: "scale-secure-and-test",
+    items: [
+      "Guardian",
+      "DevSecOps",
+      "Cloud Engineering",
+      "Platform",
+      "Platform Engineering",
+      "Cloud Engineering",
+      "DevSecOps",
+    ],
   },
 ];

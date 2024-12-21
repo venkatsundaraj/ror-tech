@@ -2,12 +2,21 @@
 
 import { FC } from "react";
 import Lottie from "lottie-react";
-import icon from "@/config/animated-svg/datajumpbox.json";
+import { cn } from "@/lib/utils";
 
-interface AnimatedIconProps {}
+interface AnimatedIconProps {
+  icon: any;
+  className?: string;
+}
 
-const AnimatedIcon: FC<AnimatedIconProps> = ({}) => {
-  return <Lottie animationData={icon} loop={true} />;
+const AnimatedIcon: FC<AnimatedIconProps> = ({ icon, className }) => {
+  return (
+    <Lottie
+      className={cn("bg-transparent", className)}
+      animationData={icon}
+      loop={true}
+    />
+  );
 };
 
 export default AnimatedIcon;

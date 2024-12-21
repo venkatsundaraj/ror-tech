@@ -22,11 +22,11 @@ const EndToEndCarousel: React.FC<EndToEndCarousel> = function ({
   return (
     <section className="w-screen md:h-screen flex flex-col items-center justify-center bg-background py-24 md:py-24 relative">
       <div className="container flex flex-col items-start">
-        <h2 className="w-full font-normal mb-6 md:mb-12 leading-tight text-left text-primary font-heading text-secondary_heading px-4 md:px-0">
+        <h2 className="w-full font-normal mb-6 md:mb-32 leading-tight text-left text-primary font-heading text-secondary_heading px-4 md:px-0">
           End-to-End Services
         </h2>
         <Carousel className="w-full">
-          <CarouselContent className="-ml-1 gap-4">
+          <CarouselContent className="-ml-1 gap-4 cursor-grab">
             {endToEndData.length
               ? Array.from(endToEndData).map((item, i) => (
                   <CarouselItem
