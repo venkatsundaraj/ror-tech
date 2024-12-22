@@ -17,14 +17,18 @@ import Icon1 from "@/config/animated-svg/datajumpbox.json";
 import Icon2 from "@/config/animated-svg/datamulticube.json";
 import ExperienceAndEngage from "@/config/animated-svg/datamultilogo1.json";
 import AutomateAndOptimise from "@/config/animated-svg/datarob-2.json";
+import AnalyzeAndPredict from "@/config/animated-svg/databrianwire2.json";
+import ScaleAndSecure from "@/config/animated-svg/datapiechart3.json";
 import Icon3 from "@/config/animated-svg/datatri1.json";
 import Icon4 from "@/config/animated-svg/databox-2.json";
 import Icon5 from "@/config/animated-svg/datalinebox1.json";
+import Icon6 from "@/config/animated-svg/dataheight1.json";
 import Link from "next/link";
 import EndToEndPaths from "../_components/end-to-end-paths";
 import StateOfTheArtSolutionSection from "@/app/_components/state-of-the-art-solution";
+import AnimatedPath from "../_components/animation-path";
 
-const iconArray = [Icon3, Icon4, Icon2, Icon1, Icon1, Icon5];
+const iconArray = [Icon3, Icon4, Icon2, Icon6, Icon1, Icon5];
 
 export default function Home() {
   return (
@@ -42,7 +46,8 @@ export default function Home() {
             <br className="hidden md:flex" /> solutions and services to manage
             data
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-14 md:gap-4 w-full py-6">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-14 md:gap-28 w-full py-6 relative ">
+            {/* <AnimatedPath /> */}
             {/* Looping the icons */}
             {Array.from(artData).map((item, i) => {
               const Icon = Icons[item.icon];
@@ -144,7 +149,10 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-between w-full flex-wrap gap-4 md:flex-nowrap py-16 md:py-16 shadow-lg backdrop-blur bg-[#84357B] p-4 md:p-8 rounded-md">
               <div className=" flex items-center justify-center">
-                <Icons.ChartPie className="w-32 h-32 stroke-background" />
+                <AnimatedIcon
+                  icon={AnalyzeAndPredict}
+                  className="max-w-[300px] md:max-w-[600px]"
+                />
               </div>
               <div className="flex flex-col group items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
@@ -170,7 +178,10 @@ export default function Home() {
             </div>
             <div className="flex items-center group justify-between w-full flex-wrap gap-4 md:flex-nowrap py-16 md:py-16 shadow-lg backdrop-blur bg-[#4A4A48] p-4 md:p-8 rounded-md">
               <div className=" flex items-center justify-center">
-                <Icons.Scale className="w-32 h-32 stroke-background" />
+                <AnimatedIcon
+                  icon={ScaleAndSecure}
+                  className="max-w-[300px] md:max-w-[600px]"
+                />
               </div>
               <div className="flex flex-col items-start justify-center gap-6">
                 <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
