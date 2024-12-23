@@ -22,6 +22,11 @@ export const mainNavContents: MainNavItems = [
     title: "Who We Are",
     subItems: [],
   },
+  {
+    href: "#partnerships",
+    title: "Partnerships",
+    subItems: [],
+  },
 ];
 
 export const artData: { title: string; icon: keyof typeof Icons }[] = [
