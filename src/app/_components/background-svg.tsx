@@ -21,7 +21,7 @@ const BackgroundSVG: FC<BackgroundSVGProps> = () => {
   }, []);
 
   return (
-    <div className="w-screen h-screen absolute top-0 left-0 overflow-x-hidden">
+    <div className="w-screen h-screen  fixed top-0 left-0 overflow-hidden">
       <svg
         viewBox="0 0 1500 900"
         className="w-full h-full sticky top-0 left-0 scale-125"

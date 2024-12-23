@@ -20,7 +20,7 @@ const EndToEndCarousel: React.FC<EndToEndCarousel> = function ({
   endToEndData,
 }) {
   return (
-    <section className="w-screen md:h-screen flex flex-col items-center justify-center bg-background py-24 md:py-24 relative">
+    <section className="w-screen md:h-screen flex flex-col items-center justify-center bg-transparent py-24 md:py-24 relative">
       <div className="container flex flex-col items-start">
         <h2 className="w-full font-normal mb-6 md:mb-32 leading-tight text-left text-primary font-heading text-secondary_heading px-4 md:px-0">
           End-to-End Services
@@ -31,7 +31,7 @@ const EndToEndCarousel: React.FC<EndToEndCarousel> = function ({
               ? Array.from(endToEndData).map((item, i) => (
                   <CarouselItem
                     key={i}
-                    className="pl-1 md:basis-1/2 lg:basis-1/3"
+                    className="pl-1 md:basis-1/2 lg:basis-1/3 bg-background shadow-none"
                   >
                     <div
                       key={i}

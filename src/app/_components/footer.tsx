@@ -13,7 +13,7 @@ const Footer: FC<FooterProps> = ({}) => {
   return (
     <footer
       id="who-we-are"
-      className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24"
+      className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24 relative"
     >
       <div className="container flex items-start justify-start flex-col">
         <div className="flex items-start justify-between gap-4 flex-col  py-8">

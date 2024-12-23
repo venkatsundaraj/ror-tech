@@ -12,21 +12,19 @@ import { Icons } from "@/app/_components/icons";
 import { artData } from "@/config/marketing";
 import StickyScaleContainer from "@/app/_components/sticky-scale-container";
 import AnimatedIcon from "@/app/_components/animated-icon";
-import BackgroundSVG from "@/app/_components/background-svg";
 import Icon1 from "@/config/animated-svg/datajumpbox.json";
 import Icon2 from "@/config/animated-svg/datamulticube.json";
 import ExperienceAndEngage from "@/config/animated-svg/datamultilogo1.json";
 import AutomateAndOptimise from "@/config/animated-svg/datarob-2.json";
 import AnalyzeAndPredict from "@/config/animated-svg/databrianwire2.json";
-import ScaleAndSecure from "@/config/animated-svg/datapiechart3.json";
+import ScaleAndSecure from "@/config/animated-svg/datapiechart10.json";
 import Icon3 from "@/config/animated-svg/datatri1.json";
 import Icon4 from "@/config/animated-svg/databox-2.json";
 import Icon5 from "@/config/animated-svg/datalinebox1.json";
 import Icon6 from "@/config/animated-svg/dataheight1.json";
 import Link from "next/link";
-import EndToEndPaths from "../_components/end-to-end-paths";
-import StateOfTheArtSolutionSection from "@/app/_components/state-of-the-art-solution";
-import AnimatedPath from "../_components/animation-path";
+
+import BackgroundSvgStatic from "@/app/_components/background-svg-static";
 
 const iconArray = [Icon3, Icon4, Icon2, Icon6, Icon1, Icon5];
 
@@ -35,9 +33,10 @@ export default function Home() {
     <>
       <StickyScaleContainer />
       <ScrollToHash />
+      <BackgroundSvgStatic />
       <section
         id="our-solution"
-        className="w-screen flex min-h-screen flex-col items-center justify-center bg-background py-16 md:py-24 relative "
+        className="w-screen flex min-h-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative"
       >
         {/* <BackgroundSVG /> */}
         <div className="container flex flex-col items-start justify-start">
@@ -46,7 +45,7 @@ export default function Home() {
             <br className="hidden md:flex" /> solutions and services to manage
             data
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-14 md:gap-28 w-full py-6 relative ">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-14 md:gap-12 w-full py-6 relative ">
             {/* <AnimatedPath /> */}
             {/* Looping the icons */}
             {Array.from(artData).map((item, i) => {
@@ -66,13 +65,13 @@ export default function Home() {
                     className={cn(
                       "w-full h-[100px] flex items-center justify-center  absolute",
                       i % 2 === 0
-                        ? "bottom-[-74px] md:top-[-70px]"
+                        ? "bottom-[-74px] md:bottom-[-70px]"
                         : "bottom-[-74px] md:bottom-[-70px]"
                     )}
                   >
                     <span
                       className={cn(
-                        "text-subtitle_heading text-center font-paragraph font-bold text-primary absolute leading-tight left-1/2 -translate-x-1/2"
+                        "text-subtitle_heading text-center font-paragraph font-bold text-primary absolute leading-tight left-1/2 -translate-x-1/2 max-w-lg"
                       )}
                     >
                       {item.title}
@@ -85,10 +84,10 @@ export default function Home() {
           {/* <EndToEndPaths /> */}
         </div>
       </section>
-      <section className="w-screen flex flex-col items-center justify-center bg-background py-16 md:py-24 relative ">
+      <section className="w-screen flex flex-col items-center justify-center bg-transparent py-16 md:py-24 relative ">
         <div className="container flex flex-col items-start">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
-            Transformational Solutions using Next-Gen Digital Technologies
+            Transformational Solutions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center group justify-between w-full flex-wrap gap-4 md:flex-nowrap py-16 md:py-16 shadow-lg backdrop-blur bg-[#263C7B] p-4 md:p-8 rounded-md">
@@ -206,29 +205,39 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen flex-col items-center justify-center bg-background py-16 md:py-24 relative">
+      <section className="w-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative">
         <div className="container flex flex-col items-center">
+          <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
+            Using Next Generation Digital Technology
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
             {transformationSolution.length
               ? transformationSolution.map((item, i) => (
-                  <div
-                    id={`${item.id}`}
-                    key={i}
-                    className="flex rounded-lg flex-col items-start justify-start gap-0 bg-[#384D89] py-6 px-6 md:px-8"
-                  >
-                    <h4 className="text-tertiary_heading flex   py-2 leading-tight font-heading font-normal text-foreground border-b border-b-foreground">
-                      {item.title}
-                    </h4>
-                    <ul className="flex flex-col items-start justify-between ">
-                      {item.items.map((listItem, i) => (
-                        <li
-                          className="text-foreground text-paragraph_heading font-heading last:border-0 py-4 border-b border-foreground w-full"
-                          key={i}
-                        >
-                          {listItem}
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="flex items-center flex-col justify-start gap-4 ">
+                    <div
+                      id={`${item.id}`}
+                      key={i}
+                      className="flex rounded-lg flex-col items-start justify-start gap-0 bg-[#384D89] py-6 px-6 md:px-8 min-h-[680px]"
+                    >
+                      <h4 className="text-tertiary_heading flex  mb-6 max-w-[230px] py-2 leading-tight font-heading font-normal text-foreground border-b border-b-foreground">
+                        {item.title}
+                      </h4>
+                      <ul className="flex flex-col items-start justify-between ">
+                        {item.items.map((listItem, i) => (
+                          <li
+                            className="text-foreground text-paragraph_heading font-heading last:border-0 py-4 border-b border-foreground w-full"
+                            key={i}
+                          >
+                            {listItem}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="p-4 flex items-center justify-center bg-foreground border rounded-lg border-primary min-h-[160px]">
+                      <p className="font-paragraph text-center text-paragraph_heading text-primary">
+                        {item.stackData}
+                      </p>
+                    </div>
                   </div>
                 ))
               : null}

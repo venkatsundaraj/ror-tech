@@ -8,11 +8,6 @@ import { heroSectionData } from "@/config/marketing";
 
 import dynamic from "next/dynamic";
 
-const BackgroundSVG = dynamic(
-  () => import("@/app/_components/background-svg"),
-  { ssr: false }
-);
-
 interface StickyScaleContainerProps {}
 
 const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
@@ -69,9 +64,8 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
   return (
     <section
       ref={sectionRef}
-      className="w-screen min-h-[125vh] bg-background bg-fixed flex items-start justify-center relative px-4 md:px-12"
+      className="w-screen min-h-[125vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
-      <BackgroundSVG />
       <div className="w-full h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
         <div
@@ -131,7 +125,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
             <div className="w-full">
               <div
                 className={cn(
-                  "flex items-center w-full justify-between transition-all bg-gradient-to-tr from-primary to-secondary  rounded-3xl flex-wrap md:flex-nowrap",
+                  "flex items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap",
                   scrollValue < 40 ? "" : ""
                 )}
               >

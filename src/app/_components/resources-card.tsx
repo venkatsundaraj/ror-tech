@@ -104,7 +104,7 @@ const ResourcesCard: FC<ResourcesCardProps> = ({}) => {
 
       <div className="flex container items-start justify-start gap-2 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-1/2 w-full h-full  py-16 md:py-24">
         <h2 className="max-w-lg font-semibold mb-6 md:mb-12 leading-tight text-left text-foreground font-heading text-secondary_heading px-4 md:px-0">
-          Resources
+          Case Studies
         </h2>
       </div>
     </Carousel>
