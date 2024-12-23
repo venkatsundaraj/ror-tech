@@ -198,7 +198,7 @@ export const transformationSolution = [
     title: "Experience and Engage",
     id: "experience-and-engage",
     items: [
-      "Portals, Marketplaces, Web applictions",
+      "Portals, Marketplaces, Web applications",
       "Mobile Applications",
       "Low Code",
       "Application Platforms",
@@ -214,9 +214,9 @@ export const transformationSolution = [
     id: "automate-and-optimize",
     items: [
       "Robotic Process Automation",
-      " Intellignet Document Processing",
+      "Intelligent Document Processing",
       "Process And Task Mining",
-      "Business Applictions",
+      "Business Applications",
     ],
     stackData:
       "Microsoft Power Platform | AI Builder | CoPilot | UiPath | Abbyy | AiQoD",
@@ -234,7 +234,7 @@ export const transformationSolution = [
       "Microsoft Fabric | Azure Data Factory | Azure Synapse Analytics | Azure ML | PowerBI",
   },
   {
-    title: "Scale , Secure and Test",
+    title: "Scale, Secure and Test",
     id: "scale-secure-and-test",
     items: [
       "Cloud Engineering",
