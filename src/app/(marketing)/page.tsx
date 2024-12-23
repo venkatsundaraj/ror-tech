@@ -217,12 +217,12 @@ export default function Home() {
                     <div
                       id={`${item.id}`}
                       key={i}
-                      className="flex rounded-lg flex-col items-start justify-start gap-0 bg-[#384D89] py-6 px-6 md:px-8 min-h-[680px]"
+                      className="flex rounded-lg flex-col items-start justify-start gap-0 bg-[#384D89] py-6 px-6 md:px-8 min-h-[280px] md:min-h-[680px] w-full"
                     >
                       <h4 className="text-tertiary_heading flex  mb-6 max-w-[230px] py-2 leading-tight font-heading font-normal text-foreground border-b border-b-foreground">
                         {item.title}
                       </h4>
-                      <ul className="flex flex-col items-start justify-between ">
+                      <ul className="flex flex-col items-start justify-between w-full">
                         {item.items.map((listItem, i) => (
                           <li
                             className="text-foreground text-paragraph_heading font-heading last:border-0 py-4 border-b border-foreground w-full"

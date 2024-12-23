@@ -72,35 +72,40 @@ export const caseStudyData: EndToEndData = [
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Development of Intelligent Security Review Application using Microsoft Power Platform for the leading Electricity and Water Authority organization in the Middle East.",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Automation of end-to-end functional testing of an enterprise business application using Microsoft Power Automate for World's largest software house in the US",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Automation of claims settlement process for a digitally native auto insurance company in South East Asia",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Modular pre-packaged HR analytics solution for a leading software house in India",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "AI solution for validation of seal and signature from different embassies for Ministry of Foreign affairs in the Middle East",
     link: "#",
   },
 ];

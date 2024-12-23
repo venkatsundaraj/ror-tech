@@ -77,12 +77,12 @@ const ResourcesCard: FC<ResourcesCardProps> = ({}) => {
                   className="flex flex-col items-center justify-center"
                 >
                   <div className="flex items-start justify-between gap-2 flex-col px-4 py-8">
-                    <h4 className="text-paragraph_heading leading-tight font-heading font-normal text-foreground">
+                    <h4 className="text-paragraph_heading leading-tight font-heading font-normal hidden text-foreground">
                       {item.title}
                     </h4>
-                    <span className="text-extra_paragraph_heading font-paragraph font-normal text-foreground">
+                    <h4 className="text-paragraph_heading leading-tight font-heading font-normal text-foreground max-w-xl">
                       {item.description}
-                    </span>
+                    </h4>
                     <Link
                       className="underline font-paragraph font-normal text-foreground"
                       href={item.link}
