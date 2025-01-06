@@ -14,7 +14,7 @@ import {
   type CarouselApi,
   CarouselPrevious,
 } from "@/app/_components/ui/carousel";
-import { cn } from "@/lib/utils";
+import { cn, slugify } from "@/lib/utils";
 
 const colors = [
   "bg-red-500",
@@ -84,8 +84,8 @@ const ResourcesCard: FC<ResourcesCardProps> = ({}) => {
                       {item.description}
                     </h4>
                     <Link
-                      className="underline font-paragraph font-normal text-foreground"
-                      href={item.link}
+                      className="underline font-paragraph font-normal text-foreground "
+                      href={`/case-studies/${slugify(item.title)}`}
                     >
                       Know More
                     </Link>
@@ -102,7 +102,7 @@ const ResourcesCard: FC<ResourcesCardProps> = ({}) => {
         <CarouselNext className="translate-y-0 left-0 right-initial top-initial relative border-none bg-transparent text-white" />
       </div>
 
-      <div className="flex container items-start justify-start gap-2 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-1/2 w-full h-full  py-16 md:py-24">
+      <div className="flex container items-start justify-start gap-2 absolute top-0 left-1/2 -translate-x-[50%] w-full h-1/2 py-16 md:py-24">
         <h2 className="max-w-lg font-semibold mb-6 md:mb-12 leading-tight text-left text-foreground font-heading text-secondary_heading px-4 md:px-0">
           Case Studies
         </h2>

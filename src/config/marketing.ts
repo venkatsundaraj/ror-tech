@@ -13,18 +13,18 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
+    href: "#partnerships",
+    title: "Partnerships",
+    subItems: [],
+  },
+  {
     href: "#resources",
-    title: "Rosources",
+    title: "Resources",
     subItems: [],
   },
   {
     href: "#who-we-are",
     title: "Who We Are",
-    subItems: [],
-  },
-  {
-    href: "#partnerships",
-    title: "Partnerships",
     subItems: [],
   },
 ];

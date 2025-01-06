@@ -208,7 +208,7 @@ export default function Home() {
       <section className="w-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative">
         <div className="container flex flex-col items-center">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
-            Using Next Generation Digital Technology
+            Using Next Generation Digital Technologies
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
             {transformationSolution.length
