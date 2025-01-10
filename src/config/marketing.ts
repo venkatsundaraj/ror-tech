@@ -13,8 +13,13 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
+    href: "#partnerships",
+    title: "Partnerships",
+    subItems: [],
+  },
+  {
     href: "#resources",
-    title: "Rosources",
+    title: "Resources",
     subItems: [],
   },
   {
@@ -29,7 +34,7 @@ export const artData: { title: string; icon: keyof typeof Icons }[] = [
   { title: "Store", icon: "Database" },
   { title: "Compile and Consolidate", icon: "Merge" },
   { title: "Validate and Reconcile", icon: "FileCheck" },
-  { title: "Analyse and Predice", icon: "ChartColumnIncreasing" },
+  { title: "Analyse and Predict", icon: "ChartColumnIncreasing" },
   { title: "Upload and Update", icon: "CloudUpload" },
 ];
 export const endToEndData: EndToEndData = [
@@ -72,35 +77,40 @@ export const caseStudyData: EndToEndData = [
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Development of Intelligent Security Review Application using Microsoft Power Platform for the leading Electricity and Water Authority organization in the Middle East.",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Automation of end-to-end functional testing of an enterprise business application using Microsoft Power Automate for World's largest software house in the US",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Automation of claims settlement process for a digitally native auto insurance company in South East Asia",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "Modular pre-packaged HR analytics solution for a leading software house in India",
     link: "#",
   },
   {
     imageUrl:
       "https://utfs.io/f/QRaE9TmLS8JoQlYBTwmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
     title: "Title",
-    description: "Digital solution that help you to engage clients better",
+    description:
+      "AI solution for validation of seal and signature from different embassies for Ministry of Foreign affairs in the Middle East",
     link: "#",
   },
 ];
@@ -180,5 +190,58 @@ export const heroSectionData: {
     title: "Foresights",
     description: "WHAT might happen in the Future.",
     subText: "Predictive Analysis",
+  },
+];
+
+export const transformationSolution = [
+  {
+    title: "Experience and Engage",
+    id: "experience-and-engage",
+    items: [
+      "Portals, Marketplaces, Web applications",
+      "Mobile Applications",
+      "Low Code",
+      "Application Platforms",
+      "Digital Experience Management",
+      "Chatbots",
+      "GenAI",
+    ],
+    stackData:
+      "Full stack | Java | .NET | Microsoft Power Platform | CoPilot | Liferay",
+  },
+  {
+    title: "Automate and Optimize",
+    id: "automate-and-optimize",
+    items: [
+      "Robotic Process Automation",
+      "Intelligent Document Processing",
+      "Process And Task Mining",
+      "Business Applications",
+    ],
+    stackData:
+      "Microsoft Power Platform | AI Builder | CoPilot | UiPath | Abbyy | AiQoD",
+  },
+  {
+    title: "Analyse and predict",
+    id: "analyse-and-predict",
+    items: [
+      "Data Engineering",
+      "Data Lake and Warehouses",
+      "Data Science",
+      "Data Visualization",
+    ],
+    stackData:
+      "Microsoft Fabric | Azure Data Factory | Azure Synapse Analytics | Azure ML | PowerBI",
+  },
+  {
+    title: "Scale, Secure and Test",
+    id: "scale-secure-and-test",
+    items: [
+      "Cloud Engineering",
+      "Platform Engineering",
+      "DevSecOps",
+      "Testing and Quality Assurance",
+    ],
+    stackData: "Azure DevOps | Azure SQL | Microsoft Sentinel | Guardian",
   },
 ];

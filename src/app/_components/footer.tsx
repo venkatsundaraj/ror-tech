@@ -13,22 +13,35 @@ const Footer: FC<FooterProps> = ({}) => {
   return (
     <footer
       id="who-we-are"
-      className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24"
+      className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24 relative"
     >
       <div className="container flex items-start justify-start flex-col">
-        <div className="flex items-start justify-between gap-2 flex-col  py-8">
+        <div className="flex items-start justify-between gap-4 flex-col  py-8">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
-            We specialize in end-to-end data management using next generation
-            digital solution
+            We are data management experts.
           </h4>
           <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
-            ROR Technologies, a part of the 21 year old Ducont system is a
-            premier global digital transformation company over 500 consultants,
-            HQ in UAE and a global presence.
+            Data is the most valuable asset for any growing enterprise, on par
+            with assets such as money in the bank, resources, real estate etc.
+            We recognise that it’s not just a business byproduct, but rather a
+            critical resource that can drive growth, improve efficiency, and
+            create opportunities for enterprises across various industries.
           </span>
-          <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
-            Get in touch with us at rortechnology@gmail.com or call us at +871
-            9389 0383 to know more.
+          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
+            ROR Technologies, part of Ducont Systems, is a premier global
+            provider of Digital Transformation solutions and services, with a
+            distinct emphasis on harnessing your data for you to derive maximum
+            business value.
+          </span>
+          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
+            With proven expertise, world-class partnerships, innovative
+            solutions, customer-centric approach and a global reach, ROR
+            Technologies ensures a transformational shift for your organisation
+            to join the ranks.
+          </span>
+          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
+            Contact us today to learn more about our services and how we can
+            support your digital finance journey.
           </span>
         </div>
       </div>
@@ -43,7 +56,7 @@ const Footer: FC<FooterProps> = ({}) => {
             className="flex items-center justify-center flex-row h-12"
           >
             <Input
-              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-background placeholder:text-secondary font-medium font-heading min-w-[260px] md:min-w-[360px]"
+              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-[#EEDCF2] placeholder:text-secondary font-medium font-heading min-w-[260px] md:min-w-[360px]"
               type="email"
               placeholder="Enter your email address"
             />
