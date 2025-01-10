@@ -133,7 +133,77 @@ export const socialMediaIcons: SocialMediaIcons = [
     url: "#",
   },
 ];
-
+export const ourDifferentiatorContent: { title: string; imgPath: string }[] = [
+  {
+    title: "Insights centered strategy",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVS7N3l6RkTnuUMoapyhGFmg9lwIYORcVixtW1",
+  },
+  {
+    title: "Hero actions",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVbWDCKXkH2jDYzO9VfQms1UPwlxZdI8GBNqX7",
+  },
+  {
+    title: "360 deg co-creation",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVerDO2THzKF8PVfhHaR7CmudUQywI1cWtxBk2",
+  },
+  {
+    title: "Only senior consultants",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVKD9il6ILRN7EY2f498lBm1DhqtyXeHvZVid5",
+  },
+  {
+    title: "500+ years, 70% practitioners",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVWFoOmX2uX31TIjKoHYR0aPnSbMcFkhvmy76G",
+  },
+  {
+    title: "Tremendous diversity",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVcGmgyCFL0cRPUsJHtd7pnFIgDZAmaLNfuQi6",
+  },
+  {
+    title: "End to end Accountability",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVih5Fmu12L9SrhBkonyJq4Z8l0ANjKH7a5euM",
+  },
+  {
+    title: "Bespoke approach",
+    imgPath:
+      "https://utfs.io/f/ZowmNmBHF7rVgAnj0u8GZmO7D95FyjUwVrPNpCBfxz4KHMWX",
+  },
+];
+export const insightCenteredContent: string[] = [
+  "Insights",
+  "Imperatives",
+  "Strategy: Hero actions - Font Back",
+  "Obj. | Goals | Metrics",
+  "Mission | Purpose | Vision | Definition",
+  "Star Shifts : Start | Stop | Continue",
+  "PoC & Execution Oversight",
+  "Assured Success",
+];
+export const tailSectionData: { title: string; palette: string }[] = [
+  {
+    title: "A multi billion dollar, emerging markets, FMCG conglomerate",
+    palette: "bg-tail-a",
+  },
+  { title: "A global telecom giant", palette: "bg-tail-b" },
+  {
+    title: "An Indian premium fashion boutique",
+    palette: "bg-tail-c",
+  },
+  {
+    title: "An Indian FMCG snacking startup",
+    palette: "bg-tail-d",
+  },
+  {
+    title: "An Indian amusement parks leader",
+    palette: "bg-tail-e",
+  },
+];
 export const menuLinks = [
   {
     title: "Solutions",
@@ -245,3 +315,47 @@ export const transformationSolution = [
     stackData: "Azure DevOps | Azure SQL | Microsoft Sentinel | Guardian",
   },
 ];
+
+export const ourProfileContentForStickySlider: { title: string; icon: Icon }[] =
+  [
+    {
+      title:
+        "Businesses exist for growth and they often require help in unlocking it especially when the markets are complex. At the heart of all such problems & opportunities lies a core business insight, a market value driver, around which spirals a specific growth construct.",
+      icon: "Snail",
+    },
+    {
+      title:
+        "Uncovering the right insight & having the entire business strategy and model revolve around it is the beginning of sustained growth advantage. This advantage often leads to new ways of expanding business & portfolio.",
+      icon: "Pencil",
+    },
+    {
+      title:
+        "Realising the advantage lies in the design of precise programs at the front-end on brand, innovation, customer engagement helped by a specific, enabling people & operations perspective.",
+      icon: "Moon",
+    },
+    {
+      title:
+        " To give customised advice on making this happen requires intense collaboration, shared accountability, personal involvement by a sound blend of global practitioner + consulting experience at the core with a network of best in class program experts.",
+      icon: "X",
+    },
+    {
+      title:
+        "Uncovering the right insight & having the entire business strategy and model revolve around it is the beginning of sustained growth advantage. This advantage often leads to new ways of expanding business & portfolio.",
+      icon: "Laptop",
+    },
+    {
+      title:
+        "Realising the advantage lies in the design of precise programs at the front-end on brand, innovation, customer engagement helped by a specific, enabling people & operations perspective.",
+      icon: "MapPin",
+    },
+    {
+      title:
+        " To give customised advice on making this happen requires intense collaboration, shared accountability, personal involvement by a sound blend of global practitioner + consulting experience at the core with a network of best in class program experts.",
+      icon: "Play",
+    },
+    {
+      title:
+        " To give customised advice on making this happen requires intense collaboration, shared accountability, personal involvement by a sound blend of global practitioner + consulting experience at the core with a network of best in class program experts.",
+      icon: "Plus",
+    },
+  ];
