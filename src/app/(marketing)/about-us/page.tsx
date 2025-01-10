@@ -57,7 +57,7 @@ const page: FC<pageProps> = ({}) => {
               Digital Transformation
             </h1>
           </div>
-          <p className="text-foreground text-subtitle_heading mx-auto font-paragraph leading-relaxed font-normal max-w-prose">
+          <p className="text-foreground text-subtitle_heading mx-auto font-paragraph font-extralight leading-relaxed max-w-prose">
             ROR Technologies, part of Ducont systems, is a premier global
             provider of Digital Transformation solutions and services, with a
             distinct emphasis on harnessing your data for you to derive maximum

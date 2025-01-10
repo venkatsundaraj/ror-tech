@@ -20,7 +20,7 @@ export function DataValueSection() {
                   The money in your bank.
                 </span>
               </h2>
-              <p className="text-popover text-subtitle_heading font-paragraph text-lg leading-normal">
+              <p className="text-popover text-subtitle_heading font-paragraph text-lg font-light leading-normal">
                 We recognise that data is the most valuable asset for any
                 growing enterprise. It isn't just a byproduct of business
                 activity but a critical resource that can drive growth, improve

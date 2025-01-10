@@ -12,10 +12,10 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
       <div className="relative w-24 h-24 mb-6">
         <Icons.Brain className="w-20 h-20" />
       </div>
-      <h3 className="text-tertiary_heading font-heading font-normal mb-4 text-popover">
+      <h3 className="text-tertiary_heading font-heading mb-4 text-popover">
         {item.title}
       </h3>
-      <p className="text-extra_subtitle_heading font-paragraph leading-relaxed">
+      <p className="text-extra_subtitle_heading font-paragraph font-light leading-relaxed">
         {item.description}
       </p>
     </div>
