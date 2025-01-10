@@ -1,4 +1,4 @@
-import { Icons } from "@/app/_components/icons";
+import { Icons, Icon } from "@/app/_components/icons";
 import { EndToEndData, MainNavItems, SocialMediaIcons } from "@/types";
 
 export const mainNavContents: MainNavItems = [
