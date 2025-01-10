@@ -10,7 +10,7 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
   return (
     <div className="bg-white rounded-xl p-8 shadow-lg h-full">
       <div className="relative w-24 h-24 mb-6">
-        <Icons.Brain className="w-20 h-20" />
+        <Icons.LaptopMinimalCheck className="w-20 h-20 stroke-secondary" />
       </div>
       <h3 className="text-tertiary_heading font-heading mb-4 text-popover">
         {item.title}

@@ -74,9 +74,15 @@ export function DataValueSection() {
                     <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
                       Our Mission
                     </h3>
-                    <p className="text-paragraph_heading font-light text-popover font-heading">
+                    <p className="text-paragraph_heading font-light text-popover font-heading mb-4">
                       At ROR Technologies, our mission is to drive innovation
-                      and
+                      and excellence in data management, enabling organizations
+                      to derive maximum value from their ecosystem data.
+                    </p>
+                    <p className="text-paragraph_heading font-light text-popover font-heading">
+                      We strive to provide cutting-edge solutions that imporve
+                      operations, refine decision-making and enhance
+                      experiences.
                     </p>
                   </div>
                 </div>

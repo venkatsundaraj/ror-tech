@@ -14,7 +14,7 @@ export function FeatureItem({
   return (
     <div className={`flex flex-col items-start p-6 ${className}`}>
       <div className="mb-4">
-        <Users className="w-12 h-12 text-purple-700" />
+        <Users className="w-12 h-12 text-secondary" />
       </div>
       <h3 className="text-tertiary_heading font-heading text-popover mb-3">
         {title}
