@@ -359,3 +359,9 @@ export const ourProfileContentForStickySlider: { title: string; icon: Icon }[] =
       icon: "Plus",
     },
   ];
+
+export const tileContent = [
+  "The money in your bank.",
+  "Resources in your company.",
+  "The people in your company.",
+];

@@ -5,6 +5,7 @@ import StickySlider from "../../_components/StickySlider";
 import { DataValueSection } from "../../_components/data-value-section";
 import WavePattern from "../../_components/wave-pattern";
 import { ExpertiseSectionProps } from "@/types";
+import BackgroundSvgStatic from "@/app/_components/background-svg-static";
 
 interface pageProps {}
 const expertiseItems: ExpertiseSectionProps[] = [
@@ -48,7 +49,8 @@ const expertiseItems: ExpertiseSectionProps[] = [
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <div>
+    <>
+      <BackgroundSvgStatic />
       <section className="relative min-h-screen bg-[#4A0D4A] flex flex-col items-center justify-center overflow-hidden mt-[102px]">
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="inline-block  p-2 mb-3">
@@ -70,7 +72,7 @@ const page: FC<pageProps> = ({}) => {
       <ExpertiseSection items={expertiseItems} />
       <WhyChooseUs />
       {/* <StickySlider /> */}
-    </div>
+    </>
   );
 };
 

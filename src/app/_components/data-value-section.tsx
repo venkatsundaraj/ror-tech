@@ -1,6 +1,7 @@
 "use client";
 
 import { Search } from "lucide-react";
+import TileTextSection from "./tile-text-section";
 
 export function DataValueSection() {
   const searchItems = Array(12).fill("Search");
@@ -16,9 +17,7 @@ export function DataValueSection() {
             <div className="lg:sticky lg:top-56 lg:h-[calc(100vh-4rem)] space-y-6">
               <h2 className="text-[30px] font-heading md:text-[38px] font-semibold text-[#2D2F6A]  leading-tight">
                 Your data is as valuable as
-                <span className="block bg-[#54145C] text-[25px] text-white md:text-[34px] p-4 mt-2">
-                  The money in your bank.
-                </span>
+                <TileTextSection />
               </h2>
               <p className="text-popover text-subtitle_heading font-paragraph text-lg font-light leading-normal">
                 We recognise that data is the most valuable asset for any
@@ -39,7 +38,7 @@ export function DataValueSection() {
                   className="space-y-12  px-[10px] py-[ 20px]"
                 >
                   {/* What we do section */}
-                  <div className="bg-[] card-container">
+                  <div className="card-container bg-foreground/20 backdrop-blur-sm">
                     <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
                       What we do
                     </h3>
@@ -51,7 +50,7 @@ export function DataValueSection() {
                   </div>
 
                   {/* What can you do section */}
-                  <div className="card-container">
+                  <div className="card-container bg-foreground/20 backdrop-blur-sm">
                     <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
                       With our technology offerings, your data management just
                       got cheaper, faster and better.
@@ -70,7 +69,7 @@ export function DataValueSection() {
                   </div>
 
                   {/* Our Mission section */}
-                  <div className="card-container">
+                  <div className="card-container bg-foreground/20 backdrop-blur-sm">
                     <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
                       Our Mission
                     </h3>

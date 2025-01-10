@@ -12,7 +12,9 @@ export function FeatureItem({
   className = "",
 }: FeatureItemProps) {
   return (
-    <div className={`flex flex-col items-start p-6 ${className}`}>
+    <div
+      className={`flex flex-col items-start p-6 ${className} bg-foreground/20 backdrop-blur-sm`}
+    >
       <div className="mb-4">
         <Users className="w-12 h-12 text-secondary" />
       </div>
