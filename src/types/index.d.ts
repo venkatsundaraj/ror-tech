@@ -24,3 +24,9 @@ export type SocialMediaIcons = {
   image: keyof typeof Icons;
   url: string;
 }[];
+
+export type ExpertiseSectionProps = {
+  title: string;
+  description: string;
+  image: string;
+};

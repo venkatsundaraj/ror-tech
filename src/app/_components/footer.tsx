@@ -18,26 +18,12 @@ const Footer: FC<FooterProps> = ({}) => {
       <div className="container flex items-start justify-start flex-col">
         <div className="flex items-start justify-between gap-4 flex-col  py-8">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
-            We are data management experts.
+            Make most of your organizational data with ROR Technologies.
           </h4>
           <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
-            Data is the most valuable asset for any growing enterprise, on par
-            with assets such as money in the bank, resources, real estate etc.
-            We recognise that it’s not just a business byproduct, but rather a
-            critical resource that can drive growth, improve efficiency, and
-            create opportunities for enterprises across various industries.
-          </span>
-          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
-            ROR Technologies, part of Ducont Systems, is a premier global
-            provider of Digital Transformation solutions and services, with a
-            distinct emphasis on harnessing your data for you to derive maximum
-            business value.
-          </span>
-          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
-            With proven expertise, world-class partnerships, innovative
-            solutions, customer-centric approach and a global reach, ROR
-            Technologies ensures a transformational shift for your organisation
-            to join the ranks.
+            Join the ranks of leading organizations that have transformed their
+            operations with ROR technologies. Let us help you stay ahead in the
+            digital age.
           </span>
           <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
             Contact us today to learn more about our services and how we can

@@ -4,9 +4,10 @@ import { WhyChooseUs } from "../../_components/why-choose-us";
 import StickySlider from "../../_components/StickySlider";
 import { DataValueSection } from "../../_components/data-value-section";
 import WavePattern from "../../_components/wave-pattern";
+import { ExpertiseSectionProps } from "@/types";
 
 interface pageProps {}
-const expertiseItems = [
+const expertiseItems: ExpertiseSectionProps[] = [
   {
     title: "Digital and AI Solutions",
     description:
@@ -20,15 +21,27 @@ const expertiseItems = [
     image: "/placeholder.svg?height=200&width=200",
   },
   {
-    title: "Digital Transformation",
+    title: "Efficiency and Speed",
     description:
-      "Transform your business with our comprehensive digital solutions. We help organizations embrace digital technologies to improve efficiency, enhance customer experience, and drive innovation across all business functions.",
+      "Time is the essence of this world. Our digital transform services ensure that your operations are not also efficient but also fast. We help organisation implement real time reporting, accelerate closing process, and enhance overall agility.",
     image: "/placeholder.svg?height=200&width=200",
   },
   {
-    title: "Cloud Services",
+    title: "Compliance and Risk Management",
     description:
-      "Leverage the power of cloud computing with our expert cloud services. We provide end-to-end cloud solutions including migration, optimization, and managed services to help you achieve scalability and flexibility.",
+      "In an era of increasing regulatory scrutiny, we provide robust compliance and risk management solutions. Our services help organizations stay ahead of regulatory changes, mitigate risks, and ensure that you operations are secure and compliant.",
+    image: "/placeholder.svg?height=200&width=200",
+  },
+  {
+    title: "Engagement and Experience",
+    description:
+      "Irrespective of the industry or function; stakeholder delight is the mantra. Organizations are striving to ensure they provide best of the engagement experience to their internal and external stakeholders. We in ROR technologies help you with the best of Digital Experience Solutions.",
+    image: "/placeholder.svg?height=200&width=200",
+  },
+  {
+    title: "Scale and Security",
+    description:
+      "Considering data being the lifeline for your business, you need to protect them from cyber-attack, malware, insider risks, unintentional exposure, phising, ransomeware etc. We help you with end to end data and information services right from advisory to implementation to managing your data security.",
     image: "/placeholder.svg?height=200&width=200",
   },
 ];
@@ -37,26 +50,14 @@ const page: FC<pageProps> = ({}) => {
   return (
     <div>
       <section className="relative min-h-screen bg-[#4A0D4A] flex flex-col items-center justify-center overflow-hidden mt-[102px]">
-        {/* Static Network Pattern */}
-        {/* <div
-          className="absolute inset-0 w-full h-full opacity-50"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='100%25' y2='100%25'%3E%3Cstop offset='0' stop-color='%2350FFFF'/%3E%3Cstop offset='1' stop-color='%2350FFFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M10 30 Q 40 20, 50 30 T 90 40 M20 50 Q 40 40, 60 50 T 80 60 M30 70 Q 50 60, 70 70 T 90 80' stroke='url(%23a)' fill='none' stroke-width='0.5'/%3E%3C/svg%3E")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        /> */}
-
-        {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-block  p-8 mb-6">
-            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-              We are Data
-              <br />
-              Management Experts.
+          <div className="inline-block  p-2 mb-3">
+            <h1 className="font-semibold leading-tight text-foreground font-heading text-secondary_heading max-w-prose">
+              We are Data Management Experts Helping Organisations Achieve
+              Digital Transformation
             </h1>
           </div>
-          <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-foreground text-subtitle_heading mx-auto font-paragraph leading-relaxed font-normal max-w-prose">
             ROR Technologies, part of Ducont systems, is a premier global
             provider of Digital Transformation solutions and services, with a
             distinct emphasis on harnessing your data for you to derive maximum

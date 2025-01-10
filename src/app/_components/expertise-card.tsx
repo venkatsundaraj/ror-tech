@@ -1,25 +1,23 @@
 import Image from "next/image";
-import { ExpertiseItem } from "../types/expertise";
+import { ExpertiseSectionProps } from "@/types";
+import { Icons } from "./icons";
 
 interface ExpertiseCardProps {
-  item: ExpertiseItem;
+  item: ExpertiseSectionProps;
 }
 
 export function ExpertiseCard({ item }: ExpertiseCardProps) {
   return (
     <div className="bg-white rounded-xl p-8 shadow-lg h-full">
       <div className="relative w-24 h-24 mb-6">
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          className="rounded-full object-cover"
-        />
+        <Icons.Brain className="w-20 h-20" />
       </div>
-      <h3 className="text-2xl font-semibold mb-4 text-gray-800">
+      <h3 className="text-tertiary_heading font-heading font-normal mb-4 text-popover">
         {item.title}
       </h3>
-      <p className="text-gray-600 leading-relaxed">{item.description}</p>
+      <p className="text-extra_subtitle_heading font-paragraph leading-relaxed">
+        {item.description}
+      </p>
     </div>
   );
 }

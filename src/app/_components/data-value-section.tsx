@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export function DataValueSection() {
   const searchItems = Array(12).fill("Search");
-  const sections = Array(3).fill(null);
+  const sections = Array(1).fill(null);
 
   return (
     <>
@@ -13,14 +13,14 @@ export function DataValueSection() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Column - Sticky */}
-            <div className="lg:sticky lg:top-8 lg:h-[calc(100vh-4rem)] space-y-6">
-              <h2 className="text-[30px] md:text-[38px] font-bold text-[#2D2F6A]  leading-tight">
+            <div className="lg:sticky lg:top-56 lg:h-[calc(100vh-4rem)] space-y-6">
+              <h2 className="text-[30px] font-heading md:text-[38px] font-semibold text-[#2D2F6A]  leading-tight">
                 Your data is as valuable as
                 <span className="block bg-[#54145C] text-[25px] text-white md:text-[34px] p-4 mt-2">
                   The money in your bank.
                 </span>
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-popover text-subtitle_heading font-paragraph text-lg leading-normal">
                 We recognise that data is the most valuable asset for any
                 growing enterprise. It isn't just a byproduct of business
                 activity but a critical resource that can drive growth, improve
@@ -40,10 +40,10 @@ export function DataValueSection() {
                 >
                   {/* What we do section */}
                   <div className="bg-[] card-container">
-                    <h3 className="text-2xl font-semibold text-[#2D2F6A] mb-4 ">
+                    <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
                       What we do
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-paragraph_heading font-light text-popover font-heading">
                       We help your value discovery of data by handling the
                       entire journey of raw data to insights and foresights
                       using next-gen digital technologies.
@@ -52,8 +52,9 @@ export function DataValueSection() {
 
                   {/* What can you do section */}
                   <div className="card-container">
-                    <h3 className="text-2xl font-semibold text-[#2D2F6A] mb-6">
-                      What can you do with your data?
+                    <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
+                      With our technology offerings, your data management just
+                      got cheaper, faster and better.
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {searchItems.map((item, index) => (
@@ -70,10 +71,10 @@ export function DataValueSection() {
 
                   {/* Our Mission section */}
                   <div className="card-container">
-                    <h3 className="text-2xl font-semibold text-[#2D2F6A] mb-4">
+                    <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
                       Our Mission
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-paragraph_heading font-light text-popover font-heading">
                       At ROR Technologies, our mission is to drive innovation
                       and
                     </p>

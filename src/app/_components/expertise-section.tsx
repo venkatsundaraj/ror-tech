@@ -3,9 +3,13 @@
 import { useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ExpertiseCard } from "./expertise-card";
-import { ExpertiseSectionProps } from "../types/expertise";
+import { ExpertiseSectionProps } from "@/types";
 
-export function ExpertiseSection({ items }: ExpertiseSectionProps) {
+export function ExpertiseSection({
+  items,
+}: {
+  items: ExpertiseSectionProps[];
+}) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = Math.ceil(items.length / 2);
 
@@ -24,7 +28,7 @@ export function ExpertiseSection({ items }: ExpertiseSectionProps) {
   return (
     <section className="bg-[#3B4B8C] py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-white text-4xl font-bold mb-12">
+        <h2 className="text-secondary_heading text-primary-foreground font-heading mb-4 md:mb-6 ">
           Our Areas of Expertise
         </h2>
 
