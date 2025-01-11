@@ -360,8 +360,24 @@ export const ourProfileContentForStickySlider: { title: string; icon: Icon }[] =
     },
   ];
 
-export const tileContent = [
-  "The money in your bank.",
-  "Resources in your company.",
-  "The people in your company.",
+export const tileContent = ["The cash in your bank.", "Real Estate.", "Gold."];
+
+export const solutionImpactData = [
+  "Scalable cloud infrastructure using Microsoft Azure to ensure seamless growth and high availability.",
+  "Secure data management with Microsoft Defender, Azure Security Center, and encryption technologies.",
+  "QA automation and testing using Azure DevOps and Selenium for consistent quality.",
+  "Scalable application performance with Azure Kubernetes Service (AKS) and Azure Load Balancer.",
+  "Secure access management with Azure Active Directory (AAD) and role-based access control (RBAC).",
+  "QA performance optimization using Azure Load Testing and Azure Monitor for proactive issue detection",
+];
+
+export const exportAndEngageData = [
+  "Customer Experience Management Solutions using Microsoft .NET and Full stack platforms",
+  "Enterprise Applications development using Microsoft Power Apps",
+  "Enterprise Content Management Solutions using SharePoint",
+  "Document Management solutions using SharePoint Premium",
+  "Unified Digital Platform solutions using Liferay to governmental organizations",
+  "Employee Engagement Mobile Application using Open-Source Platforms",
+  "ChatBot and GenAI solutions for customer service",
+  "Enterprise collaboration using Microsoft Teams",
 ];

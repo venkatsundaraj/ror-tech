@@ -35,14 +35,15 @@ const TileTextSection: FC<TileTextSectionProps> = ({ className }) => {
       setApi={setApi}
       opts={{
         align: "start",
-        // loop: true,
-        // active: true,
+        loop: true,
+        active: true,
+        direction: "ltr",
         skipSnaps: false,
         duration: 100,
       }}
       plugins={[
         Autoplay({
-          delay: 4000,
+          delay: 2000,
           stopOnInteraction: true,
         }),
       ]}
