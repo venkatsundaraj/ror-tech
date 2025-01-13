@@ -9,6 +9,7 @@ import { Settings2, LineChart, PieChart } from "lucide-react";
 import Link from "next/link";
 import { Icons } from "@/app/_components/icons";
 import { exportAndEngageData } from "@/config/marketing";
+import { pillersOfData } from "@/config/marketing";
 
 interface SolutionDropDownProps {}
 
@@ -160,57 +161,36 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
             <TabsContent value="analyze" className="mt-6">
               <div className="grid grid-cols-1 md:grid-cols-3 py-6 gap-4">
                 <div className="flex flex-col items-center justify-centerw-ful gap-6">
-                  <div className="w-full px-4 py-8 aspect-square shadow-md" />
+                  <div className="w-full px-4 py-8 aspect-square  shadow-md" />
                 </div>
-                <div className="w-full  col-start-2 col-end-4">
+                <div className="w-full  col-start-2 col-end-4 shadow-md">
                   <div className="px-8 py-8 flex items-start justify-start gap-6 h-full flex-col shadow-lg">
                     <h4 className="text-popover text-paragraph_heading font-heading font-normal leading-normal">
-                      Solutions for superior stakeholder engagement and
-                      experience
+                      Three pillars of Data and AI Solutions
                     </h4>
-                    <ul className="flex flex-col items-start justify-between ">
-                      {exportAndEngageData.map((item, index) => (
-                        <li
-                          key={index}
-                          className="flex items-center justify-start gap-12 md:gap-16 py-6 border-b border-popover w-full"
-                        >
-                          <Icons.User className="fill-primary" />
-                          <span className="text-popover text-extra_subtitle_heading font-paragraph font-light leading-normal">
-                            {item}
-                          </span>
-                        </li>
-                      ))}
+                    <ul className="grid grid-cols-1 md:grid-cols-3 items-start justify-between ">
+                      {pillersOfData.map((item, index) => {
+                        const Icon = Icons[item.icon];
+                        return (
+                          <li
+                            key={index}
+                            className="flex flex-col items-start justify-start gap-4 md:gap-6 py-2 border-popover w-full border-r border-r-popover p-3 last:border-r-0"
+                          >
+                            <Icon className="w-8 h-8 stroke-popover" />
+                            <h4 className="text-popover text-paragraph_heading font-heading font-normal leading-normal">
+                              {item.title}
+                            </h4>
+                            <span>{item.description}</span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div className="w-full aspect-square shadow-md px-4 py-8 flex gap-6 md:gap-10 flex-col items-center justify-center">
-                <div className="w-full flex items-center justify-between">
-                  <h4 className="text-popover text-paragraph_heading font-heading font-normal leading-normal">
-                    Competencies
-                  </h4>
-                  <Link
-                    href="/our-solutions"
-                    className="underline text-extra_subtitle_heading text-popover font-paragraph font-light flex items-center justify-center"
-                  >
-                    <span>View All</span>
-                    <Icons.ArrowRight className="-rotate-45" />{" "}
-                  </Link>
-                </div>
-                <div className="grid grid-cols-2 gap-4 w-full">
-                  {Array.from({ length: 8 }).map((_, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-center flex-col gap-4"
-                    >
-                      <Icons.LayoutGrid className="fill-popover" />
-                      <span className="text-popover text-center text-[14px] font-paragraph font-normal leading-normal">
-                        Microsoft Power Apps
-                      </span>
-                    </div>
-                  ))}
-                </div>
+              <div className="w-full shadow-md px-4 py-8 flex gap-6 md:gap-10 flex-col items-center justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full"></div>
               </div>
             </TabsContent>
 

@@ -360,7 +360,11 @@ export const ourProfileContentForStickySlider: { title: string; icon: Icon }[] =
     },
   ];
 
-export const tileContent = ["The cash in your bank.", "Real Estate.", "Gold."];
+export const tileContent = [
+  "The cash in your bank.",
+  "The stocks you own.",
+  "The investments you trust.",
+];
 
 export const solutionImpactData = [
   "Scalable cloud infrastructure using Microsoft Azure to ensure seamless growth and high availability.",
@@ -380,4 +384,37 @@ export const exportAndEngageData = [
   "Employee Engagement Mobile Application using Open-Source Platforms",
   "ChatBot and GenAI solutions for customer service",
   "Enterprise collaboration using Microsoft Teams",
+];
+
+export const pillersOfData: {
+  title: string;
+  icon: Icon;
+  description: string;
+}[] = [
+  {
+    title: "Data Engineering",
+    icon: "Play",
+    description:
+      "Solutions and technologies that help in designing and building systems for the aggregation, storage and analysis of data at scale.",
+  },
+  {
+    title: "Data Science",
+    icon: "Play",
+    description:
+      "Solutions and technologies that help in to uncover actionable insights hidden in an organization’s data.",
+  },
+  {
+    title: "Data Visualization",
+    icon: "Play",
+    description:
+      "Data visualization is the graphical representation of data by using visual elements like charts, graphs and maps,",
+  },
+];
+
+export const whyChooseUsImageData = [
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOMCdTEKaAN2xy7u8gkcnHmWrtVoJiaswfYqB",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JojgsvF1Jw8jHFuSTVfx07Pb2Z3B5N4iW16pCM",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JojgsvF1Jw8jHFuSTVfx07Pb2Z3B5N4iW16pCM",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jodybf1LnTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JocS67T5AviChW1Q34Jaq0rPl9vMtyISbNZBg8",
 ];
