@@ -38,7 +38,7 @@ export function WhyChooseUs() {
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-secondary_heading text-primary font-heading mb-12 bg-primary">
+        <h2 className="text-secondary_heading relative text-primary font-heading mb-12">
           Why Choose Us?
         </h2>
 
