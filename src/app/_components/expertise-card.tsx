@@ -15,7 +15,7 @@ export function ExpertiseCard({ item }: ExpertiseCardProps) {
           alt={item.title}
           width={280}
           height={180}
-          className="w-40"
+          className="w-32"
         />
       </div>
       <h3 className="text-tertiary_heading font-heading mb-4 text-popover">

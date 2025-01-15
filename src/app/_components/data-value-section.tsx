@@ -68,7 +68,9 @@ export function DataValueSection() {
                           >
                             <Icon className="w-6" />
 
-                            <span>{item.title}</span>
+                            <span className="w-[100px] text-left">
+                              {item.title}
+                            </span>
                           </button>
                         );
                       })}
