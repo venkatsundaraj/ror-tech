@@ -9,8 +9,14 @@ interface ExpertiseCardProps {
 export function ExpertiseCard({ item }: ExpertiseCardProps) {
   return (
     <div className="bg-white rounded-xl p-8 shadow-lg h-full">
-      <div className="relative w-24 h-24 mb-6">
-        <Icons.LaptopMinimalCheck className="w-20 h-20 stroke-secondary" />
+      <div className="relative mb-6">
+        <Image
+          src={item.image}
+          alt={item.title}
+          width={280}
+          height={180}
+          className="w-40"
+        />
       </div>
       <h3 className="text-tertiary_heading font-heading mb-4 text-popover">
         {item.title}

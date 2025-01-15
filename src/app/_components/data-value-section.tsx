@@ -2,9 +2,11 @@
 
 import { Search } from "lucide-react";
 import TileTextSection from "./tile-text-section";
+import { searchItems } from "@/config/marketing";
+import { Icons } from "./icons";
+import TypingAnimation from "./typing-animation";
 
 export function DataValueSection() {
-  const searchItems = Array(12).fill("Search");
   const sections = Array(1).fill(null);
 
   return (
@@ -17,7 +19,8 @@ export function DataValueSection() {
             <div className="lg:sticky lg:top-56 lg:h-[calc(100vh-4rem)] space-y-6">
               <h2 className="text-[30px] font-heading md:text-[38px] font-semibold text-[#2D2F6A]  leading-tight">
                 Your data is as valuable as
-                <TileTextSection />
+                {/* <TileTextSection /> */}
+                <TypingAnimation />
               </h2>
               <p className="text-popover text-subtitle_heading font-paragraph text-lg font-light leading-normal">
                 We recognise that data is the most valuable asset for any
@@ -53,18 +56,22 @@ export function DataValueSection() {
                   <div className="card-container bg-foreground/20 backdrop-blur-sm">
                     <h3 className="text-tertiary_heading text-popover font-heading mb-4 ">
                       With our technology offerings, your data management just
-                      got cheaper, faster and better.
+                      got cheaper, faster and better
                     </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {searchItems.map((item, index) => (
-                        <button
-                          key={`${sectionIndex}-${index}`}
-                          className="flex items-center justify-center gap-2 px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-                        >
-                          <Search className="w-4 h-4" />
-                          <span>{item}</span>
-                        </button>
-                      ))}
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                      {searchItems.map((item, index) => {
+                        const Icon = Icons[item.icon];
+                        return (
+                          <button
+                            key={`${sectionIndex}-${index}`}
+                            className="flex items-center justify-center min-w-[160px] gap-2 px-4 py-1 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                          >
+                            <Icon className="w-6" />
+
+                            <span>{item.title}</span>
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
 

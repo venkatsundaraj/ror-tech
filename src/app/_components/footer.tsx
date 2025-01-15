@@ -42,7 +42,7 @@ const Footer: FC<FooterProps> = ({}) => {
             className="flex items-center justify-center flex-row h-12"
           >
             <Input
-              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-[#EEDCF2] placeholder:text-secondary font-medium font-heading min-w-[260px] md:min-w-[360px]"
+              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-[#EEDCF2] placeholder:text-secondary font-medium font-heading min-w-[200px] md:min-w-[360px]"
               type="email"
               placeholder="Enter your email address"
             />

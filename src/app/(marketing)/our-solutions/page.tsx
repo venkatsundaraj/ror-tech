@@ -34,7 +34,7 @@ const page: FC<pageProps> = ({}) => {
         </div>
       </section>
       <SolutionDropDown />
-      <section className="w-screen min-h-screen flex py-5 items-center justify-center relative bg-[#384D89] rounded-xl">
+      <section className="w-screen min-h-screen flex py-5 items-center justify-center relative bg-[#384D89] rounded-xl rounded-b-none">
         <div className="container flex flex-col gap-5 md:gap-10 items-start justify-center">
           <h2 className="text-tertiary_heading font-heading text-foreground leading-tight max-w-2xl font-semibold">
             Scalable, Secured and quality driven solutions

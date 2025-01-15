@@ -1,5 +1,6 @@
 import { Icons, Icon } from "@/app/_components/icons";
 import { EndToEndData, MainNavItems, SocialMediaIcons } from "@/types";
+import { title } from "process";
 
 export const mainNavContents: MainNavItems = [
   {
@@ -361,9 +362,9 @@ export const ourProfileContentForStickySlider: { title: string; icon: Icon }[] =
   ];
 
 export const tileContent = [
-  "The cash in your bank.",
-  "The stocks you own.",
-  "The investments you trust.",
+  "the cash in your bank.",
+  "your assets.",
+  "your resources.",
 ];
 
 export const solutionImpactData = [
@@ -417,4 +418,63 @@ export const whyChooseUsImageData = [
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JojgsvF1Jw8jHFuSTVfx07Pb2Z3B5N4iW16pCM",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jodybf1LnTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JocS67T5AviChW1Q34Jaq0rPl9vMtyISbNZBg8",
+];
+
+export const dataVisualizeTool: {
+  title: string;
+  icons: { icon: Icon; name: string }[];
+}[] = [
+  {
+    title: "Data Engineering",
+    icons: [
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+    ],
+  },
+  {
+    title: "Data Science",
+    icons: [
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+    ],
+  },
+  {
+    title: "Data Visualization",
+    icons: [
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+    ],
+  },
+];
+
+export const searchItems: { title: string; icon: Icon }[] = [
+  { title: "Search", icon: "SearchDuplicate" },
+  { title: "Understand", icon: "Understand" },
+  { title: "Update", icon: "Update" },
+  { title: "Validate", icon: "Validate" },
+  { title: "Consolidate", icon: "Consolidate" },
+  { title: "Compile", icon: "Compile" },
+  { title: "Scale", icon: "ScaleDuplicate" },
+  { title: "Reconcile", icon: "Reconcile" },
+  { title: "Cleanse", icon: "Cleanse" },
+  { title: "Secure", icon: "Secure" },
+  { title: "Store", icon: "Store" },
 ];
