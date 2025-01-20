@@ -4,27 +4,27 @@ import { title } from "process";
 
 export const mainNavContents: MainNavItems = [
   {
-    href: "#our-solution",
+    href: "/#our-solution",
     title: "Solutions",
     subItems: [],
   },
   {
-    href: "#end-to-end-services",
+    href: "/#end-to-end-services",
     title: "Services",
     subItems: [],
   },
   {
-    href: "#partnerships",
+    href: "/#partnerships",
     title: "Partnerships",
     subItems: [],
   },
   {
-    href: "#resources",
+    href: "/#resources",
     title: "Resources",
     subItems: [],
   },
   {
-    href: "#who-we-are",
+    href: "/#who-we-are",
     title: "Who We Are",
     subItems: [],
   },
@@ -387,7 +387,6 @@ export const experiencetAndEngageData = [
   "Enterprise collaboration using Microsoft Teams",
 ];
 
-
 export const automateAndOptimiseData = [
   "Accounts Payable automation using Microsoft Power Automate and Power Apps",
   "Insurance Claims Settlement Automation using Microsoft Power Automate, PowerApps, Microsoft AI Builder",
@@ -399,27 +398,34 @@ export const automateAndOptimiseData = [
   "Automated meeting scheduling and minutes of meeting generation using Microsoft CoPilot and OpenAI",
 ];
 
+export const scaleSecureAndTest = [
+  "Prebuilt HR Analytics solution using Microsoft Power BI, Microsoft SSRS and MS SQl Database",
+  "CEO Cockpit solution using Microsoft Power BI",
+  "Inventory & Supply chain optimization for Accurate Prediction of Demand Using AI/ML for retail establishments",
+  "Pro-active Media Monitoring and Insights for Mis information and Disinformation using Microsoft AI platforms",
+  "Resume parsing and skill analytics for leading IT firm",
+];
 
-export const pillersOfData: {
+export const analizeVisualPredictData: {
   title: string;
   icon: Icon;
   description: string;
 }[] = [
   {
     title: "Data Engineering",
-    icon: "Play",
+    icon: "DataEngineering",
     description:
       "Solutions and technologies that help in designing and building systems for the aggregation, storage and analysis of data at scale.",
   },
   {
     title: "Data Science",
-    icon: "Play",
+    icon: "DataScience",
     description:
       "Solutions and technologies that help in to uncover actionable insights hidden in an organization’s data.",
   },
   {
     title: "Data Visualization",
-    icon: "Play",
+    icon: "DataVisualization",
     description:
       "Data visualization is the graphical representation of data by using visual elements like charts, graphs and maps,",
   },
@@ -433,47 +439,156 @@ export const whyChooseUsImageData = [
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JocS67T5AviChW1Q34Jaq0rPl9vMtyISbNZBg8",
 ];
 
-export const dataVisualizeTool: {
+export const scaleAndSecureTechIcon: {
   title: string;
-  icons: { icon: Icon; name: string }[];
+  icons: { icon: string; name: string }[];
 }[] = [
   {
     title: "Data Engineering",
     icons: [
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JondIF1NowYUd8PNaxkbQMZDjCOh9TreziRGso",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoBQrBGzIpn9TX8jAg1KsG2erN3mS6aChv5qWU",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JonZV7JVOowYUd8PNaxkbQMZDjCOh9TreziRGs",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo31q57KQi8vcObFlrT7w14X6SLdI0jJUfZom3",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jov8L894qGR1Lx8Biu7mtjMQKqYnfeNwV9rEUO",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoAyuqhpk1HyxoZ8NhGk6rWw0vu3eISDROFpiA",
+        name: "Microsoft Power Tools",
+      },
     ],
   },
   {
     title: "Data Science",
     icons: [
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joxk7HslGnmZE9koqNWJhMVpPCK4Xtj2rdFzBw",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo2b9FRUzOC09YKoOtyHUM2NAp57SnheZFfEQT",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JohTObsRwSd5EuiPRzV1oqnyO0TkMNLcrlYKIs",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoGCc5ewhX0PcgUquWvdSoLC1z2Hy4sKApBrhQ",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JomWlXJOgzZqrCjMOHKx9kJIUvNaQ58eGYD2Fp",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JocWmjF6viChW1Q34Jaq0rPl9vMtyISbNZBg8x",
+        name: "Microsoft Power Tools",
+      },
     ],
   },
   {
     title: "Data Visualization",
     icons: [
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
-      { icon: "LayoutGrid", name: "Microsoft Power Tools" },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JohpbtbGwSd5EuiPRzV1oqnyO0TkMNLcrlYKIs",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoVLkhcwZ3rS4qt7Wg80DQnNCd2ihuvs9b6BLy",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoK2obVUFhz8TfXUsR9owmHPc3EAgSiNGMQ7tB",
+        name: "Microsoft Power Tools",
+      },
+    ],
+  },
+];
+
+export const dataVisualizeTool: {
+  title: string;
+  icons: { icon: string; name: string }[];
+}[] = [
+  {
+    title: "Data Engineering",
+    icons: [
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JornNY7OiSyxDL6AsiGq9Ko2Vg7kzfI5EceXtb",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoiXJWww49RIzCkG6rwMe7Nh1yW3EF2sYjAat0",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo0pQALFyPaUgdn3GVS8D7yrwzvTR1ZB5tKL4q",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoJwBVoG5PeQZ1iSX9RGOdE2YBjfuJb380V6tL",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JokQNNoLT9fWpjiqn4FdXvS2etCZc8TIHVR1AM",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JogLtpAG0U0SRx7ke5iucGIHoOqf9BhNJpYZWD",
+        name: "Microsoft Power Tools",
+      },
+    ],
+  },
+  {
+    title: "Data Science",
+    icons: [
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoE0Wkt1R3SVOvYsnBF5ut4o72mbMrehXAwgcx",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoR1ng6RPeXnUPIxt6SpQRTBM8jmFquiJc75dO",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoZpBR63NY0xWQHDojuibp7I4r2hvgC9kTXdNF",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JocuHAaDviChW1Q34Jaq0rPl9vMtyISbNZBg8x",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoDbb0Zz2pbawQson9Ci2jXZFSM57Rhcl4YgeI",
+        name: "Microsoft Power Tools",
+      },
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joxw54TWNGnmZE9koqNWJhMVpPCK4Xtj2rdFzB",
+        name: "Microsoft Power Tools",
+      },
+    ],
+  },
+  {
+    title: "Data Visualization",
+    icons: [
+      {
+        icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoLarfVv83ATws25PVk7MyaeE9bm0Ntjxgnou1",
+        name: "Microsoft Power Tools",
+      },
     ],
   },
 ];
@@ -494,106 +609,198 @@ export const searchItems: { title: string; icon: Icon }[] = [
 
 export const endToEndServicesData = [
   {
-    title:"Consulting and Advisory",
-    subText:"Digital Strategies and advisory for",
-    services:[
+    title: "Consulting and Advisory",
+    subText: "Digital Strategies and advisory for",
+    services: [
       {
-        title:"Efficiency improvement and cost optimization",
+        title: "Efficiency improvement and cost optimization",
       },
       {
-        title:"Compliance enhancement",
+        title: "Compliance enhancement",
       },
       {
-        title:"Quality Assurance",
+        title: "Quality Assurance",
       },
       {
-        title:"Compliance Enhancement",
+        title: "Compliance Enhancement",
       },
       {
-        title:"Information Security and Controls",
+        title: "Information Security and Controls",
       },
       {
-        title:"Application rationalization",
+        title: "Application rationalization",
       },
       {
-        title:"Real-time Insights and Foresights about Operations",
+        title: "Real-time Insights and Foresights about Operations",
       },
       {
-        title:"Improved Stakeholder Engagement and Experiences",
+        title: "Improved Stakeholder Engagement and Experiences",
       },
-],
+    ],
   },
   {
-    title:"Implementation and Development",
-    subText:"",
-    services:[
+    title: "Implementation and Development",
+    subText: "",
+    services: [
       {
-        title:"Custom Application Development",
+        title: "Custom Application Development",
       },
       {
-        title:"Platform Implementation",
+        title: "Platform Implementation",
       },
       {
-        title:"Version Upgrades and Migration",
+        title: "Version Upgrades and Migration",
       },
       {
-        title:"Enterprise Application Customization",
+        title: "Enterprise Application Customization",
       },
-],
+    ],
   },
   {
-    title:"Testing and Quality Assurance",
-    subText:"",
-    services:[
+    title: "Testing and Quality Assurance",
+    subText: "",
+    services: [
       {
-        title:"Functional and Non-functional testing",
+        title: "Functional and Non-functional testing",
       },
-],
+    ],
   },
   {
-    title:"Application Support and Maintenance",
-    subText:"",
-    services:[
+    title: "Application Support and Maintenance",
+    subText: "",
+    services: [
       {
-        title:"Hypercare Support",
+        title: "Hypercare Support",
       },
       {
-        title:"Breakdown Fixes",
+        title: "Breakdown Fixes",
       },
       {
-        title:"Ongoing Application Maintenance",
+        title: "Ongoing Application Maintenance",
       },
       {
-        title:"Application Revamp",
+        title: "Application Revamp",
       },
-],
+    ],
   },
   {
-    title:"Offshoring and Managed Services",
-    subText:"Setting up Centres of Excellence and Offshore development centres Managed Services Portfolio",
-    services:[
+    title: "Offshoring and Managed Services",
+    subText:
+      "Setting up Centres of Excellence and Offshore development centres Managed Services Portfolio",
+    services: [
       {
-        title:"Automation as a Service",
+        title: "Automation as a Service",
       },
       {
-        title:"Analytics as a service",
+        title: "Analytics as a service",
       },
       {
-        title:"Data Security as a Service",
+        title: "Data Security as a Service",
       },
       {
-        title:"Quality assurance and Testing as a Service",
+        title: "Quality assurance and Testing as a Service",
       },
-],
+    ],
   },
   {
-    title:"Staff Augmentation and Resourcing",
-    subText:"",
-    services:[
+    title: "Staff Augmentation and Resourcing",
+    subText: "",
+    services: [
       {
-        title:"Elements",
+        title: "Elements",
       },
-],
-  }
+    ],
+  },
+];
 
-]
+export const ExperienceAndEngagementUsersIcon: Icon[] = [
+  "CustomerExperience",
+  "EnterpriseApplications",
+  "ContentManagement",
+  "DocumentManagement",
+  "UnifiedPlatform",
+  "EmployeeEngagement",
+  "GenAIChat",
+  "EnterpriseColloboration",
+];
+
+export const experienceAndEngageTechIcons = [
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joi2MVCOb49RIzCkG6rwMe7Nh1yW3EF2sYjAat",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoiW6E5Z49RIzCkG6rwMe7Nh1yW3EF2sYjAat0",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JomSUmaXgzZqrCjMOHKx9kJIUvNaQ58eGYD2Fp",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JomSUmaXgzZqrCjMOHKx9kJIUvNaQ58eGYD2Fp",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoY1FvePBK2udhgFkc9pfroZsCYNOQUvqaylij",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo5PRzPl4ExjW1sDfG4KwEQHO6ueoI38FJlAm0",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JovfAjGnUqGR1Lx8Biu7mtjMQKqYnfeNwV9rEU",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo4Zk8FQDtOT2gNrQSweasDkMdxH1n6hmpyZPL",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoW8kuuzV93iJm0k54l8QjZnxIufGLthXdgERC",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joc5xtDAviChW1Q34Jaq0rPl9vMtyISbNZBg8x",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JodASTJunTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoxwJDLhlGnmZE9koqNWJhMVpPCK4Xtj2rdFzB",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo5OhdiRExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
+];
+
+export const AutomateAndOptimizeUsersIcon: Icon[] = [
+  "AccountsPayableAutomation",
+  "InsuranceClaimSettlement",
+  "InvoiceAutomation",
+  "Workflow",
+  "PayrollInput",
+  "DocumentAndDigitalization",
+  "FunctionalTest",
+  "AutomatedMeetings",
+];
+
+export const scaleAndSecureUsersIcon: Icon[] = [
+  "HrAnalytics",
+  "CeoCockpit",
+  "InventorySupplychain",
+  "MediaMonitoring",
+  "ResumeParsing",
+];
+
+export const AutomateAndOptimizeTechIcons = [
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JodUGSUCnTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Johdr2XZwSd5EuiPRzV1oqnyO0TkMNLcrlYKIs",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoLyFLP683ATws25PVk7MyaeE9bm0Ntjxgnou1",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jod2NINunTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo2ye8gDOC09YKoOtyHUM2NAp57SnheZFfEQT8",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JofdNEeFXHOZbh2CjGeXqfwlSxucmzViUyQR8F",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JourrbdzNLOwjFV5iNZr1aLG9o7MqTk8AQHbBC",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JozJfFVi9NXxdUlywiDTJ1qQKVY5zWoc4R6bB9",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jow1Gg4R9azNjsdfbS78XogvKc3YFTErMpmnAx",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoyJJ0qUdUGDbyzcPt5aIElLJ6SxmBdQChFqfv",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoWP5ZaYzV93iJm0k54l8QjZnxIufGLthXdgER",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoP2Tcw0Kj6Opsn1uPzRZy4cUX0oD37gNBif8w",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoA6wHs01HyxoZ8NhGk6rWw0vu3eISDROFpiAY",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoGyEJ8PhX0PcgUquWvdSoLC1z2Hy4sKApBrhQ",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoidlwT949RIzCkG6rwMe7Nh1yW3EF2sYjAat0",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoYOPhrdBK2udhgFkc9pfroZsCYNOQUvqaylij",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoYOPhrdBK2udhgFkc9pfroZsCYNOQUvqaylij",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoDIg0kD2pbawQson9Ci2jXZFSM57Rhcl4YgeI",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JonZ4TNf1owYUd8PNaxkbQMZDjCOh9TreziRGs",
+];
+
+export const scaleIcons = [
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JondIF1NowYUd8PNaxkbQMZDjCOh9TreziRGso",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoBQrBGzIpn9TX8jAg1KsG2erN3mS6aChv5qWU",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JonZV7JVOowYUd8PNaxkbQMZDjCOh9TreziRGs",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo31q57KQi8vcObFlrT7w14X6SLdI0jJUfZom3",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jov8L894qGR1Lx8Biu7mtjMQKqYnfeNwV9rEUO",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoAyuqhpk1HyxoZ8NhGk6rWw0vu3eISDROFpiA",
+];
+
+export const secureIcons = [
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joxk7HslGnmZE9koqNWJhMVpPCK4Xtj2rdFzBw",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo2b9FRUzOC09YKoOtyHUM2NAp57SnheZFfEQT",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JohTObsRwSd5EuiPRzV1oqnyO0TkMNLcrlYKIs",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoGCc5ewhX0PcgUquWvdSoLC1z2Hy4sKApBrhQ",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JomWlXJOgzZqrCjMOHKx9kJIUvNaQ58eGYD2Fp",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JocWmjF6viChW1Q34Jaq0rPl9vMtyISbNZBg8x",
+];
+
+export const qualityAssurance = [
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JohpbtbGwSd5EuiPRzV1oqnyO0TkMNLcrlYKIs",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoVLkhcwZ3rS4qt7Wg80DQnNCd2ihuvs9b6BLy",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoK2obVUFhz8TfXUsR9owmHPc3EAgSiNGMQ7tB",
+];
