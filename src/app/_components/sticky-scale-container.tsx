@@ -64,7 +64,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
   return (
     <section
       ref={sectionRef}
-      className="w-screen max-h-[85vh] md:min-h-[90vh] md:max-h-[90vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
+      className="w-screen max-h-[85vh] md:min-h-[80vh] md:max-h-[80vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
       <div className="container h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
@@ -86,7 +86,7 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
           <section
             key={index}
             className={cn(
-              "w-full h-[75%] md:h-[85%]  self-start  flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl"
+              "w-full h-[75%] md:h-[75%]  self-start  flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl"
             )}
           >
             <div className="w-full">

@@ -1,6 +1,6 @@
 import StickyHeroSection from "@/app/_components/sticky-hero-section";
 import { endToEndData, transformationSolution } from "@/config/marketing";
-
+import type { Variants } from "motion/react";
 import EndToEndServices from "@/app/_components/end-to-end-services";
 import EndToEndCarousel from "@/app/_components/end-to-end-carousel";
 import ResourcesCard from "@/app/_components/resources-card";
@@ -23,12 +23,27 @@ import Icon4 from "@/config/animated-svg/databox-2.json";
 import Icon5 from "@/config/animated-svg/datalinebox1.json";
 import Icon6 from "@/config/animated-svg/dataheight1.json";
 import Link from "next/link";
-import { solutionsData } from "@/config/marketing";
+import { motion } from "framer-motion";
 
 import BackgroundSvgStatic from "@/app/_components/background-svg-static";
 import HorizontalSection from "@/app/_components/horizontal-section";
 
 const iconArray = [Icon3, Icon4, Icon2, Icon6, Icon1, Icon5];
+
+const cardVariants: Variants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    y: 50,
+    rotate: -10,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 
 export default function Home() {
   return (
