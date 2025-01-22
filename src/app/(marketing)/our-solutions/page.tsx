@@ -12,7 +12,7 @@ const page: FC<pageProps> = ({}) => {
   return (
     <>
       <ScrollToHash />
-      <section className="w-screen min-h-screen flex py-5 items-center justify-center relative bg-black/10">
+      <section className="w-screen min-h-screen flex py-5 items-center justify-center relative bg-black/10 before:absolute before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:bg-foreground/10 before:z-10">
         <div className="container static z-10 h-full flex items-center justify-center md:justify-start">
           <div className="w-full flex flex-col items-start justify-center gap-2">
             <h1 className="text-secondary_heading font-heading text-secondary leading-tight max-w-2xl font-semibold mb-2">

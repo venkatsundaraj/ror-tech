@@ -23,20 +23,47 @@ import Icon4 from "@/config/animated-svg/databox-2.json";
 import Icon5 from "@/config/animated-svg/datalinebox1.json";
 import Icon6 from "@/config/animated-svg/dataheight1.json";
 import Link from "next/link";
+import { solutionsData } from "@/config/marketing";
 
 import BackgroundSvgStatic from "@/app/_components/background-svg-static";
+import HorizontalSection from "@/app/_components/horizontal-section";
 
 const iconArray = [Icon3, Icon4, Icon2, Icon6, Icon1, Icon5];
 
 export default function Home() {
   return (
     <>
-      <StickyScaleContainer />
       <ScrollToHash />
       <BackgroundSvgStatic />
       <section
         id="our-solution"
-        className="w-screen flex min-h-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative"
+        className="w-screen flex min-h-screen flex-col items-center justify-end  bg-transparent py-16 md:py-16 relative"
+      >
+        <div className="absolute top-0 left-0 pointer-events-none h-full w-full max-w-full  overflow-hidden z-10 min-w-[200px]">
+          <div className="w-full h-full md:h-screen overflow-hidden">
+            <div className="pointer-events-none">
+              <iframe
+                src="https://player.vimeo.com/video/985697257?loop=true&amp;autoplay=true&amp;muted=false&amp;gesture=media&amp;playsinline=true&amp;h=2e363519db&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=false&amp;customControls=true"
+                allow="autoplay; fullscreen; picture-in-picture; encrypted-media; accelerometer; gyroscope"
+                title="Player for KOMIS_Website_video_v2"
+                className="absolute top-[-100%] left-[-100%] md:left-auto h-[300%] w-[400%] md:w-[100%] max-w-none md:max-w-[100%]"
+                data-ready="true"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div className="container z-10 ">
+          <h2 className="text-primary_heading font-paragraph leading-tight font-bold text-foreground">
+            Empowering
+            <br /> Positive Change
+          </h2>
+        </div>
+      </section>
+      <HorizontalSection />
+      <section
+        id="our-solution"
+        className="w-screen hidden min-h-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative"
       >
         {/* <BackgroundSVG /> */}
         <div className="container flex flex-col items-start justify-start">
@@ -84,7 +111,8 @@ export default function Home() {
           {/* <EndToEndPaths /> */}
         </div>
       </section>
-      <section className="w-screen flex flex-col items-center justify-center bg-transparent py-16 md:py-24 relative ">
+      <StickyScaleContainer />
+      <section className="w-screen hidden flex-col items-center justify-center bg-transparent py-16 md:py-24 relative ">
         <div className="container flex flex-col items-start">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
             Transformational Solutions
@@ -205,7 +233,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative">
+      <section className="w-screen hidden items-center justify-center bg-transparent py-16 md:py-24 relative">
         <div className="container flex flex-col items-center">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
             Using Next Generation Digital Technologies

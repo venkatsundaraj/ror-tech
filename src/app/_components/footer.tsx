@@ -31,7 +31,7 @@ const Footer: FC<FooterProps> = ({}) => {
           </span>
         </div>
       </div>
-      <WavePattern />
+      <WavePattern className="absolute" />
       <div className="container flex items-start justify-start flex-col">
         <div className="w-full gap-4 flex items-center justify-between flex-wrap md:flex-nowrap py-8 md:py-12">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-xl">

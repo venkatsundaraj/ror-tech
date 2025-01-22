@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Kanit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import ReactLenis from "./_components/react-lenis";
 
 const heading = Kanit({
   variable: "--heading",
@@ -33,7 +34,7 @@ export default function RootLayout({
           "antialiased grainy font-sans min-h-screen w-screen relative overflow-x-hidden"
         )}
       >
-        {children}
+        <ReactLenis>{children}</ReactLenis>
       </body>
     </html>
   );

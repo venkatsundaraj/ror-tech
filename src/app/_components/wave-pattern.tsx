@@ -1,8 +1,12 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import React, { useEffect, useRef } from "react";
 
-const WavePattern: React.FC = () => {
+interface pageProps {
+  className?: string;
+}
+const WavePattern: React.FC<pageProps> = ({ className }) => {
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
@@ -91,7 +95,7 @@ const WavePattern: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full h-full bg-transparent">
+    <div className={cn("w-full h-full bg-transparent", className)}>
       <svg
         ref={svgRef}
         className="w-full h-[400px]"

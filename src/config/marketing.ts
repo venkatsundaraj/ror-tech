@@ -1,6 +1,9 @@
 import { Icons, Icon } from "@/app/_components/icons";
 import { EndToEndData, MainNavItems, SocialMediaIcons } from "@/types";
-import { title } from "process";
+import ExperienceAndEngage from "@/config/animated-svg/datamultilogo1.json";
+import AutomateAndOptimise from "@/config/animated-svg/datarob-2.json";
+import AnalyzeAndPredict from "@/config/animated-svg/databrianwire2.json";
+import ScaleAndSecure from "@/config/animated-svg/datapiechart10.json";
 
 export const mainNavContents: MainNavItems = [
   {
@@ -803,4 +806,67 @@ export const qualityAssurance = [
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JohpbtbGwSd5EuiPRzV1oqnyO0TkMNLcrlYKIs",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoVLkhcwZ3rS4qt7Wg80DQnNCd2ihuvs9b6BLy",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoK2obVUFhz8TfXUsR9owmHPc3EAgSiNGMQ7tB",
+];
+
+export const solutionsData = [
+  {
+    icon: ExperienceAndEngage,
+    title: "Experience and Engage",
+    description:
+      "Digital solutions that help you to engage with your stakeholders better and provide superior experiences.",
+    solutions: [
+      "Portals, Marketplaces, Web applications",
+      "Mobile Applications",
+      "Low Code",
+      "Application Platforms",
+      "Digital Experience Management",
+      "Chatbots",
+      "GenAI",
+    ],
+    services:
+      "Full stack | Java | .NET | Microsoft Power Platform | CoPilot | Liferay",
+  },
+  {
+    icon: AutomateAndOptimise,
+    title: "Automate and Optimize",
+    description:
+      "AI solutions that help you to automate your processes and optimize your efforts and cost",
+    solutions: [
+      "Robotic Process Automation",
+      "Intelligent Document Processing",
+      "Process And Task Mining",
+      "Business Applications",
+    ],
+    services:
+      "Insurance Claims Settlement Platform | Automation Hub: Automation Command and Control center | RPA | Intelligent Document Processing | Process Mining | Communications Mining | Automated Testing",
+  },
+  {
+    icon: AnalyzeAndPredict,
+    title: "Analyse and predict",
+    description:
+      "Cognitive solutions that help you look at the past and visualize the future",
+    solutions: [
+      "Data Engineering",
+      "Data Lake and Warehouses",
+      "Data Science",
+      "Data Visualization",
+    ],
+    services:
+      "Microsoft Fabric | Azure Data Factory | Azure Synapse Analytics | Azure ML | PowerBI",
+  },
+
+  {
+    icon: ScaleAndSecure,
+    title: "Scale , Secure and Test",
+    description:
+      "Solutions that help you scale your infrastructure and secure them at every level",
+    solutions: [
+      "Cloud Engineering",
+      "Platform Engineering",
+      "DevSecOps",
+      "Testing and Quality Assurance",
+    ],
+    services: "Azure DevOps | Azure SQL | Microsoft Sentinel | Guardian",
+  },
+  ,
 ];
