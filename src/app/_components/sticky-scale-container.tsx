@@ -64,9 +64,9 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
   return (
     <section
       ref={sectionRef}
-      className="w-screen max-h-[85vh] md:min-h-[100vh] md:max-h-[100vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
+      className="w-screen max-h-[85vh] md:min-h-[90vh] md:max-h-[90vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
-      <div className="w-full h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
+      <div className="container h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
 
         <div

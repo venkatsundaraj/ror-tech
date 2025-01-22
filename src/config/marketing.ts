@@ -7,12 +7,12 @@ import ScaleAndSecure from "@/config/animated-svg/datapiechart10.json";
 
 export const mainNavContents: MainNavItems = [
   {
-    href: "/#our-solution",
+    href: "/our-solutions",
     title: "Solutions",
     subItems: [],
   },
   {
-    href: "/#end-to-end-services",
+    href: "/our-services",
     title: "Services",
     subItems: [],
   },
@@ -22,12 +22,12 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "/#resources",
-    title: "Resources",
+    href: "/case-studies",
+    title: "Case Studies",
     subItems: [],
   },
   {
-    href: "/#who-we-are",
+    href: "/about-us",
     title: "Who We Are",
     subItems: [],
   },

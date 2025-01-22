@@ -83,7 +83,7 @@ const BackgroundSVG: FC<BackgroundSVGProps> = () => {
               cy={cy}
               r={radius}
               fill={getRandomColor()}
-              className="opacity-75"
+              className="opacity-40"
             />
           );
         })}
@@ -101,7 +101,12 @@ const BackgroundSVG: FC<BackgroundSVGProps> = () => {
         ].map((animPath, i) => {
           const radius = 3 + (i % 4); // Vary radius between 3, 4, 5, and 6
           return (
-            <circle key={`anim-dot-${i}`} fill={getRandomColor()} r={radius}>
+            <circle
+              className="opacity-40"
+              key={`anim-dot-${i}`}
+              fill={getRandomColor()}
+              r={radius}
+            >
               <animateMotion
                 dur={animPath.duration}
                 repeatCount="indefinite"

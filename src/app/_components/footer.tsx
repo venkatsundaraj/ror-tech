@@ -1,11 +1,12 @@
 import { FC } from "react";
-import { Button } from "@/app/_components/ui/button";
+import { Button, buttonVariants } from "@/app/_components/ui/button";
 import { Input } from "@/app/_components/ui/input";
 import Image from "next/image";
 import { menuLinks, socialMediaIcons } from "@/config/marketing";
 import { Icons } from "./icons";
 import Link from "next/link";
 import WavePattern from "./wave-pattern";
+import { cn } from "@/lib/utils";
 
 interface FooterProps {}
 
@@ -15,41 +16,47 @@ const Footer: FC<FooterProps> = ({}) => {
       id="who-we-are"
       className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24 relative"
     >
-      <div className="container flex items-start justify-start flex-col">
+      <div className="container flex items-start justify-start flex-col z-[2]">
         <div className="flex items-start justify-between gap-4 flex-col  py-8">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
-            Make most of your organizational data with ROR Technologies.
+            Learn More about the end-to-end services we offer for efficient data
+            management.
           </h4>
-          <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
+          <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl hidden">
             Join the ranks of leading organizations that have transformed their
             operations with ROR technologies. Let us help you stay ahead in the
             digital age.
           </span>
-          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
+          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl hidden">
             Contact us today to learn more about our services and how we can
             support your digital finance journey.
           </span>
+          <Link
+            className={cn(
+              buttonVariants({ variant: "default" }),
+              "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
+            )}
+            href={"/our-solutions"}
+          >
+            View Our Solutions
+          </Link>
         </div>
       </div>
-      <WavePattern className="absolute" />
-      <div className="container flex items-start justify-start flex-col">
+      <WavePattern className="absolute z-[1]" />
+      <div className="container flex items-start justify-start flex-col z-[2]">
         <div className="w-full gap-4 flex items-center justify-between flex-wrap md:flex-nowrap py-8 md:py-12">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-xl">
-            Join our newsletter to stay updated.
+            Follow ROR Technologies' Latest News
           </h4>
-          <form
-            id="form"
-            className="flex items-center justify-center flex-row h-12"
+          <Link
+            className={cn(
+              buttonVariants({ variant: "default" }),
+              "bg-background text-secondary font-semibold rounded-lg hover:bg-background/80 hover:text-secondary"
+            )}
+            href={"/our-solutions"}
           >
-            <Input
-              className="h-full px-2 rounded-none text-extra_paragraph_heading bg-[#EEDCF2] placeholder:text-secondary font-medium font-heading min-w-[200px] md:min-w-[360px]"
-              type="email"
-              placeholder="Enter your email address"
-            />
-            <Button variant={"secondary"} className="!rounded-none h-full">
-              Submit Now
-            </Button>
-          </form>
+            View News
+          </Link>
         </div>
         <div className="flex gap-4 items-start justify-between flex-wrap md:flex-nowrap py-12 md:py-16 border-y border-foreground w-full">
           <div className="flex flex-col items-start justify-between gap-4">

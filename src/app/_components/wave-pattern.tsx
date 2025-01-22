@@ -95,7 +95,7 @@ const WavePattern: React.FC<pageProps> = ({ className }) => {
   }, []);
 
   return (
-    <div className={cn("w-full h-full bg-transparent", className)}>
+    <div className={cn("w-full h-[80%] bg-transparent", className)}>
       <svg
         ref={svgRef}
         className="w-full h-[400px]"
