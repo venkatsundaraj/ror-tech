@@ -302,8 +302,8 @@ export default function Home() {
       <Footer>
         <div className="container flex items-start justify-start flex-col z-[2]">
           <div className="flex items-start justify-between gap-4 flex-col  py-8">
-            <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
-              Driving Digital Transformation Through Data
+            <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl ">
+              Driving Digital Transformation
             </h4>
             <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
               At ROR Technologies, part of Ducont Systems, we are global leaders
@@ -318,7 +318,7 @@ export default function Home() {
             </span>
             <Link
               className={cn(
-                buttonVariants({ variant: "default" }),
+                buttonVariants({ variant: "default", size: "lg" }),
                 "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
               )}
               href={"/about-us"}

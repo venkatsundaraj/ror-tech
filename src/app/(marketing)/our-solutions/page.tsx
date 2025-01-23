@@ -3,6 +3,10 @@ import { buttonVariants } from "@/app/_components/ui/button";
 import VideoBackground from "@/app/_components/video-background";
 import { solutionImpactData } from "@/config/marketing";
 import { cn } from "@/lib/utils";
+import Footer from "@/app/_components/footer";
+
+import Link from "next/link";
+
 import { FC } from "react";
 import { ScrollToHash } from "@/app/_components/scroll-to-hash";
 
@@ -19,7 +23,7 @@ const page: FC<pageProps> = ({}) => {
               Our solution help you derive maximum value from your ecosystem
               data.
             </h1>
-            <p className="text-paragraph_heading font-light text-popover font-paragraph max-w-2xl ">
+            <p className="text-paragraph_heading font-light text-popover font-paragraph max-w-2xl hidden">
               We help your value discovery of data by handling the entire
               journey of raw data to insights and foresights using next-gen
               digital technologies.
@@ -41,6 +45,36 @@ const page: FC<pageProps> = ({}) => {
         />
       </section>
       <SolutionDropDown />
+      <Footer>
+        <div className="container flex items-start justify-start flex-col z-[2]">
+          <div className="flex items-start justify-between gap-4 flex-col  py-8">
+            <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
+              Learn More about the end-to-end services we offer for efficient
+              data management.
+            </h4>
+            <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl hidden">
+              At ROR Technologies, part of Ducont Systems, we are global leaders
+              in digital transformation, specializing in turning your data into
+              a game-changing asset. Our expertise helps organizations adapt,
+              thrive, and lead in an ever-evolving market—maximizing business
+              value with every move.
+            </span>
+            <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl hidden">
+              Contact us today to learn more about our services and how we can
+              support your digital finance journey.
+            </span>
+            <Link
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
+              )}
+              href={"/about-us"}
+            >
+              About Us
+            </Link>
+          </div>
+        </div>
+      </Footer>
     </>
   );
 };

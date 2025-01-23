@@ -23,6 +23,8 @@ import {
 } from "@/app/_components/ui/sheet";
 import { Button } from "@/app/_components/ui/button";
 
+const solutionsTitle = ["Experience", "Automate", "Predict", "Secure"];
+
 interface HorizontalSectionDuplicateProps {}
 const colors = ["#263C7B", "#322A5E", "#84357B", "#4A4A48"];
 const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
@@ -53,7 +55,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
       >
         <div className="sticky container  top-0 flex flex-col items-start justify-center h-[100vh] md:h-screen  overflow-hidden">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
-            Teaming Up with Tech
+            Collaborating with Tech Champions
           </h2>
           <span className="w-[300px] md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary mb-16 mt-4 md:mb-12">
             Innovative solutions powered by next-generation digital
@@ -75,7 +77,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
                 </div>
                 <div className="flex flex-col items-start justify-center gap-6">
                   <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground">
-                    {item?.title}
+                    {solutionsTitle[i]}
                   </h4>
                   <span className="text-subtitle_heading font-paragraph font-normal text-foreground min-h-[100px]">
                     {item?.description}

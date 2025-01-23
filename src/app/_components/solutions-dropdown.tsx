@@ -145,7 +145,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                       return (
                         <li
                           key={index}
-                          className="flex items-center justify-start gap-12 md:gap-16 py-4 border-b border-popover w-full last:border-b-0"
+                          className="flex items-center justify-start gap-12 md:gap-16 py-4 px-0 md:px-10 border-b border-popover w-full last:border-b-0"
                         >
                           <SelectedIcon className="fill-primary h-14 w-14" />
                           <span className="text-popover text-extra_subtitle_heading font-paragraph font-light leading-normal">
@@ -222,7 +222,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                       return (
                         <li
                           key={index}
-                          className="flex items-center justify-start gap-12 md:gap-16 py-4 border-b border-popover w-full last:border-b-0"
+                          className="flex items-center justify-start gap-12 md:gap-16 py-4 border-b border-popover w-full last:border-b-0 px-0 md:px-10"
                         >
                           <SelectedIcon className="fill-primary h-14 w-14" />
                           <span className="text-popover text-extra_subtitle_heading font-paragraph font-light leading-normal">
@@ -338,7 +338,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                       return (
                         <li
                           key={index}
-                          className="flex items-center justify-start gap-12 md:gap-16 py-4 border-b border-popover w-full last:border-b-0"
+                          className="flex items-center justify-start gap-12 md:gap-16 py-4 border-b border-popover w-full last:border-b-0 px-0 md:px-10"
                         >
                           <SelectedIcon className="fill-primary h-14 w-14" />
                           <span className="text-popover text-extra_subtitle_heading font-paragraph font-light leading-normal">
@@ -354,7 +354,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
 
             {/* Fourth One */}
             <TabsContent value="scale" className="py-4">
-              <div className="grid grid-cols-1 md:grid-cols-12 py-6 gap-4 md:gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-12 py-6 gap-4 md:gap-5 w-full">
                 <div className="w-full flex flex-col items-start justify-start gap-3 md:gap-5 md:col-start-1 md:col-end-8 ">
                   <h3 className="text-tertiary_heading text-primary font-heading font-normal leading-tight">
                     Scale, Secure and Test
@@ -415,26 +415,26 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                     </div>
                   </div>
                 </div>
-                <div className="w-screen min-h-screen flex py-5 items-center justify-center relative bg-[#384D89] rounded-xl rounded-b-none">
-                  <div className="container flex flex-col gap-5 md:gap-10 items-start justify-center">
-                    <h2 className="text-tertiary_heading font-heading text-foreground leading-tight max-w-2xl font-semibold">
-                      Scalable, Secured and quality driven solutions
-                    </h2>
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-                      {solutionImpactData.map((item, i) => (
-                        <div
-                          key={i}
-                          className="flex flex-col items-start justify-start gap-4 p-5 bg-foreground rounded-lg"
-                        >
-                          <span className="font-heading font-normal text-primary_heading leading-tight">{`0${
-                            i + 1
-                          }`}</span>
-                          <p className="font-paragraph font-light text-subtitle_heading leading-normal">
-                            {item}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
+              </div>
+              <div className="w-full flex py-5 md:py-8 items-center justify-center relative bg-[#384D89] rounded-md  ">
+                <div className="container flex flex-col gap-5 md:gap-10 items-start justify-center">
+                  <h2 className="text-tertiary_heading font-heading text-foreground leading-tight max-w-2xl font-semibold">
+                    Scalable, Secured and quality driven solutions
+                  </h2>
+                  <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    {solutionImpactData.map((item, i) => (
+                      <div
+                        key={i}
+                        className="flex flex-col items-start justify-start gap-4 p-5 bg-foreground rounded-md"
+                      >
+                        <span className="font-heading font-normal text-primary_heading leading-tight">{`0${
+                          i + 1
+                        }`}</span>
+                        <p className="font-paragraph font-light text-subtitle_heading leading-normal">
+                          {item}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

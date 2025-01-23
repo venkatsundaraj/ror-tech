@@ -104,7 +104,7 @@ const ResourcesCardDuplicate: FC<ResourcesCardDuplicateProps> = ({}) => {
 
       <div className="flex flex-col container items-start justify-start gap-2 absolute top-0 left-1/2 -translate-x-[50%] w-full h-1/2 py-16 md:py-24">
         <h2 className="w-full font-normal leading-tight text-left text-foreground font-heading text-secondary_heading ">
-          Winning Game Plans
+          Winning Strategies
         </h2>
         <span className="w-[300px] md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-foreground mb-16 mt-4 md:mb-12">
           Explore how our data management expertise has transformed challenges

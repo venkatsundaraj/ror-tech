@@ -41,10 +41,12 @@ import {
   MonitorCog,
   Scale,
   Play,
+  Copyright,
 } from "lucide-react";
 
 export const Icons = {
   User,
+  Copyright,
   Snail,
   Scale,
   LayoutGrid,

@@ -90,7 +90,7 @@ const StickyScaleContainerDuplicate: FC<
                 " font-normal w-full ease-in-out leading-tight transition-all duration-1000 text-center !text-primary font-heading text-secondary_heading md:px-0"
               )}
             >
-              Dribbling Into Change
+              Dribbling Technology Transformation
             </h1>
           </div>
         </div>
@@ -104,9 +104,8 @@ const StickyScaleContainerDuplicate: FC<
           )}
         >
           <h2 className="w-[300px] md:w-[800px] font-normal leading-tight text-left text-primary font-heading text-tertiary_heading">
-            Empowering organizations to unlock the maximum potential of their
-            ecosystem data, transforming raw data into actionable insights that
-            drive progress.
+            Powering Businesses, with Actionable Insights, and Empowering Data
+            for Government Projects creating Widespread Impact.
           </h2>
           <span className="w-[300px] hidden md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
             Simple. Scaleable. Secure. Compliant. Cost-Effective.

@@ -22,7 +22,7 @@ const EndToEndCarouselDuplicate: React.FC<EndToEndCarouselDuplicateProps> =
       <section className="w-screen md:h-screen flex flex-col items-center justify-center bg-transparent py-24 md:py-24 relative">
         <div className="container flex flex-col items-start">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
-            From Kickoff to Goal
+            End to End Playbook
           </h2>
           <span className="w-[300px] md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary mb-16 mt-4 md:mb-12">
             Seamless, end-to-end data management services, ensuring every step

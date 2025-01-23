@@ -2,7 +2,11 @@ import { FC } from "react";
 import { Button, buttonVariants } from "@/app/_components/ui/button";
 import { Input } from "@/app/_components/ui/input";
 import Image from "next/image";
-import { menuLinks, socialMediaIcons } from "@/config/marketing";
+import {
+  mainNavContents,
+  menuLinks,
+  socialMediaIcons,
+} from "@/config/marketing";
 import { Icons } from "./icons";
 import Link from "next/link";
 import WavePattern from "./wave-pattern";
@@ -66,18 +70,23 @@ const Footer: FC<FooterProps> = ({ children }) => {
             </ul>
           </div>
           <ul className="grid grid-cols-2 gap-3">
-            {menuLinks.map((item, i) => (
+            {mainNavContents.map((item, i) => (
               <li key={i} className="min-w-[200px]">
-                <Link className="text-foreground" href={item.url}>
+                <Link className="text-foreground" href={item.href}>
                   {item.title}
                 </Link>
               </li>
             ))}
+            <li className="min-w-[200px]">
+              <Link className="text-foreground" href={"/contact-us"}>
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="w-full flex items-center justify-between flex-wrap md:flex-nowrap py-6">
-          <span className="text-extra_paragraph_heading font-paragraph font-normal text-foreground max-w-xl">
-            Copyright @ 2024
+          <span className="text-extra_paragraph_heading font-paragraph font-normal text-foreground max-w-xl text-nowrap flex flex-nowrap gap-1">
+            <p>Copyright</p> <Icons.Copyright className="w-4" /> <p>2024</p>
           </span>
           <Link
             className="text-extra_paragraph_heading font-paragraph font-normal text-foreground max-w-xl"
