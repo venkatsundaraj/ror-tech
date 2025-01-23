@@ -17,8 +17,8 @@ const paragraph = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "ROR Technology",
-  description: "Homepage | ROR Technology",
+  title: "ROR Technologies",
+  description: "Homepage | ROR Technologies",
 };
 
 export default function RootLayout({
