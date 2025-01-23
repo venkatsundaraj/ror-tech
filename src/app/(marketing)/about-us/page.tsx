@@ -1,9 +1,13 @@
 import { FC } from "react";
-import { ExpertiseSection } from "../../_components/expertise-section";
-import { WhyChooseUs } from "../../_components/why-choose-us";
-import StickySlider from "../../_components/StickySlider";
-import { DataValueSection } from "../../_components/data-value-section";
-import WavePattern from "../../_components/wave-pattern";
+import { ExpertiseSection } from "@/app/_components/expertise-section";
+import { WhyChooseUs } from "@/app/_components/why-choose-us";
+import StickySlider from "@/app/_components/StickySlider";
+import { DataValueSection } from "@/app/_components/data-value-section";
+import Footer from "@/app/_components/footer";
+import { buttonVariants } from "@/app/_components/ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import WavePattern from "@/app/_components/wave-pattern";
 import { ExpertiseSectionProps } from "@/types";
 import BackgroundSvgStatic from "@/app/_components/background-svg-static";
 
@@ -71,6 +75,33 @@ const page: FC<pageProps> = ({}) => {
       <DataValueSection />
       <ExpertiseSection items={expertiseItems} />
       <WhyChooseUs />
+      <Footer>
+        <div className="container flex items-start justify-start flex-col z-[2]">
+          <div className="flex items-start justify-between gap-4 flex-col  py-8">
+            <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
+              Make most of your organizational data with ROR Technologies.
+            </h4>
+            <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
+              Join the ranks of leading organizations that have transformed
+              their operations with ROR technologies. Let us help you stay ahead
+              in the digital age.
+            </span>
+            <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl">
+              Contact us today to learn more about our services and how we can
+              support your digital finance journey.
+            </span>
+            <Link
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary hidden"
+              )}
+              href={"/about-us"}
+            >
+              About Us
+            </Link>
+          </div>
+        </div>
+      </Footer>
       {/* <StickySlider /> */}
     </>
   );

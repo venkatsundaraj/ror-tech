@@ -8,40 +8,17 @@ import Link from "next/link";
 import WavePattern from "./wave-pattern";
 import { cn } from "@/lib/utils";
 
-interface FooterProps {}
+interface FooterProps {
+  children?: React.ReactNode;
+}
 
-const Footer: FC<FooterProps> = ({}) => {
+const Footer: FC<FooterProps> = ({ children }) => {
   return (
     <footer
       id="who-we-are"
       className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24 relative"
     >
-      <div className="container flex items-start justify-start flex-col z-[2]">
-        <div className="flex items-start justify-between gap-4 flex-col  py-8">
-          <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
-            Learn More about the end-to-end services we offer for efficient data
-            management.
-          </h4>
-          <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl hidden">
-            Join the ranks of leading organizations that have transformed their
-            operations with ROR technologies. Let us help you stay ahead in the
-            digital age.
-          </span>
-          <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl hidden">
-            Contact us today to learn more about our services and how we can
-            support your digital finance journey.
-          </span>
-          <Link
-            className={cn(
-              buttonVariants({ variant: "default" }),
-              "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
-            )}
-            href={"/our-solutions"}
-          >
-            View Our Solutions
-          </Link>
-        </div>
-      </div>
+      {children}
       <WavePattern className="absolute z-[1]" />
       <div className="container flex items-start justify-start flex-col z-[2]">
         <div className="w-full gap-4 flex items-center justify-between flex-wrap md:flex-nowrap py-8 md:py-12">

@@ -11,7 +11,7 @@ const layout: FC<layoutProps> = ({ children }) => {
     <main className="min-h-screen w-screen bg-background">
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };

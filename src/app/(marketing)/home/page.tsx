@@ -26,8 +26,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "@/app/_components/footer";
 import { buttonVariants } from "@/app/_components/ui/button";
+
 import BackgroundSvgStatic from "@/app/_components/background-svg-static";
 import HorizontalSection from "@/app/_components/horizontal-section";
+import StickyScaleContainerDuplicate from "@/app/_components/sticky-scale-container-duplicate";
+import HorizontalSectionDuplicate from "@/app/_components/horizontal-section-duplicate";
+import EndToEndCarouselDuplicate from "@/app/_components/end-to-end-carousel-duplicate";
+import ResourcesCardDuplicate from "@/app/_components/resource-card-duplicate";
 
 const iconArray = [Icon3, Icon4, Icon2, Icon6, Icon1, Icon5];
 
@@ -51,7 +56,7 @@ export default function Home() {
     <>
       <ScrollToHash />
       <BackgroundSvgStatic />
-      <StickyScaleContainer />
+      <StickyScaleContainerDuplicate />
       <section
         id="our-solution"
         className="w-screen hidden min-h-screen flex-col items-center justify-end  bg-transparent py-16 md:py-16 relative"
@@ -77,7 +82,7 @@ export default function Home() {
           </h2>
         </div>
       </section>
-      <HorizontalSection />
+      <HorizontalSectionDuplicate />
       <section
         id="our-solution"
         className="w-screen hidden min-h-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative"
@@ -292,8 +297,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <EndToEndCarousel endToEndData={endToEndData} />
-      <ResourcesCard />
+      <EndToEndCarouselDuplicate endToEndData={endToEndData} />
+      <ResourcesCardDuplicate />
       <Footer>
         <div className="container flex items-start justify-start flex-col z-[2]">
           <div className="flex items-start justify-between gap-4 flex-col  py-8">
