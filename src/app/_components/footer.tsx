@@ -32,7 +32,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
           <Link
             className={cn(
               buttonVariants({ variant: "default" }),
-              "bg-background text-secondary font-semibold rounded-lg hover:bg-background/80 hover:text-secondary"
+              "bg-background text-secondary font-semibold rounded-lg hover:bg-background/80 hover:text-secondary md:px-12 md:py-6"
             )}
             href={"/our-solutions"}
           >

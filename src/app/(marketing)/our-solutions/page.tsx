@@ -32,7 +32,7 @@ const page: FC<pageProps> = ({}) => {
               href="/our-solutions#our-solutions"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "rounded-3xl bg-gradient-to-tl from-primary to-secondary font-normal !text-foreground font-paragraph text-subtitle_heading px-8 py-3 mt-4"
+                "rounded-3xl bg-gradient-to-tl from-primary to-secondary font-normal !text-foreground font-paragraph text-subtitle_heading px-8 py-3 mt-4 transition-all duration-300 hover:bg-gradient-to-br"
               )}
             >
               View Our Solutions
