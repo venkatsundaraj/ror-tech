@@ -50,9 +50,10 @@ export default function Home() {
     <>
       <ScrollToHash />
       <BackgroundSvgStatic />
+      <StickyScaleContainer />
       <section
         id="our-solution"
-        className="w-screen flex min-h-screen flex-col items-center justify-end  bg-transparent py-16 md:py-16 relative"
+        className="w-screen hidden min-h-screen flex-col items-center justify-end  bg-transparent py-16 md:py-16 relative"
       >
         <div className="absolute top-0 left-0 pointer-events-none h-full w-full max-w-full  overflow-hidden z-10 min-w-[200px]">
           <div className="w-full h-full md:h-screen overflow-hidden">
@@ -126,7 +127,7 @@ export default function Home() {
           {/* <EndToEndPaths /> */}
         </div>
       </section>
-      <StickyScaleContainer />
+
       <section className="w-screen hidden flex-col items-center justify-center bg-transparent py-16 md:py-24 relative ">
         <div className="container flex flex-col items-start">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading mb-6 md:mb-12">
@@ -256,7 +257,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
             {transformationSolution.length
               ? transformationSolution.map((item, i) => (
-                  <div className="flex items-center flex-col justify-start gap-4 ">
+                  <div
+                    key={i}
+                    className="flex items-center flex-col justify-start gap-4 "
+                  >
                     <div
                       id={`${item.id}`}
                       key={i}

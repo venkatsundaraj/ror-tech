@@ -447,7 +447,7 @@ export const scaleAndSecureTechIcon: {
   icons: { icon: string; name: string }[];
 }[] = [
   {
-    title: "Data Engineering",
+    title: "Scale",
     icons: [
       {
         icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JondIF1NowYUd8PNaxkbQMZDjCOh9TreziRGso",
@@ -476,7 +476,7 @@ export const scaleAndSecureTechIcon: {
     ],
   },
   {
-    title: "Data Science",
+    title: "Secure",
     icons: [
       {
         icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joxk7HslGnmZE9koqNWJhMVpPCK4Xtj2rdFzBw",
@@ -505,7 +505,7 @@ export const scaleAndSecureTechIcon: {
     ],
   },
   {
-    title: "Data Visualization",
+    title: "Quality Assurance",
     icons: [
       {
         icon: "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JohpbtbGwSd5EuiPRzV1oqnyO0TkMNLcrlYKIs",
@@ -731,7 +731,6 @@ export const experienceAndEngageTechIcons = [
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joi2MVCOb49RIzCkG6rwMe7Nh1yW3EF2sYjAat",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoiW6E5Z49RIzCkG6rwMe7Nh1yW3EF2sYjAat0",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JomSUmaXgzZqrCjMOHKx9kJIUvNaQ58eGYD2Fp",
-  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JomSUmaXgzZqrCjMOHKx9kJIUvNaQ58eGYD2Fp",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoY1FvePBK2udhgFkc9pfroZsCYNOQUvqaylij",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo5PRzPl4ExjW1sDfG4KwEQHO6ueoI38FJlAm0",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JovfAjGnUqGR1Lx8Biu7mtjMQKqYnfeNwV9rEU",
@@ -741,6 +740,9 @@ export const experienceAndEngageTechIcons = [
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JodASTJunTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoxwJDLhlGnmZE9koqNWJhMVpPCK4Xtj2rdFzB",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo5OhdiRExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JolrHlJDIM3WqncHBhbASCXrkRtF4E87J1PweL",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jow7NwD19azNjsdfbS78XogvKc3YFTErMpmnAx",
+  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoScHEhefD5btxVm4sdUgOiLWYcuMaIwpv8eSh",
 ];
 
 export const AutomateAndOptimizeUsersIcon: Icon[] = [
@@ -778,7 +780,6 @@ export const AutomateAndOptimizeTechIcons = [
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoA6wHs01HyxoZ8NhGk6rWw0vu3eISDROFpiAY",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoGyEJ8PhX0PcgUquWvdSoLC1z2Hy4sKApBrhQ",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoidlwT949RIzCkG6rwMe7Nh1yW3EF2sYjAat0",
-  "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoYOPhrdBK2udhgFkc9pfroZsCYNOQUvqaylij",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoYOPhrdBK2udhgFkc9pfroZsCYNOQUvqaylij",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoDIg0kD2pbawQson9Ci2jXZFSM57Rhcl4YgeI",
   "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JonZ4TNf1owYUd8PNaxkbQMZDjCOh9TreziRGs",

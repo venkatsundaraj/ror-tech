@@ -64,21 +64,48 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
   return (
     <section
       ref={sectionRef}
-      className="w-screen max-h-[85vh] md:min-h-[80vh] md:max-h-[80vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
+      className="w-screen min-h-[125vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
-      <div className="container h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
+      <div className="w-full h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
+        <div
+          ref={containerRef}
+          className={cn(
+            "w-full h-[80%]  absolute transition-all duration-300 ease-out py-5 md:py-8 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10",
+            scrollValue < 40 ? "" : ""
+          )}
+        >
+          <div
+            className={cn(
+              "absolute  w-[300px] md:w-[890px] transition-all duration-1000",
+              scrollValue < 40
+                ? "top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] opacity-100"
+                : "top-[40px] left-[0px] opacity-0"
+            )}
+          >
+            <h1
+              className={cn(
+                " font-normal w-full ease-in-out leading-tight transition-all duration-1000 text-center !text-primary font-heading text-secondary_heading md:px-0"
+              )}
+            >
+              We help you derive maximum value from your ecosystem data.
+            </h1>
+          </div>
+        </div>
 
         <div
           className={cn(
-            "w-full h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 "
+            "w-full h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 mt-32",
+            scrollValue > 40
+              ? "opacity-1 translate-x-0"
+              : "opacity-0 translate-x-0"
           )}
         >
-          <h1 className="w-[400px] md:w-[800px] font-normal leading-tight text-left text-primary font-heading text-secondary_heading">
-            We help you derive maximum value from your ecosystem data
-          </h1>
-          <span className="w-[300px]  md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
+          <h1 className="w-[300px] md:w-[800px] font-normal leading-tight text-left text-primary font-heading text-secondary_heading">
             By Navigating from Raw Data to Information and Insights.
+          </h1>
+          <span className="w-[300px] hidden md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
+            Simple. Scaleable. Secure. Compliant. Cost-Effective.
           </span>
         </div>
 
@@ -86,13 +113,20 @@ const StickyScaleContainer: FC<StickyScaleContainerProps> = ({}) => {
           <section
             key={index}
             className={cn(
-              "w-full h-[75%] md:h-[75%]  self-start  flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl"
+              "w-full h-[95%]  self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl",
+              scrollValue < 40
+                ? "scale-0 translate-y-full"
+                : "scale-1 translate-y-0",
+              currentState === index && scrollValue > 40
+                ? "opacity-1"
+                : "opacity-0"
             )}
           >
             <div className="w-full">
               <div
                 className={cn(
-                  "flex items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap"
+                  "flex items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap",
+                  scrollValue < 40 ? "" : ""
                 )}
               >
                 <div className="flex flex-col items-start justify-center p-5 md:p-10">
