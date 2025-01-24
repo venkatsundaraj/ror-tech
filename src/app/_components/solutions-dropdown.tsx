@@ -22,7 +22,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { Button } from "@/app/_components/ui/button";
+import { Button, buttonVariants } from "@/app/_components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -32,6 +32,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/app/_components/ui/dialog";
+import { cn } from "@/lib/utils";
 
 export function DialogDemo() {
   return (
@@ -107,7 +108,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                 </div>
                 <div className="w-full h-full   md:col-start-8 md:col-end-13">
                   <div className="w-full h-full flex flex-col gap-6 md:gap-12 items-start justify-start bg-[#EFF1F7] shadow-sm rounded-md py-8 px-8 md:py-8">
-                    <h4 className="text-popover text-paragraph_heading font-heading leading-normal font-semibold">
+                    <h4 className="text-popover text-paragraph_heading font-heading leading-normal font-normal">
                       Competencies
                     </h4>
                     <ul className="grid grid-cols-3 gap-3 gap-y-12">
@@ -184,7 +185,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                 </div>
                 <div className="w-full h-full   md:col-start-8 md:col-end-13">
                   <div className="w-full h-full flex flex-col gap-6 md:gap-12 items-start justify-start bg-[#EFF1F7] shadow-sm rounded-md py-8 px-8 md:py-8">
-                    <h4 className="text-popover text-paragraph_heading font-heading leading-normal font-semibold">
+                    <h4 className="text-popover text-paragraph_heading font-heading leading-normal font-normal">
                       Competencies
                     </h4>
                     <ul className="grid grid-cols-3 gap-3 gap-y-12">
@@ -247,7 +248,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                     Cognitive solutions that help you look at the past and
                     visualize the future
                   </span>
-                  <div className="flex items-center justify-center w-full p-2 md:p-4 rounded-md shadow-sm bg-[#EFF1F7]">
+                  <div className="flex items-center justify-center w-full p-2 md:p-4 rounded-md shadow-sm bg-[#EBE1EB]">
                     <Image
                       src={
                         "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JogPgdomU0SRx7ke5iucGIHoOqf9BhNJpYZWDA"
@@ -260,17 +261,17 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                   </div>
                 </div>
                 <div className="w-full h-full   md:col-start-8 md:col-end-13">
-                  <div className="w-full h-full flex flex-col gap-6 md:gap-8 items-start justify-start bg-[#EFF1F7] shadow-sm rounded-md py-8 px-8 md:py-8">
-                    <h4 className="text-popover text-paragraph_heading font-heading leading-normal font-semibold">
+                  <div className="w-full h-full flex flex-col gap-2 md:gap-2 items-start justify-start bg-[#EBE1EB] shadow-sm rounded-md py-8 px-8 md:py-8">
+                    <h4 className="text-popover text-subtitle_heading font-heading leading-normal font-normal">
                       Competencies
                     </h4>
-                    <div className="flex flex-col items-center justify-start gap-8 w-full">
+                    <div className="flex flex-col items-center justify-start gap-2 w-full">
                       {dataVisualizeTool.map((item, index) => (
                         <div
                           key={index}
-                          className="flex flex-col items-start justify-start gap-3"
+                          className="flex flex-col items-start justify-start gap-3 border-b-2 pb-5 last:border-b-0 border-secondary"
                         >
-                          <h4 className="text-secondary text-paragraph_heading font-heading font-semibold leading-normal">
+                          <h4 className="text-popover text-[16px] font-heading font-normal leading-normal">
                             {item.title}
                           </h4>
                           <ul className="grid grid-cols-3 gap-1 gap-y-8">
@@ -311,13 +312,13 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                       return (
                         <li
                           key={index}
-                          className="flex h-full flex-col items-start justify-start gap-4 md:gap-1 py-4 md:py-2 border-popover w-full border-b md:border-b-0 md:border-r border-r-popover border-b-popover p-3 last:border-r-0 last:border-b-0"
+                          className="flex flex-col items-start justify-start gap-4 md:gap-1 py-4 md:py-2 border-popover w-full border-b md:border-b-0 md:border-r border-r-popover border-b-popover p-3 last:border-r-0 last:border-b-0"
                         >
                           <Icon className="w-12 h-12 mb-2" />
                           <h4 className="text-popover text-subtitle_heading font-heading font-normal leading-normal">
                             {item.title}
                           </h4>
-                          <span className="text-extra_subtitle_heading text-popover font-light font-paragraph">
+                          <span className="text-extra_subtitle_heading text-popover font-light font-paragraph md:min-h-[120px]">
                             {item.description}
                           </span>
                         </li>
@@ -350,6 +351,20 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                   </ul>
                 </div>
               </div>
+              <div className="w-full rounded-md bg-[#8E4585] flex flex-col items-start justify-center gap-4 p-4 md:p-8 bg">
+                <h3 className="text-foreground text-tertiary_heading font-normal font-heading">
+                  View our Data Science solution in action.
+                </h3>
+                <Link
+                  href={"/case-studies"}
+                  className={cn(
+                    buttonVariants({ variant: "default", size: "lg" }),
+                    "bg-foreground text-secondary hover:text-secondary hover:bg-foreground/80"
+                  )}
+                >
+                  Read More
+                </Link>
+              </div>
             </TabsContent>
 
             {/* Fourth One */}
@@ -363,10 +378,10 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                     Solutions that help you scale your infrastructure and secure
                     them at every level
                   </span>
-                  <div className="flex items-center justify-center w-full p-2 md:p-4 rounded-md shadow-sm bg-[#EFF1F7]">
+                  <div className="flex items-center justify-center w-full p-2 md:p-4 rounded-md shadow-sm bg-[#EBEBEB]">
                     <Image
                       src={
-                        "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JorDtYBdyiSyxDL6AsiGq9Ko2Vg7kzfI5EceXt"
+                        "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoWbfSaXzV93iJm0k54l8QjZnxIufGLthXdgER"
                       }
                       width={300}
                       className="w-[80%]"
@@ -376,17 +391,17 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                   </div>
                 </div>
                 <div className="w-full h-full   md:col-start-8 md:col-end-13">
-                  <div className="w-full h-full flex flex-col gap-6 md:gap-8 items-start justify-start bg-[#EFF1F7] shadow-sm rounded-md py-8 px-8 md:py-8">
-                    <h4 className="text-popover text-paragraph_heading font-heading leading-normal font-semibold">
+                  <div className="w-full h-full flex flex-col gap-2 md:gap-2 items-start justify-start bg-[#EBEBEB] shadow-sm rounded-md py-8 px-8 md:py-8">
+                    <h4 className="text-popover text-subtitle_heading font-heading leading-normal font-normal">
                       Competencies
                     </h4>
-                    <div className="flex flex-col items-center justify-start gap-8 w-full">
+                    <div className="flex flex-col items-center justify-start gap-2 w-full">
                       {scaleAndSecureTechIcon.map((item, index) => (
                         <div
                           key={index}
-                          className="flex flex-col items-start justify-start gap-3"
+                          className="flex flex-col items-start justify-start gap-3 border-b-2 pb-5 last:border-b-0 border-popover"
                         >
-                          <h4 className="text-secondary text-paragraph_heading font-heading font-semibold leading-normal">
+                          <h4 className="text-popover text-[16px] font-heading font-normal leading-normal">
                             {item.title}
                           </h4>
                           <ul className="grid grid-cols-3 gap-1 gap-y-8">
