@@ -22,6 +22,7 @@ import {
   SheetTrigger,
 } from "@/app/_components/ui/sheet";
 import { Button } from "@/app/_components/ui/button";
+import { Icons } from "./icons";
 
 const solutionsTitle = ["Experience", "Automate", "Predict", "Secure"];
 
@@ -51,7 +52,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
     return (
       <section
         ref={targetRef}
-        className="w-screen flex-col h-[200vh] items-center justify-center bg-transparent py-16 md:py-24 relative"
+        className="w-screen flex-col h-[200vh] items-center justify-center bg-transparent py-4 md:py-24 relative"
       >
         <div className="sticky container  top-0 flex flex-col items-start justify-center h-[100vh] md:h-screen  overflow-hidden">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
@@ -86,9 +87,12 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
                     <SheetTrigger asChild>
                       <Button
                         variant="default"
-                        className="bg-transparent hover:bg-transparent/10 "
+                        className="bg-transparent  hover:bg-transparent"
                       >
-                        Read about our Technologies
+                        <span className="hover:underline">
+                          Read about our Technologies
+                        </span>
+                        <Icons.ArrowRight className=" transition-all duration-150" />
                       </Button>
                     </SheetTrigger>
                     <SheetContent className="py-8 md:py-16">

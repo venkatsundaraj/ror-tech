@@ -625,9 +625,6 @@ export const endToEndServicesData = [
         title: "Quality Assurance",
       },
       {
-        title: "Compliance Enhancement",
-      },
-      {
         title: "Information Security and Controls",
       },
       {

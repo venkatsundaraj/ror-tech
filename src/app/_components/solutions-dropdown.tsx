@@ -60,25 +60,25 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                 value="experience"
                 className="text-popover font-paragraph font-light py-4  !text-paragraph_heading data-[state=active]:text-popover data-[state=active]:font-semibold data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
-                Experience and Engage
+                Experience
               </TabsTrigger>
               <TabsTrigger
                 value="automate"
                 className="text-popover font-paragraph font-light py-4 !text-paragraph_heading data-[state=active]:text-popover data-[state=active]:font-semibold data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
-                Automate and Optimize
+                Automate
               </TabsTrigger>
               <TabsTrigger
                 value="analyze"
                 className="text-popover font-paragraph font-light py-4 !text-paragraph_heading data-[state=active]:text-popover data-[state=active]:font-semibold data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
-                Analyze, Visualize and Predict
+                Predict
               </TabsTrigger>
               <TabsTrigger
                 value="scale"
                 className="text-popover font-paragraph font-light py-4 !text-paragraph_heading data-[state=active]:text-popover data-[state=active]:font-semibold data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
-                Scale, Secure and Test
+                Secure
               </TabsTrigger>
             </TabsList>
 
@@ -270,7 +270,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                           key={index}
                           className="flex flex-col items-start justify-start gap-3"
                         >
-                          <h4 className="text-popover text-paragraph_heading font-heading font-normal leading-normal">
+                          <h4 className="text-secondary text-paragraph_heading font-heading font-semibold leading-normal">
                             {item.title}
                           </h4>
                           <ul className="grid grid-cols-3 gap-1 gap-y-8">
@@ -386,7 +386,7 @@ const SolutionDropDown: FC<SolutionDropDownProps> = ({}) => {
                           key={index}
                           className="flex flex-col items-start justify-start gap-3"
                         >
-                          <h4 className="text-popover text-paragraph_heading font-heading font-normal leading-normal">
+                          <h4 className="text-secondary text-paragraph_heading font-heading font-semibold leading-normal">
                             {item.title}
                           </h4>
                           <ul className="grid grid-cols-3 gap-1 gap-y-8">

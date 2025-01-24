@@ -5,6 +5,7 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { heroSectionData } from "@/config/marketing";
+import { useInView } from "framer-motion";
 
 import dynamic from "next/dynamic";
 
@@ -66,7 +67,7 @@ const StickyScaleContainerDuplicate: FC<
   return (
     <section
       ref={sectionRef}
-      className="w-screen min-h-[125vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
+      className="w-screen min-h-[125svh] md:min-h-[125vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
       <div className="w-full h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
@@ -97,7 +98,7 @@ const StickyScaleContainerDuplicate: FC<
 
         <div
           className={cn(
-            "w-full h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 mt-32",
+            "w-full h-[85%] md:h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 mt-32",
             scrollValue > 40
               ? "opacity-1 translate-x-0"
               : "opacity-0 translate-x-0"
@@ -105,7 +106,7 @@ const StickyScaleContainerDuplicate: FC<
         >
           <h2 className="w-[300px] md:w-[800px] font-normal leading-tight text-left text-primary font-heading text-tertiary_heading">
             Powering Businesses, with Actionable Insights, and Empowering Data
-            for Government Projects creating Widespread Impact.
+            for Government and Corporates
           </h2>
           <span className="w-[300px] hidden md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
             Simple. Scaleable. Secure. Compliant. Cost-Effective.

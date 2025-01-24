@@ -36,7 +36,7 @@ const WavePattern: React.FC<pageProps> = ({ className }) => {
       circle.setAttribute("cx", particle.x.toString());
       circle.setAttribute("cy", particle.y.toString());
       circle.setAttribute("r", particle.size.toString());
-      circle.setAttribute("fill", "rgba(134, 239, 172, 0.8)");
+      circle.setAttribute("fill", "rgba(134, 239, 172, 0.4)");
       svg.appendChild(circle);
     });
 

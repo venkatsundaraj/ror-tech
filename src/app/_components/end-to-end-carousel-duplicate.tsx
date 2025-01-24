@@ -19,7 +19,7 @@ interface EndToEndCarouselDuplicateProps {
 const EndToEndCarouselDuplicate: React.FC<EndToEndCarouselDuplicateProps> =
   function ({ endToEndData }) {
     return (
-      <section className="w-screen md:h-screen flex flex-col items-center justify-center bg-transparent py-24 md:py-24 relative">
+      <section className="w-screen md:h-screen flex flex-col items-center justify-center bg-transparent pt-4 pb-24 md:py-24 relative">
         <div className="container flex flex-col items-start">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
             End to End Playbook
