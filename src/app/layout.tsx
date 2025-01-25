@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Kanit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import ReactLenis from "./_components/react-lenis";
+import { Toaster } from "@/app/_components/ui/toaster";
 
 const heading = Kanit({
   variable: "--heading",
@@ -35,6 +36,7 @@ export default function RootLayout({
         )}
       >
         <ReactLenis>{children}</ReactLenis>
+        <Toaster />
       </body>
     </html>
   );
