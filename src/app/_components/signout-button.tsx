@@ -26,7 +26,7 @@ const SignoutButton: FC<SignoutButtonProps> = ({}) => {
     <Button
       onClick={signoutHandler}
       variant={"default"}
-      className="rounded-md bg-secondary-foreground"
+      className="rounded-md bg-primary"
       disabled={isLoading}
     >
       {isLoading ? <Icons.Loader2 className="w-4 h-4 animate-spin" /> : null}

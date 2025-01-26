@@ -707,7 +707,7 @@ export const endToEndServicesData = [
     subText: "",
     services: [
       {
-        title: "Elements",
+        title: "Multi-skilled",
       },
     ],
   },
@@ -867,4 +867,200 @@ export const solutionsData = [
     services: "Azure DevOps | Azure SQL | Microsoft Sentinel | Guardian",
   },
   ,
+];
+
+export const contentLists: MainNavItems = [
+  {
+    title: "Case Studies",
+    href: "/dashboard/case-studies",
+    subItems: [
+      {
+        title: "Add Case Study",
+        href: "/dashboard/case-studies/",
+        type: "button",
+      },
+      { title: "All Case Studies", href: "/dashboard/case-studies/" },
+    ],
+  },
+];
+
+export const contactUsData = [
+  {
+    title: "Clients and Partners",
+    description:
+      "Are you ready to unlock the full potential of your data and drive maximum value? Or perhaps you’re eager to explore impactful collaboration opportunities with ROR?",
+    mailId: "info@rortechnology.com",
+    reachOutToUs: "Email Us Now",
+  },
+  {
+    title: "Careers",
+    description:
+      "Are you ready to take your career to the next level? Join ROR Technologies and be part of a team that’s driving innovation and creating transformative solutions every day!",
+    mailId: "careers@rortechnology.com",
+    reachOutToUs: "Reach Out Now",
+  },
+];
+
+export const companyLocation = [
+  {
+    location: "Dubai HQ",
+    address:
+      "Suite 404 Al Moosa Tower 1, 505 Sheikh Zayed Rd (opp. Museum of Future), Trade Centre, Trade Centre 1, Dubai",
+    tel: "(+971) 4 266 7879",
+  },
+  {
+    location: "INDIA",
+    address:
+      "No 9, 2nd Floor, AB towers Karpaga Nagar 8th Street, Madurai - 625007",
+    tel: "+91 6374055575",
+  },
+];
+
+export const ourPartnershipTenets: { title: string; icon: Icon }[] = [
+  {
+    title: "Strategic than Operational",
+    icon: "Strategic",
+  },
+  {
+    title: "Trust and Transparency",
+    icon: "TrustAndTransparency",
+  },
+  {
+    title: "Mutually Rewarding",
+    icon: "MutuallyRewarding",
+  },
+  {
+    title: "Ecosystem Success",
+    icon: "Ecosystem",
+  },
+];
+
+export const typeOfPartnerships = [
+  {
+    title: "Technology Partnerships",
+    description:
+      "Strong association with globally recognized technology product vendors to build cutting edge solutions around them.",
+  },
+  {
+    title: "Solution Partnerships",
+    description:
+      "Partnerships with specialized solution companies for completing the missing pieces of solution puzzle.",
+  },
+  {
+    title: "Business Partnerships",
+    description:
+      "ROR’s global footprint expansion through business partnerships with reputed regional players and business influencers in different regions and verticals",
+  },
+  {
+    title: "Campus Connects",
+    description:
+      "New products and solution enablement through mutually beneficial MOUs with leading campuses",
+  },
+];
+
+export const technologyPartners = [
+  {
+    company: "Microsoft",
+    companyWebsite: "https://www.microsoft.com/en-in/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoKvnv5zGFhz8TfXUsR9owmHPc3EAgSiNGMQ7t",
+    description:
+      "Ducont is Microsoft’s Gold Partner. This longstanding partnership supports competency building and drives the development of innovative solutions in hyperautomation, data analytics, and AI.",
+  },
+  {
+    company: "Tungsten Automation",
+    companyWebsite: "https://www.tungstenautomation.com/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoFFh4eFcTqXyUSnFKg8zQZkCAtrRxsJ2cDaiM",
+    description:
+      "Ducont is a trusted partner of Tungsten Automation, a global leader in intelligent workflow automation, delivering robust solutions to streamline and automate data-intensive business workflows.",
+  },
+  {
+    company: "Ghangor Cloud",
+    companyWebsite: "https://ghangorcloud.com/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JopexoBQ3cTLVPIyFzkuiaCOnK7jHv6DbBN1MR",
+    description:
+      "Ghangor Cloud is a leader in next-generation Information Security and Compliance solutions, specializing in advanced Data Loss Prevention. Their “Industry’s First and Only” solution addresses both malicious and inadvertent data theft across any channel, protocol, or web service. Ducont partners with Ghangor Cloud to bring these solutions to the Middle East market.",
+  },
+  {
+    company: "AIQOD",
+    companyWebsite: "https://aiqod.com/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOMeMXEKaAN2xy7u8gkcnHmWrtVoJiaswfYqB",
+    description:
+      "AIQOD is an innovative organization offering a No-Code platform powered by advanced Generative AI, ML, NLP, and Analytics capabilities. ROR Technologies has a strong partnership with AIQOD to deliver next-gen AI solutions to organizations worldwide.",
+  },
+  {
+    company: "Exequantum",
+    companyWebsite: "http://exequantum.com/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jop8yR823cTLVPIyFzkuiaCOnK7jHv6DbBN1MR",
+    description:
+      "Exequantum is a leading player in Post-Quantum Cybersecurity. ROR Technologies collaborates with them to redefine security solutions for corporates and government agencies, preparing for the next technological wave of quantum computing.",
+  },
+];
+
+export const solutionPartners = [
+  {
+    company: "Bootlabs",
+    companyWebsite: "https://bootlabstech.com/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JodV3vUKbnTKYG3xD0yZ2H6r7WBSuNPQnmkpi4",
+    description:
+      "Bootlabs is a key player in Platform Engineering, Cloud Engineering, DevSecOps, and Generative AI solutions. ROR Technologies partners with them to deliver advanced security and observability solutions to its customers.",
+  },
+  {
+    company: "Vishleshan",
+    companyWebsite: "https://www.vishleshan.net/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JokV5fthT9fWpjiqn4FdXvS2etCZc8TIHVR1AM",
+    description:
+      "Visleshan is a digital transformation solutions provider with a strong focus on Design Thinking. ROR Technologies partners with them to deliver innovative digital experience solutions, from concept to execution, driven by extensive Design Thinking.",
+  },
+];
+
+export const businessPartners = [
+  {
+    company: "Alpha Data",
+    companyWebsite: "https://www.alpha.ae/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoZonefpY0xWQHDojuibp7I4r2hvgC9kTXdNFl",
+    description:
+      "A premier Digital Transformation provider in the Middle East since 1981, with longstanding partnerships with local and federal governments in the UAE, they have a strong presence in Dubai and Abu Dhabi, along with operations in Saudi Arabia and Qatar. ROR Technologies maintains a robust business relationship with them across these geographies. Alpha Data – The leading Digital Transformation Providers & System Integrator in the UAE",
+  },
+  {
+    company: "Meerana",
+    companyWebsite: "https://meerana.ae/",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JojOUcB7Jw8jHFuSTVfx07Pb2Z3B5N4iW16pCM",
+    description:
+      "Meerana, an Emirati-owned innovative organization, holds a strong presence in the UAE public sector. ROR Technologies collaborates closely with Meerana on various joint go-to-market initiatives",
+  },
+  {
+    company: "Indus Novateur",
+    companyWebsite: "https://www.indusnovateur.com",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JodGO2u6nTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
+    description:
+      "Indus Novateur is a leading IT services provider with operations spanning GCC countries, East Africa, and the United States. As SAP Gold Partners and a top systems integrator for Salesforce implementations worldwide, they bring extensive expertise to the table. ROR Technologies maintains a strategic partnership with Indus to address markets across the GCC. SAP Gold Partner in Chennai, Bangalore, Mumbai, USA, UAE, Oman, Qatar, Saudi Arabia, KSA, India﻿",
+  },
+  {
+    company: "Huco",
+    companyWebsite: "https://huco.co",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JofGrv1iXHOZbh2CjGeXqfwlSxucmzViUyQR8F",
+    description:
+      "Huco is a leading tech consulting and services firm specializing in Hybrid Cloud, Cloud-Native, and DevOps solutions. They help global organizations build, run, manage, and secure applications for the multicloud economy. With a strong presence across the MENA region, ROR Technologies has a strategic business association with Huco to pursue joint opportunities. ",
+  },
+];
+export const campusPartners = [
+  {
+    company: "Thiagarajar College of Engineering",
+    companyWebsite: "https://www.tce.edu",
+    image:
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoEAYwKKR3SVOvYsnBF5ut4o72mbMrehXAwgcx",
+    description:
+      "Thiagarajar College of Engineering (TCE), established in 1957 by philanthropist Karumuttu Thiagarajan Chettiar in Madurai, is a Government-Aided Autonomous Institution affiliated with Anna University and approved by AICTE. TCE offers diverse Undergraduate, Postgraduate, and Ph.D. programs in Engineering, Architecture, and Science. ROR has signed an MoU with TCE’s IT department for joint research and solution proof of concepts.",
+  },
 ];

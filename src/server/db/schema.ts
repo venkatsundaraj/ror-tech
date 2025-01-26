@@ -17,13 +17,27 @@ export const createTable = pgTableCreator((name) => `ror_${name}`);
 
 export const contactFormTable = createTable("contact_form", {
   id: serial("id").primaryKey(),
-  firstName: text("first_name").notNull(),
-  lastName: text("last_name").notNull(),
+  name: text("name").notNull(),
   phone: text("phone").notNull(),
   email: text("email").notNull(),
-  companyName: text("company_name"),
-  companyWebsite: text("company_website"),
+  typeOfUser: varchar("typeOfUser", { length: 255 }).notNull(),
+  typeOfEnquiry: varchar("typeOfEnquiry", { length: 255 }).notNull(),
   message: text("message").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at")
+    .notNull()
+    .$onUpdate(() => new Date()),
+});
+
+export const caseStudiesTable = createTable("case_study", {
+  id: serial("id").primaryKey(),
+  title: varchar("title", { length: 255 }).notNull(),
+  description: text("message").notNull(),
+  category: varchar("category", { length: 255 }).notNull(),
+  date: date("date").notNull(),
+  fileUrl: varchar("fileUrl", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }).notNull(),
+  content: text("content").notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at")
     .notNull()
