@@ -4,6 +4,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/app/_components/ui/button";
 import { cn } from "@/lib/utils";
 import { companyLocation, contactUsData } from "@/config/marketing";
+import dynamic from "next/dynamic";
 import ContactUsForm from "@/app/_components/contact-us-form";
 
 interface pageProps {}
@@ -11,7 +12,7 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   return (
     <>
-      <section className="w-screen min-h-screen flex items-center justify-center bg-[#F2F2F2] py-16 md:py-36 relative ">
+      <section className="w-screen min-h-screen flex items-center justify-center bg-[#F2F2F2] py-40 md:py-36 relative ">
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
           <div className="w-full flex flex-col items-center justify-start gap-4 md:gap-8 h-full ">
             {contactUsData.map((data, index) => (
@@ -31,7 +32,7 @@ const page: FC<pageProps> = ({}) => {
                     "bg-transparent rounded-none text-left items-center justify-start text-popover font-normal  hover:bg-transparent hover:text-popover/80 pt-4 w-full border-t border-t-popover"
                   )}
                   target="_blank"
-                  href={data.mailId}
+                  href={`mailto:${data.mailId}`}
                 >
                   {data.reachOutToUs}
                 </Link>
@@ -56,7 +57,7 @@ const page: FC<pageProps> = ({}) => {
                       {data.address}
                     </p>
                     <Link
-                      href={data.tel}
+                      href={`tel:${data.tel}`}
                       className="text-extra_paragraph_heading font-paragraph font-light text-foreground"
                     >
                       {data.tel}

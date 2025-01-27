@@ -81,7 +81,7 @@ const ContactUsForm: FC<ContactUsFormProps> = ({}) => {
             id="location"
             label=""
             category={typeOfUser}
-            className="min-w-full p-2 outline-none border-b border-b-foreground md:border-0 rounded-md text-foreground w-full h-10 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="min-w-full p-2 outline-none border-b border-b-foreground  rounded-none text-foreground w-full h-10 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           {errors?.typeOfUser ? (
             <p className="px-1 text-xs text-destructive h-4">
@@ -180,7 +180,7 @@ const ContactUsForm: FC<ContactUsFormProps> = ({}) => {
             id="typeOfEnquiry"
             label=""
             category={typeOfEnquiry}
-            className="min-w-full p-2 outline-none border-b border-b-foreground md:border-0 rounded-md text-foreground w-full h-10 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="min-w-full p-2 outline-none border-b border-b-foreground rounded-none text-foreground w-full h-10 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           {errors?.typeOfEnquiry ? (
             <p className="px-1 text-xs text-destructive h-4">

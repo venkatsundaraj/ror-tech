@@ -80,7 +80,7 @@ const Header: FC<HeaderProps> = ({}) => {
                   "inline-flex !bg-secondary items-center !text-foreground flex-row justify-center text-sm font-medium font-paragraph  !rounded-none",
                   buttonVariants({ variant: "secondary" })
                 )}
-                href={"#contact-us"}
+                href={"/contact-us"}
               >
                 Contact Us
               </Link>
