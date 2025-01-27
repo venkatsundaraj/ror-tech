@@ -25,7 +25,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
       {children}
       <WavePattern className="absolute z-[1]" />
       <div className="container flex items-start justify-start flex-col z-[2]">
-        <div className="w-full gap-4 flex items-center justify-between flex-wrap md:flex-nowrap py-8 md:py-12">
+        <div className="w-full gap-4 hidden items-center justify-between flex-wrap md:flex-nowrap py-8 md:py-12">
           <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-xl">
             Follow ROR Technologies' Latest News
           </h4>
@@ -51,7 +51,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
               alt="Logo"
             />
             <p className="text-extra_paragraph_heading max-w-[280px] font-paragraph font-normal text-foreground">
-              We help you derive maximum value from you ecosystem data.
+              We help you derive maximum value from your ecosystem data.
             </p>
             <ul className="flex items-center justify-center gap-4">
               {socialMediaIcons.length

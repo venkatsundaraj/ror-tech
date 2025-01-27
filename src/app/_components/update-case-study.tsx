@@ -38,7 +38,11 @@ interface UpdateCaseStudyProps {
 
 type FormData = z.infer<typeof caseStudySchema>;
 
-const category: string[] = ["Hyperautomation"];
+const category: string[] = [
+  "Hyperautomation",
+  "MIS Report Generation",
+  "UiPath Studio/UiPath Attended BOT",
+];
 
 const UpdateCaseStudy: FC<UpdateCaseStudyProps> = ({ caseStudy }) => {
   const [content, setContent] = useState<any>();
@@ -175,15 +179,19 @@ const UpdateCaseStudy: FC<UpdateCaseStudyProps> = ({ caseStudy }) => {
             )}
           </div>
           <div className="flex items-start flex-col justify-start gap-2 w-full">
-            <SelectCategory<FormData>
+            <Label className="text-primary mb-2" htmlFor="Title">
+              Category
+            </Label>
+            <Input
+              id="Category"
+              autoCapitalize="off"
+              autoComplete="none"
+              className="bg-transparent focus-visible:ring-offset-0 focus-visible:outline-none focus-visible:ring-0 text-primary"
+              type="text"
+              {...register("category")}
               disabled={isSubmitting}
-              register={register}
-              id="category"
-              name="category"
-              label="Category"
-              category={category}
               defaultValue={caseStudy.category}
-              className="min-w-full p-2 border border-gray-300 rounded-md text-primary h-10 bg-background focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
             />
             {errors?.category ? (
               <p className="px-1 text-xs text-destructive h-4">
@@ -237,7 +245,13 @@ const UpdateCaseStudy: FC<UpdateCaseStudyProps> = ({ caseStudy }) => {
                   onClientUploadComplete={(res) => {
                     if (res && res.length > 0) {
                       const uploadedFileUrl = res[0].key;
-                      console.log(res, uploadedFileUrl);
+                      if (uploadedFileUrl) {
+                        toast({
+                          title: "Your Image is updated",
+                          description: "Continue updating your content.",
+                          variant: "default",
+                        });
+                      }
                       setValue(
                         "fileUrl",
                         `https://utfs.io/f/${uploadedFileUrl}`,
@@ -248,6 +262,11 @@ const UpdateCaseStudy: FC<UpdateCaseStudyProps> = ({ caseStudy }) => {
                     }
                   }}
                   onUploadError={(error) => {
+                    toast({
+                      title: error.message,
+                      description: "Something went wrong",
+                      variant: "destructive",
+                    });
                     console.error("Upload error: ", error);
                   }}
                 />

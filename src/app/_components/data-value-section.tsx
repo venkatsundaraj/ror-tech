@@ -5,6 +5,7 @@ import TileTextSection from "./tile-text-section";
 import { searchItems } from "@/config/marketing";
 import { Icons } from "./icons";
 import TypingAnimation from "./typing-animation";
+import { tileContent } from "@/config/marketing";
 
 export function DataValueSection() {
   const sections = Array(1).fill(null);
@@ -20,7 +21,7 @@ export function DataValueSection() {
               <h2 className="text-[30px] font-heading md:text-[38px] font-semibold text-[#2D2F6A]  leading-tight">
                 Your data is as valuable as
                 {/* <TileTextSection /> */}
-                <TypingAnimation />
+                <TypingAnimation tileContent={tileContent} />
               </h2>
               <p className="text-popover text-subtitle_heading font-paragraph text-lg font-light leading-normal">
                 We recognise that data is the most valuable asset for any

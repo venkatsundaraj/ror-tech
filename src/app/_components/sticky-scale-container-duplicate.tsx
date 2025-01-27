@@ -6,9 +6,13 @@ import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { heroSectionData } from "@/config/marketing";
 import { useInView } from "framer-motion";
+import TypingAnimation from "@/app/_components/typing-animation";
 
-import dynamic from "next/dynamic";
-
+const tileContent = [
+  "Next generation digital technologies like Gen AI and machine learning.",
+  "Powering businesses for governments and corporates.",
+  "Association with leading technologies.",
+];
 interface StickyScaleContainerDuplicateProps {}
 
 const StickyScaleContainerDuplicate: FC<
@@ -91,7 +95,7 @@ const StickyScaleContainerDuplicate: FC<
                 " font-normal w-full ease-in-out leading-tight transition-all duration-1000 text-center !text-primary font-heading text-secondary_heading md:px-0"
               )}
             >
-              Dribbling Technology Transformation
+              We are Digital Transformational Experts
             </h1>
           </div>
         </div>
@@ -104,9 +108,10 @@ const StickyScaleContainerDuplicate: FC<
               : "opacity-0 translate-x-0"
           )}
         >
-          <h2 className="w-[300px] md:w-[800px] font-normal leading-tight text-left text-primary font-heading text-tertiary_heading">
-            Powering Businesses, with Actionable Insights, and Empowering Data
-            for Government and Corporates
+          <h2 className="text-[30px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight">
+            Digital transformational experts in
+            {/* <TileTextSection /> */}
+            <TypingAnimation tileContent={tileContent} />
           </h2>
           <span className="w-[300px] hidden md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
             Simple. Scaleable. Secure. Compliant. Cost-Effective.
@@ -129,11 +134,14 @@ const StickyScaleContainerDuplicate: FC<
             <div className="w-full">
               <div
                 className={cn(
-                  "flex items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap",
+                  "flex  items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap",
                   scrollValue < 40 ? "" : ""
                 )}
               >
-                <div className="flex flex-col items-start justify-center p-5 md:p-10">
+                <div className="flex flex-col items-start justify-center p-5 md:px-10  md:py-12">
+                  <h1 className="max-w-lg gap-4 font-normal leading-tight text-left text-foreground font-heading text-tertiary_heading mb-4">
+                    Maximizing the value of your ecosystem data.
+                  </h1>
                   <h1 className="max-w-lg gap-4 font-normal leading-tight text-center text-foreground font-heading text-primary_heading">
                     {section.title}
                   </h1>

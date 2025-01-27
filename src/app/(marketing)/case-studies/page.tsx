@@ -22,7 +22,7 @@ const page = async ({}: pageProps) => {
   const data = await getData();
   return (
     <>
-      <section className="w-screen min-h-screen flex-col items-start justify-center bg-transparent py-16 md:py-36 relative ">
+      <section className="w-screen min-h-screen flex-col items-start justify-center bg-transparent py-32 md:pt-36 relative ">
         <div className="container flex flex-col items-start gap-4">
           <div className="flex flex-col items-start gap-1">
             <p className="text-paragraph_heading font-paragraph uppercase font-normal  text-popover md:mb-2">
@@ -39,14 +39,21 @@ const page = async ({}: pageProps) => {
         <div className="container flex items-start justify-start flex-col z-[2]">
           <div className="flex items-start justify-between gap-4 flex-col  py-8">
             <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
-              Interested in managing your business’ data to increase your
-              efficiency?
+              Make most of your organizational data with ROR Technologies.
             </h4>
-
+            <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl ">
+              Join the ranks of leading organizations that have transformed
+              their operations with ROR technologies. Let us help you stay ahead
+              in the digital age.
+            </span>
+            <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl ">
+              Contact us today to learn more about our services and how we can
+              support your digital finance journey.
+            </span>
             <Link
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
+                "bg-background text-secondary hidden font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
               )}
               href={"/contact-us"}
             >

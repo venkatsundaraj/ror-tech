@@ -25,9 +25,8 @@ const EndToEndCarouselDuplicate: React.FC<EndToEndCarouselDuplicateProps> =
             End to End Playbook
           </h2>
           <span className="w-[300px] md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary mb-16 mt-4 md:mb-12">
-            Seamless, end-to-end data management services, ensuring every step
-            from data collection to insightful decision-making is expertly
-            handled.
+            Seamless, end-to-end services, ensuring every aspect of digital
+            transformation is efficiently handled.
           </span>
           <Carousel className="w-full">
             <CarouselContent className="-ml-1 gap-4 cursor-grab">

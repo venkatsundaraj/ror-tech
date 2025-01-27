@@ -26,13 +26,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "@/app/_components/footer";
 import { buttonVariants } from "@/app/_components/ui/button";
-
 import BackgroundSvgStatic from "@/app/_components/background-svg-static";
 import HorizontalSection from "@/app/_components/horizontal-section";
-import StickyScaleContainerDuplicate from "@/app/_components/sticky-scale-container-duplicate";
-import HorizontalSectionDuplicate from "@/app/_components/horizontal-section-duplicate";
-import EndToEndCarouselDuplicate from "@/app/_components/end-to-end-carousel-duplicate";
-import ResourcesCardDuplicate from "@/app/_components/resource-card-duplicate";
 
 const iconArray = [Icon3, Icon4, Icon2, Icon6, Icon1, Icon5];
 
@@ -56,7 +51,7 @@ export default function Home() {
     <>
       <ScrollToHash />
       <BackgroundSvgStatic />
-      <StickyScaleContainerDuplicate />
+      <StickyScaleContainer />
       <section
         id="our-solution"
         className="w-screen hidden min-h-screen flex-col items-center justify-end  bg-transparent py-16 md:py-16 relative"
@@ -82,7 +77,7 @@ export default function Home() {
           </h2>
         </div>
       </section>
-      <HorizontalSectionDuplicate />
+      <HorizontalSection />
       <section
         id="our-solution"
         className="w-screen hidden min-h-screen flex-col items-center justify-center bg-transparent py-16 md:py-24 relative"
@@ -297,13 +292,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <EndToEndCarouselDuplicate endToEndData={endToEndData} />
-      <ResourcesCardDuplicate />
+      <EndToEndCarousel endToEndData={endToEndData} />
+      <ResourcesCard />
       <Footer>
         <div className="container flex items-start justify-start flex-col z-[2]">
           <div className="flex items-start justify-between gap-4 flex-col  py-8">
-            <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl ">
-              Driving Digital Transformation
+            <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-foreground max-w-2xl mb-6">
+              Driving Digital Transformation Through Data
             </h4>
             <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
               At ROR Technologies, part of Ducont Systems, we are global leaders
@@ -318,7 +313,7 @@ export default function Home() {
             </span>
             <Link
               className={cn(
-                buttonVariants({ variant: "default", size: "lg" }),
+                buttonVariants({ variant: "default" }),
                 "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
               )}
               href={"/about-us"}

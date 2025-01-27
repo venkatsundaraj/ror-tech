@@ -54,7 +54,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
         ref={targetRef}
         className="w-screen flex-col h-[200vh] items-center justify-center bg-transparent py-4 md:py-24 relative"
       >
-        <div className="sticky container  top-0 flex flex-col items-start justify-center h-[100vh] md:h-screen  overflow-hidden">
+        <div className="sticky container  top-0 flex flex-col items-start justify-center h-[100vh] md:h-screen ">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
             Collaborating with Tech Champions
           </h2>
@@ -87,7 +87,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
                     <SheetTrigger asChild>
                       <Button
                         variant="default"
-                        className="bg-transparent  hover:bg-transparent"
+                        className="bg-transparent  hover:bg-transparent p-0"
                       >
                         <span className="hover:underline">
                           Read about our Technologies

@@ -68,7 +68,7 @@ export const endToEndData: EndToEndData = [
   },
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8Jo5nwI83ExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
+      "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoXBDsCtlcJVL4uK3WR8NaHQzE59h1P2ItADx7",
     title: "Managed Services",
     description:
       "Outsource your non-critical and expensive processes to be handled efficiently using next-gen technologies",
@@ -889,14 +889,14 @@ export const contactUsData = [
     title: "Clients and Partners",
     description:
       "Are you ready to unlock the full potential of your data and drive maximum value? Or perhaps you’re eager to explore impactful collaboration opportunities with ROR?",
-    mailId: "info@rortechnology.com",
+    mailId: "info@rortechnologies.com",
     reachOutToUs: "Email Us Now",
   },
   {
     title: "Careers",
     description:
       "Are you ready to take your career to the next level? Join ROR Technologies and be part of a team that’s driving innovation and creating transformative solutions every day!",
-    mailId: "careers@rortechnology.com",
+    mailId: "careers@rortechnologies.com",
     reachOutToUs: "Reach Out Now",
   },
 ];
@@ -1062,5 +1062,133 @@ export const campusPartners = [
       "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoEAYwKKR3SVOvYsnBF5ut4o72mbMrehXAwgcx",
     description:
       "Thiagarajar College of Engineering (TCE), established in 1957 by philanthropist Karumuttu Thiagarajan Chettiar in Madurai, is a Government-Aided Autonomous Institution affiliated with Anna University and approved by AICTE. TCE offers diverse Undergraduate, Postgraduate, and Ph.D. programs in Engineering, Architecture, and Science. ROR has signed an MoU with TCE’s IT department for joint research and solution proof of concepts.",
+  },
+];
+
+export const caseStudiesData = [
+  {
+    title: "Automation of Invoice Extraction and PO Reconciliation",
+    benefitsData: [
+      {
+        title: "Processing Time",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoUOkameuKHfmtSCwOWL9lRFieaAxbyBP4sIGJ",
+        description: "Reduced from 2 hours to 3 minutes",
+      },
+      {
+        title: "Accuracy",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOR8s5LaAN2xy7u8gkcnHmWrtVoJiaswfYqBK",
+        description: "Drastically improved reconciliation",
+      },
+      {
+        title: "Efficiency",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoBdDYBVpn9TX8jAg1KsG2erN3mS6aChv5qWU7",
+        description: "Streamlined workflows and cut costs.",
+      },
+      {
+        title: "Productivity",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoAKOoJG1HyxoZ8NhGk6rWw0vu3eISDROFpiAY",
+        description: "Freed up resources for strategic tasks.",
+      },
+    ],
+  },
+  {
+    title: "Simplifying Report Generation for Wealth Management Firms",
+    benefitsData: [
+      {
+        title: "Time Efficiency",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoYbn08fBK2udhgFkc9pfroZsCYNOQUvqaylij",
+        description:
+          "Reduced report generation time from 6–7 hours to just 30 mins.",
+      },
+      {
+        title: "Error Elimination",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOR8s5LaAN2xy7u8gkcnHmWrtVoJiaswfYqBK",
+        description:
+          "Minimized manual errors in data extraction and formatting.",
+      },
+      {
+        title: "Enhanced Productivity",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoBdDYBVpn9TX8jAg1KsG2erN3mS6aChv5qWU7",
+        description: "Freed up employees for higher-value tasks.",
+      },
+      {
+        title: "Customer Satisfaction",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoZFM6LFY0xWQHDojuibp7I4r2hvgC9kTXdNFl",
+        description: "Consistent and timely report delivery boosted trust.",
+      },
+    ],
+  },
+  {
+    title: "Optimizing Deal Management Testing with Automation",
+    benefitsData: [
+      {
+        title: "Time Efficiency",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoYbn08fBK2udhgFkc9pfroZsCYNOQUvqaylij",
+        description:
+          "Reduced transaction testing time from 120 minutes to 7-9 minutes",
+      },
+      {
+        title: "Error Elimination",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOR8s5LaAN2xy7u8gkcnHmWrtVoJiaswfYqBK",
+        description:
+          "Standardized testing across applications, eliminating manual errors.",
+      },
+      {
+        title: "Process Optimization",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoyrriU4dUGDbyzcPt5aIElLJ6SxmBdQChFqfv",
+        description: "Improved consistency and workflow management.",
+      },
+      {
+        title: "Scalability",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoY3ic5JKBK2udhgFkc9pfroZsCYNOQUvqayli",
+        description:
+          "Supported multi-country, multi-currency complexities with ease.",
+      },
+    ],
+  },
+  {
+    title: "Transforming Risk Review Processes for a Govt. Organisation",
+    benefitsData: [
+      {
+        title: "Centralized Management",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JocYCreKviChW1Q34Jaq0rPl9vMtyISbNZBg8x",
+        description:
+          "Unified platform for tracking and managing requests end-to-end.",
+      },
+      {
+        title: "Improved Efficiency",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoQJzFUOmLS8JoxDr3CQYdi4MUgWNHuAX51vqf",
+        description:
+          "Automated workflows reduced delays and manual dependencies.",
+      },
+      {
+        title: "Enhanced Collaboration",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoBQMrRd3pn9TX8jAg1KsG2erN3mS6aChv5qWU",
+        description:
+          "Integrated communication channels for seamless interaction.",
+      },
+      {
+        title: "Performance Monitoring",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo3ltR5jQi8vcObFlrT7w14X6SLdI0jJUfZom3",
+        description:
+          "Advanced data reporting and analytics for actionable insights.",
+      },
+    ],
   },
 ];

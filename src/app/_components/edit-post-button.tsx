@@ -20,7 +20,7 @@ type CaseStudy = InferModel<typeof caseStudiesTable>;
 
 interface EditPostButtonProps {
   post: CaseStudy;
-  type: "case-study";
+  type: "case-studies";
 }
 
 const EditPostButton: FC<EditPostButtonProps> = ({ post, type }) => {
@@ -52,7 +52,7 @@ const EditPostButton: FC<EditPostButtonProps> = ({ post, type }) => {
         <Link
           href={`/dashboard/${type}/${post.id}`}
           className={cn(
-            "!text-foreground bg-background w-full inline-flex items-center justify-center hover:bg-background hover:!text-secondary-foreground text-[16px] font-paragraph border-none text-center"
+            "!text-primary bg-background w-full inline-flex items-center justify-center hover:bg-background hover:!text-primary/80 text-[16px] font-paragraph border-none text-center"
           )}
         >
           Edit
@@ -61,7 +61,7 @@ const EditPostButton: FC<EditPostButtonProps> = ({ post, type }) => {
         <Button
           onClick={() => deletePostHandler(post.id, type)}
           variant={"outline"}
-          className="!text-foreground p-0 h-[initial] font-paragraph hover:!text-secondary-foreground w-full hover:bg-background border-none text-[16px]"
+          className="!text-primary p-0 h-[initial] font-paragraph hover:!text-primary/80 w-full hover:bg-background border-none text-[16px]"
         >
           {isLoading ? <Icons.Loader2 className="animate-spin" /> : null}
           Delete

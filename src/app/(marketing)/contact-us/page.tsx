@@ -6,18 +6,20 @@ import { cn } from "@/lib/utils";
 import { companyLocation, contactUsData } from "@/config/marketing";
 import dynamic from "next/dynamic";
 import ContactUsForm from "@/app/_components/contact-us-form";
+import BackgroundSVG from "@/app/_components/background-svg";
 
 interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
   return (
     <>
-      <section className="w-screen min-h-screen flex items-center justify-center bg-[#F2F2F2] py-40 md:py-36 relative ">
+      <BackgroundSVG />
+      <section className="w-screen min-h-screen flex items-center justify-center  py-40 md:py-36 relative ">
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
           <div className="w-full flex flex-col items-center justify-start gap-4 md:gap-8 h-full ">
             {contactUsData.map((data, index) => (
               <div
-                className="flex flex-col items-start justify-start gap-4 md:gap-4 bg-foreground rounded-md p-4 "
+                className="flex flex-col items-start justify-start gap-4 md:gap-4 bg-foreground rounded-md p-4 shadow-md"
                 key={index}
               >
                 <h3 className="text-tertiary_heading text-popover font-heading font-light">
@@ -29,7 +31,7 @@ const page: FC<pageProps> = ({}) => {
                 <Link
                   className={cn(
                     buttonVariants({ variant: "default" }),
-                    "bg-transparent rounded-none text-left items-center justify-start text-popover font-normal  hover:bg-transparent hover:text-popover/80 pt-4 w-full border-t border-t-popover"
+                    "bg-transparent rounded-none text-left items-center justify-start text-popover font-normal hover:underline hover:bg-transparent hover:text-popover/80 pt-4 w-full border-t border-t-popover p-0"
                   )}
                   target="_blank"
                   href={`mailto:${data.mailId}`}
@@ -58,7 +60,7 @@ const page: FC<pageProps> = ({}) => {
                     </p>
                     <Link
                       href={`tel:${data.tel}`}
-                      className="text-extra_paragraph_heading font-paragraph font-light text-foreground"
+                      className="text-extra_paragraph_heading hover:underline font-paragraph font-light text-foreground"
                     >
                       {data.tel}
                     </Link>
@@ -70,16 +72,16 @@ const page: FC<pageProps> = ({}) => {
                   Write to us at
                 </p>
                 <Link
-                  href={"mailto:careers@rortechnology.com"}
-                  className="text-extra_paragraph_heading font-paragraph font-light text-foreground"
+                  href={"mailto:careers@rortechnologies.com"}
+                  className="text-extra_paragraph_heading font-paragraph hover:underline font-light text-foreground"
                 >
-                  careers@rortechnology.com
+                  careers@rortechnologies.com
                 </Link>
                 <Link
-                  href={"mailto:info@rortechnology.com"}
-                  className="text-extra_paragraph_heading font-paragraph font-light text-foreground"
+                  href={"mailto:info@rortechnologies.com"}
+                  className="text-extra_paragraph_heading font-paragraph hover:underline font-light text-foreground"
                 >
-                  info@rortechnology.com
+                  info@rortechnologies.com
                 </Link>
               </div>
             </div>

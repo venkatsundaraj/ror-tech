@@ -18,6 +18,7 @@ import {
 import { cn, slugify } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
 import { Icons } from "./icons";
+import { Icon } from "lucide-react";
 
 const colors = [
   "bg-red-500",
@@ -76,9 +77,10 @@ const CaseStudyCarousel: FC<CaseStudyCarouselProps> = ({ caseStudy }) => {
               <Image
                 src={item.fileUrl}
                 alt={item.title}
-                width={1900}
-                draggable="false"
-                height={900}
+                width="1620"
+                priority
+                quality={100}
+                height="1400"
                 className="w-full h-full object-cover absolute"
               />
               <div className="container h-full flex items-start justify-end flex-col z-10">
@@ -87,9 +89,20 @@ const CaseStudyCarousel: FC<CaseStudyCarouselProps> = ({ caseStudy }) => {
                   className="flex flex-col items-center  justify-center"
                 >
                   <div className="flex items-start justify-between gap-2 md:gap-4 flex-col px-4 py-8">
-                    <span className="text-extra_paragraph_heading leading-tight font-heading font-normal text-primary">
-                      {item.category}
-                    </span>
+                    <div className="flex items-center justify-center flex-nowrap">
+                      {item.category
+                        .split("-")
+                        .map((word) => word.trim())
+                        .map((item, i) => (
+                          <span
+                            key={i}
+                            className="text-extra_paragraph_heading leading-tight font-heading font-normal text-primary flex items-center justify-center gap-1"
+                          >
+                            {item.length ? <Icons.Dot /> : null}
+                            {item}
+                          </span>
+                        ))}
+                    </div>
                     <h4 className="text-tertiary_heading leading-tight font-heading font-normal text-primary max-w-md">
                       {item.title}
                     </h4>

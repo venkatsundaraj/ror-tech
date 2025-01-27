@@ -1,10 +1,9 @@
-import { tileContent } from "@/config/marketing";
-import { useState, useEffect } from "react";
+import { useState, useEffect, FC } from "react";
 
 export function useTypingAnimation(
   texts: string[],
-  typingSpeed: number = 150,
-  deletingSpeed: number = 50,
+  typingSpeed: number = 20,
+  deletingSpeed: number = 20,
   pauseDuration: number = 1000
 ) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -51,7 +50,11 @@ export function useTypingAnimation(
 
 import React from "react";
 
-export default function TypingAnimation() {
+interface TypingAnimationProps {
+  tileContent: string[];
+}
+
+const TypingAnimation: FC<TypingAnimationProps> = function ({ tileContent }) {
   const currentText = useTypingAnimation(tileContent);
 
   return (
@@ -62,4 +65,6 @@ export default function TypingAnimation() {
       </div>
     </div>
   );
-}
+};
+
+export default TypingAnimation;

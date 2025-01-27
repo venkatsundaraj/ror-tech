@@ -27,7 +27,7 @@ const bgColors = ["#501C69B3", "#501C69CC", "#501C69E6", "#501C69FF"];
 const page: FC<pageProps> = ({}) => {
   return (
     <>
-      <section className="w-screen  flex items-center justify-center bg-foreground pt-40 pb-16 md:py-36 relative ">
+      <section className="w-screen  flex items-center justify-center bg-foreground pt-40 pb-16 md:pt-36 md:pb-8 relative ">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
           <div className="w-full flex-col flex items-start justify-start gap-6 md:gap-8">
             <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading">
@@ -77,9 +77,11 @@ const page: FC<pageProps> = ({}) => {
           <div className="bg-[#805D963B] rounded-md px-5 md:px-10 py-6 md:py-1 flex items-center justify-center flex-col gap-4">
             <Image
               src={
-                "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoBJBIXQpn9TX8jAg1KsG2erN3mS6aChv5qWU7"
+                "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JokGFZX6KT9fWpjiqn4FdXvS2etCZc8TIHVR1A"
               }
               alt="Partnerships"
+              priority
+              quality={100}
               width={300}
               height={300}
               className="w-full"
@@ -127,7 +129,7 @@ const page: FC<pageProps> = ({}) => {
                         quality={100}
                         className="w-[220px] h-auto self-center"
                       />
-                      <p className="font-paragraph font-light  text-extra_paragraph_heading text-popover md:min-h-[200px]">
+                      <p className="font-paragraph font-light  text-extra_subtitle_heading text-popover leading-normal md:min-h-[200px]">
                         {item.description}
                       </p>
                     </li>
@@ -169,7 +171,7 @@ const page: FC<pageProps> = ({}) => {
                         quality={100}
                         className="w-[220px] h-auto self-center"
                       />
-                      <p className="font-paragraph font-light  text-extra_paragraph_heading text-popover md:min-h-[200px]">
+                      <p className="font-paragraph font-light  text-extra_subtitle_heading text-popover leading-normal  md:min-h-[200px]">
                         {item.description}
                       </p>
                     </li>
@@ -211,7 +213,7 @@ const page: FC<pageProps> = ({}) => {
                         quality={100}
                         className="w-[220px] h-auto self-center"
                       />
-                      <p className="font-paragraph font-light  text-extra_paragraph_heading text-popover md:min-h-[200px]">
+                      <p className="font-paragraph font-light  text-extra_subtitle_heading text-popover leading-normal  md:min-h-[200px]">
                         {item.description}
                       </p>
                     </li>
@@ -253,7 +255,7 @@ const page: FC<pageProps> = ({}) => {
                         quality={100}
                         className="w-[220px] h-auto self-center"
                       />
-                      <p className="font-paragraph font-light  text-extra_paragraph_heading text-popover md:min-h-[200px]">
+                      <p className="font-paragraph font-light   text-extra_subtitle_heading text-popover leading-normal  md:min-h-[200px]">
                         {item.description}
                       </p>
                     </li>

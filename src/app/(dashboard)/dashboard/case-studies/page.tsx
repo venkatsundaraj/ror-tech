@@ -25,12 +25,12 @@ const page = async ({}: pageProps) => {
           <ul className="w-full flex flex-col items-center justify-start gap-4">
             {data.length ? (
               data.map((item, i) => (
-                <li key={i} className="w-full">
+                <li key={i} className="w-full bg-primary rounded-lg">
                   <div className="flex w-full py-4 px-4 border border-foreground rounded-md items-center justify-between">
                     <h4 className="text-foreground">
                       {item.title} ({item.category})
                     </h4>
-                    <EditPostButton post={item} type="case-study" />
+                    <EditPostButton post={item} type="case-studies" />
                   </div>
                 </li>
               ))
