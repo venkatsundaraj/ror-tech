@@ -15,6 +15,7 @@ import {
   CarouselPrevious,
 } from "@/app/_components/ui/carousel";
 import { cn, slugify } from "@/lib/utils";
+import Autoplay from "embla-carousel-autoplay";
 
 const colors = [
   "bg-red-500",
@@ -53,7 +54,14 @@ const ResourcesCardDuplicate: FC<ResourcesCardDuplicateProps> = ({}) => {
         align: "start",
         loop: true,
         active: true,
+        duration: 100,
       }}
+      plugins={[
+        Autoplay({
+          delay: 4000,
+          // stopOnInteraction: false,
+        }),
+      ]}
     >
       <CarouselContent className="w-screen h-screen pl-0 ml-0">
         {Array.from(caseStudyData).map((item, i) => (

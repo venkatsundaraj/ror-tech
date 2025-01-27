@@ -17,7 +17,7 @@ export const mainNavContents: MainNavItems = [
     subItems: [],
   },
   {
-    href: "/#partnerships",
+    href: "/partnerships",
     title: "Partnerships",
     subItems: [],
   },
@@ -1027,7 +1027,7 @@ export const businessPartners = [
     image:
       "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoZonefpY0xWQHDojuibp7I4r2hvgC9kTXdNFl",
     description:
-      "A premier Digital Transformation provider in the Middle East since 1981, with longstanding partnerships with local and federal governments in the UAE, they have a strong presence in Dubai and Abu Dhabi, along with operations in Saudi Arabia and Qatar. ROR Technologies maintains a robust business relationship with them across these geographies. Alpha Data – The leading Digital Transformation Providers & System Integrator in the UAE",
+      "A premier Digital Transformation provider in the Middle East since 1981, with longstanding partnerships with local and federal governments in the UAE, they have a strong presence in Dubai and Abu Dhabi, along with operations in Saudi Arabia and Qatar. ROR Technologies maintains a robust business relationship with them across these geographies.",
   },
   {
     company: "Meerana",

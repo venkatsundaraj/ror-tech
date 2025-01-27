@@ -33,6 +33,15 @@ const MobileNav: FC<MobileNavProps> = ({ items, children, removeHandler }) => {
                 </Link>
               ))
             : null}
+          <Link
+            href={"/contact-us"}
+            onClick={removeHandler}
+            className={cn(
+              "flex w-full items-center rounded-md p-2 text-extra_subtitle_heading font-medium hover:underline"
+            )}
+          >
+            Contact Us
+          </Link>
         </nav>
       </div>
     </div>

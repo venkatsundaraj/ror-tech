@@ -22,12 +22,12 @@ import { buttonVariants } from "@/app/_components/ui/button";
 
 interface pageProps {}
 
-const bgColors = ["#501C6980", "#501C69A6", "#501C69D9", "#501C69FF"];
+const bgColors = ["#501C69B3", "#501C69CC", "#501C69E6", "#501C69FF"];
 
 const page: FC<pageProps> = ({}) => {
   return (
     <>
-      <section className="w-screen  flex items-center justify-center bg-foreground py-16 md:py-36 relative ">
+      <section className="w-screen  flex items-center justify-center bg-foreground pt-40 pb-16 md:py-36 relative ">
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
           <div className="w-full flex-col flex items-start justify-start gap-6 md:gap-8">
             <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading">
@@ -40,10 +40,10 @@ const page: FC<pageProps> = ({}) => {
                 ecosystem success and always thrives for mutual value creation.
               </p>
               <div className="flex flex-col items-start justify-center gap-4 md:gap-2">
-                <p className="text-extra_paragraph_heading font-paragraph uppercase font-semibold text-[#252525] md:mb-2">
+                <p className="text-extra_paragraph_heading font-paragraph font-semibold text-[#252525] md:mb-2">
                   Our Partnership Tenets
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 ">
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-6 ">
                   {ourPartnershipTenets.map((item, i) => {
                     const Icon = Icons[item.icon];
 
@@ -74,22 +74,16 @@ const page: FC<pageProps> = ({}) => {
               </p>
             </div>
           </div>
-          <div className="bg-[#805D963B] rounded-md px-5 md:px-10 py-3 flex items-center justify-center flex-col gap-4">
-            {typeOfPartnerships.map((item, i) => (
-              <div
-                style={{
-                  backgroundColor: `${bgColors[i]}`,
-                }}
-                className="flex flex-col items-start justify-center gap-2 p-3 rounded-md"
-              >
-                <p className="font-paragraph font-normal text-left text-extra_subtitle_heading text-foreground">
-                  {item.title}
-                </p>
-                <span className="font-paragraph font-light text-left text-extra_paragraph_heading text-foreground">
-                  {item.description}
-                </span>
-              </div>
-            ))}
+          <div className="bg-[#805D963B] rounded-md px-5 md:px-10 py-6 md:py-1 flex items-center justify-center flex-col gap-4">
+            <Image
+              src={
+                "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoBJBIXQpn9TX8jAg1KsG2erN3mS6aChv5qWU7"
+              }
+              alt="Partnerships"
+              width={300}
+              height={300}
+              className="w-full"
+            />
           </div>
         </div>
       </section>
@@ -295,3 +289,21 @@ const page: FC<pageProps> = ({}) => {
 };
 
 export default page;
+
+//  {
+//    typeOfPartnerships.map((item, i) => (
+//      <div
+//        style={{
+//          backgroundColor: `${bgColors[i]}`,
+//        }}
+//        className="flex flex-col items-start justify-center gap-2 p-3 rounded-md"
+//      >
+//        <p className="font-paragraph font-normal text-left text-extra_subtitle_heading text-foreground">
+//          {item.title}
+//        </p>
+//        <span className="font-paragraph font-light text-left text-extra_paragraph_heading text-foreground">
+//          {item.description}
+//        </span>
+//      </div>
+//    ));
+//  }
