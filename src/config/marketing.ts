@@ -365,9 +365,9 @@ export const ourProfileContentForStickySlider: { title: string; icon: Icon }[] =
   ];
 
 export const tileContent = [
-  "the cash in your bank.",
-  "your assets.",
-  "your resources.",
+  "cash in the bank.",
+  "movable and immovable assets.",
+  "financial investments.",
 ];
 
 export const solutionImpactData = [

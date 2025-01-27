@@ -19,7 +19,7 @@ export function DataValueSection() {
             {/* Left Column - Sticky */}
             <div className="lg:sticky lg:top-56 lg:h-[calc(100vh-4rem)] space-y-6">
               <h2 className="text-[30px] font-heading md:text-[38px] font-semibold text-[#2D2F6A]  leading-tight">
-                Your data is as valuable as
+                Your data is as valuable as your
                 {/* <TileTextSection /> */}
                 <TypingAnimation tileContent={tileContent} />
               </h2>
