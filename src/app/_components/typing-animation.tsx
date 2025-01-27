@@ -64,7 +64,7 @@ const TypingAnimation: FC<TypingAnimationProps> = function ({
 
   return (
     <div className="flex items-center justify-start">
-      <div className="text-[30px] md:text-[34px] text-foreground font-heading  py-2 md:px-2">
+      <div className="text-[30px] md:text-[34px] text-foreground font-heading  py-2 ">
         <p className={cn("bg-secondary max-w-[780px] px-1 py-2", className)}>
           {currentText}
         </p>
