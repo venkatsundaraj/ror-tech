@@ -71,14 +71,14 @@ const StickyScaleContainerDuplicate: FC<
   return (
     <section
       ref={sectionRef}
-      className="w-screen min-h-[125svh] md:min-h-[125vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
+      className="w-screen min-h-[125vh] md:min-h-[125vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
-      <div className="w-full h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
+      <div className="w-full min-h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
         <div
           ref={containerRef}
           className={cn(
-            "w-full h-[80%]  absolute transition-all duration-300 ease-out py-5 md:py-8 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10",
+            "w-full h-[100%]  absolute transition-all duration-300 ease-out py-5 md:py-8 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10",
             scrollValue < 40 ? "" : ""
           )}
         >
@@ -108,10 +108,13 @@ const StickyScaleContainerDuplicate: FC<
               : "opacity-0 translate-x-0"
           )}
         >
-          <h2 className="text-[30px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight">
+          <h2 className="text-[22px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight">
             Digital transformational experts in
             {/* <TileTextSection /> */}
-            <TypingAnimation tileContent={tileContent} />
+            <TypingAnimation
+              className="text-extra_subtitle_heading  md:text-[38px]"
+              tileContent={tileContent}
+            />
           </h2>
           <span className="w-[300px] hidden md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
             Simple. Scaleable. Secure. Compliant. Cost-Effective.
@@ -122,7 +125,7 @@ const StickyScaleContainerDuplicate: FC<
           <section
             key={index}
             className={cn(
-              "w-full h-[95%]  self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl",
+              "w-full h-[105%]  self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl",
               scrollValue < 40
                 ? "scale-0 translate-y-full"
                 : "scale-1 translate-y-0",
