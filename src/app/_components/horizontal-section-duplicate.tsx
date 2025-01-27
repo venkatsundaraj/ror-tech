@@ -58,7 +58,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
             Collaborating with Tech Champions
           </h2>
-          <span className="w-[300px] md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary mb-16 mt-4 md:mb-12">
+          <span className="w-[300px] md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary mb-16 md:mb-4 mt-4 ">
             Innovative solutions powered by next-generation digital
             technologies, designed to manage, interpret, and maximize the value
             of your data.
@@ -68,7 +68,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
               <div
                 key={i}
                 style={{ backgroundColor: `${colors[i]}` }}
-                className="flex items-center min-w-[380px] md:min-w-[460px] flex-col group justify-between w-full flex-wrap gap-4 md:flex-nowrap py-8 md:py-8 shadow-lg backdrop-blur p-4 md:p-8 rounded-md"
+                className="flex items-center min-w-[300px] lg:min-w-[460px] flex-col group justify-between w-full flex-wrap gap-4 md:gap-2 md:flex-nowrap py-8 lg:py-8 shadow-lg backdrop-blur p-4 md:p-4 lg:p-8 rounded-md"
               >
                 <div className="w-full flex items-start justify-start">
                   <AnimatedIcon
