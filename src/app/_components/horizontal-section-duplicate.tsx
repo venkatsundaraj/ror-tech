@@ -54,7 +54,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
         ref={targetRef}
         className="w-screen flex-col h-[200vh] items-center justify-center bg-transparent py-4 md:py-24 relative"
       >
-        <div className="sticky container  top-0 flex flex-col items-start justify-center h-[100vh] md:h-screen ">
+        <div className="sticky container  top-0 flex flex-col items-start justify-center min-h-[100vh] md:h-screen overflow-hidden">
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
             Collaborating with Tech Champions
           </h2>

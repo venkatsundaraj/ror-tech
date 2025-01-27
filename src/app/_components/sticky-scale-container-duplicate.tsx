@@ -108,11 +108,11 @@ const StickyScaleContainerDuplicate: FC<
               : "opacity-0 translate-x-0"
           )}
         >
-          <h2 className="text-[22px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight">
+          <h2 className="text-[28px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight">
             Digital transformational experts in
             {/* <TileTextSection /> */}
             <TypingAnimation
-              className="text-extra_subtitle_heading  md:text-[38px]"
+              className="text-[28px]  md:text-[38px]"
               tileContent={tileContent}
             />
           </h2>
