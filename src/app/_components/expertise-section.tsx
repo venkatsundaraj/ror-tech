@@ -29,7 +29,7 @@ export function ExpertiseSection({
     <section className="bg-[#3B4B8C] relative py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-secondary_heading text-primary-foreground font-heading mb-4 md:mb-6 ">
-          Our Areas of Expertise
+          We are known for
         </h2>
 
         <div className="relative">
