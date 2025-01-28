@@ -5,7 +5,7 @@ import * as React from "react";
 import Image from "next/image";
 import { caseStudyData } from "@/config/marketing";
 import Link from "next/link";
-
+import { Icons } from "@/app/_components/icons";
 import {
   Carousel,
   CarouselContent,
@@ -15,6 +15,7 @@ import {
   CarouselPrevious,
 } from "@/app/_components/ui/carousel";
 import { cn, slugify } from "@/lib/utils";
+import { buttonVariants } from "@/app/_components/ui/button";
 import Autoplay from "embla-carousel-autoplay";
 import { InferModel } from "drizzle-orm";
 import { caseStudiesTable } from "@/server/db/schema";
@@ -92,17 +93,21 @@ const ResourcesCardDuplicate: FC<ResourcesCardDuplicateProps> = ({
                   className="flex flex-col items-center justify-center"
                 >
                   <div className="flex items-start justify-between gap-2 flex-col px-4 py-8">
-                    <h4 className="text-paragraph_heading leading-tight font-heading font-normal  text-primary">
+                    <h4 className="text-tertiary_heading leading-tight font-heading font-normal  text-primary max-w-xl mb-4">
                       {item.title}
                     </h4>
                     <h4 className="text-paragraph_heading leading-tight font-heading font-normal hidden text-primary max-w-xl">
                       {item.description}
                     </h4>
                     <Link
-                      className="underline font-paragraph font-normal text-primary "
+                      className={cn(
+                        buttonVariants({ variant: "outline" }),
+                        " font-paragraph bg-primary  font-normal text-foreground hover:bg-primary/90 hover:text-foreground rounded-full  "
+                      )}
                       href={`/case-studies/${slugify(item.title)}`}
                     >
-                      Know More
+                      Read More
+                      <Icons.ArrowRight className="-rotate-45" />
                     </Link>
                   </div>
                 </div>

@@ -20,7 +20,7 @@ const page: FC<pageProps> = ({}) => {
         <div className="container static z-10 h-full flex items-center justify-center md:justify-start">
           <div className="w-full flex flex-col items-start justify-center gap-2">
             <h1 className="text-secondary_heading font-heading text-secondary leading-tight max-w-2xl font-semibold mb-2">
-              Our solution help you derive maximum value from your ecosystem
+              Our solutions help you derive maximum value from your ecosystem
               data.
             </h1>
             <p className="text-paragraph_heading font-light text-popover font-paragraph max-w-2xl hidden">
@@ -68,9 +68,9 @@ const page: FC<pageProps> = ({}) => {
                 buttonVariants({ variant: "default" }),
                 "bg-background text-secondary font-semibold rounded-3xl hover:bg-background/80 hover:text-secondary"
               )}
-              href={"/about-us"}
+              href={"/our-services"}
             >
-              About Us
+              Our Services
             </Link>
           </div>
         </div>

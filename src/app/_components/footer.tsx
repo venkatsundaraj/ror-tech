@@ -86,7 +86,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
         </div>
         <div className="w-full flex items-center justify-between flex-wrap md:flex-nowrap py-6">
           <span className="text-extra_paragraph_heading font-paragraph font-normal text-foreground max-w-xl text-nowrap flex flex-nowrap gap-1">
-            <p>Copyright</p> <Icons.Copyright className="w-4" /> <p>2024</p>
+            <p>Copyright</p> <Icons.Copyright className="w-4" /> <p>2025</p>
           </span>
           <Link
             className="text-extra_paragraph_heading font-paragraph font-normal text-foreground max-w-xl"

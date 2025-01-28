@@ -11,6 +11,8 @@ import { useRef } from "react";
 import { solutionsData } from "@/config/marketing";
 import * as React from "react";
 import { Minus, Plus } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/app/_components/ui/button";
 import {
   Sheet,
   SheetClose,
@@ -116,6 +118,17 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
                       <span className="text-center flex mt-4 md:mt-8 text-extra_subtitle_heading font-paragraph font-light">
                         {item?.services}
                       </span>
+                      <p className="text-center w-full">
+                        <Link
+                          className={cn(
+                            "inline-flex !bg-secondary self-center items-center !text-foreground flex-row justify-center text-sm font-medium font-paragraph  !rounded-none mt-5",
+                            buttonVariants({ variant: "secondary" })
+                          )}
+                          href={"/contact-us"}
+                        >
+                          Contact Us
+                        </Link>
+                      </p>
                     </SheetContent>
                   </Sheet>
                   <span className="text-extra_paragraph_heading hidden font-paragraph font-normal text-foreground">

@@ -15,6 +15,7 @@ import {
   type CarouselApi,
   CarouselPrevious,
 } from "@/app/_components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { cn, slugify } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
 import { Icons } from "./icons";
@@ -65,6 +66,12 @@ const CaseStudyCarousel: FC<CaseStudyCarouselProps> = ({ caseStudy }) => {
         loop: true,
         active: true,
       }}
+      plugins={[
+        Autoplay({
+          delay: 4000,
+          // stopOnInteraction: false,
+        }),
+      ]}
     >
       <CarouselContent className="w-full h-[80vh] max-h-[700px] pl-0 ml-0 ">
         {Array.from(caseStudy).map((item, i) => (
@@ -89,16 +96,17 @@ const CaseStudyCarousel: FC<CaseStudyCarouselProps> = ({ caseStudy }) => {
                   className="flex flex-col items-center  justify-center"
                 >
                   <div className="flex items-start justify-between gap-2 md:gap-4 flex-col px-4 py-8">
-                    <div className="flex items-center justify-center flex-nowrap">
+                    <div className="flex items-center justify-center  gap-2 flex-nowrap">
                       {item.category
                         .split("-")
                         .map((word) => word.trim())
+                        .filter((item) => item)
                         .map((item, i) => (
                           <span
                             key={i}
-                            className="text-extra_paragraph_heading leading-tight font-heading font-normal text-primary flex items-center justify-center gap-1"
+                            className="text-extra_paragraph_heading leading-tight font-heading font-normal flex items-center justify-center gap-1 bg-primary/90 rounded-sm p-2 text-foreground"
                           >
-                            {item.length ? <Icons.Dot /> : null}
+                            {/* {item.length ? <Icons.Dot /> : null} */}
                             {item}
                           </span>
                         ))}

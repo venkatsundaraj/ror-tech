@@ -50,20 +50,21 @@ const page = async ({ params }: pageProps) => {
 
         <div className="flex items-center justify-between absolute bottom-[25px] md:bottom-[100px] left-[25px] md:left-[100px]">
           <div className="flex items-start flex-col justify-center gap-4 md:gap-4">
-            <span className=" text-primary font-paragraph bg-transparent ">
+            <div className="flex items-center justify-center  gap-2 flex-nowrap">
               {post.category
                 .split("-")
                 .map((word) => word.trim())
+                .filter((item) => item)
                 .map((item, i) => (
                   <span
                     key={i}
-                    className="text-extra_paragraph_heading leading-tight font-heading font-normal text-primary flex items-center justify-center gap-1"
+                    className="text-extra_paragraph_heading leading-tight font-heading font-normal  flex items-center justify-center gap-1 bg-primary/90 rounded-sm p-2 text-foreground"
                   >
-                    {item.length ? <Icons.Dot /> : null}
+                    {/* {item.length ? <Icons.Dot /> : null} */}
                     {item}
                   </span>
                 ))}
-            </span>
+            </div>
             <h2 className="font-heading text-secondary_heading text-primary leading-tight md:leading-[55px] max-w-sm md:max-w-5xl">
               {post.title ? post.title : ""}
             </h2>

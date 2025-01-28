@@ -3,8 +3,8 @@ import { useState, useEffect, FC } from "react";
 
 export function useTypingAnimation(
   texts: string[],
-  typingSpeed: number = 20,
-  deletingSpeed: number = 20,
+  typingSpeed: number = 30,
+  deletingSpeed: number = 10,
   pauseDuration: number = 1000
 ) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);

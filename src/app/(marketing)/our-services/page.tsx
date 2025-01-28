@@ -32,10 +32,9 @@ const page: FC<pageProps> = function () {
           <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading z-10">
             End-to-End Services
             <br />
-            <span className="font-heading text-tertiary_heading">
-              {" "}
+            <p className="font-heading text-tertiary_heading leading-tight">
               to Meet your Needs
-            </span>
+            </p>
           </h2>
           <div className="flex items-center justify-center flex-col w-full gap-6 py-8">
             {endToEndServicesData.map((item, i) => (

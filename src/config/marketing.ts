@@ -44,7 +44,7 @@ export const artData: { title: string; icon: keyof typeof Icons }[] = [
 export const endToEndData: EndToEndData = [
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8Jo5nwI83ExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
+      "https://utfs.io/f/QRaE9TmLS8JoS6K0aEfD5btxVm4sdUgOiLWYcuMaIwpv8eSh",
     title: "Advisory and Consulting",
     description:
       "Process Studies, ROI Calculation, Solution Roadmaps, Product Comparisions",
@@ -52,7 +52,7 @@ export const endToEndData: EndToEndData = [
   },
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoYjLwuxBK2udhgFkc9pfroZsCYNOQUvqaylij",
+      "https://utfs.io/f/QRaE9TmLS8Jo5nwI83ExjW1sDfG4KwEQHO6ueoI38FJlAm0V",
     title: "Development and Product Implementations",
     description:
       "Full life cycle development or implementation, customization, upgrades and migrations",
@@ -60,7 +60,7 @@ export const endToEndData: EndToEndData = [
   },
   {
     imageUrl:
-      "https://utfs.io/f/QRaE9TmLS8JoS6K0aEfD5btxVm4sdUgOiLWYcuMaIwpv8eSh",
+      "https://utfs.io/f/QRaE9TmLS8JoYjLwuxBK2udhgFkc9pfroZsCYNOQUvqaylij",
     title: "Application Support and Maintenance",
     description:
       "Innovative support models to ensure you get best out of your digital investments",
@@ -686,7 +686,7 @@ export const endToEndServicesData = [
   {
     title: "Offshoring and Managed Services",
     subText:
-      "Setting up Centres of Excellence and Offshore development centres Managed Services Portfolio",
+      "Setting up Centres of Excellence and Offshore development centres and Managed Services Portfolio",
     services: [
       {
         title: "Automation as a Service",

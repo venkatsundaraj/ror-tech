@@ -112,7 +112,7 @@ const StickyScaleContainerDuplicateTwo: FC<
             Digital transformational experts in
             {/* <TileTextSection /> */}
             <TypingAnimation
-              className="text-[28px]  md:text-[38px] "
+              className="text-[28px]  md:text-[38px] bg-[#384D89] text-foreground"
               tileContent={tileContent}
             />
           </h2>
@@ -141,7 +141,8 @@ const StickyScaleContainerDuplicateTwo: FC<
                 >
                   <div className="flex flex-col items-start justify-center p-5 md:px-10  md:py-12">
                     <h1 className="max-w-lg gap-4 font-normal leading-tight text-left text-foreground font-heading text-tertiary_heading mb-4">
-                      Maximizing the value of your ecosystem data.
+                      Maximizing the value of your <br />
+                      ecosystem data.
                     </h1>
                     <h1 className="max-w-lg gap-4 font-normal leading-tight text-center text-foreground font-heading text-primary_heading">
                       {section.title}
