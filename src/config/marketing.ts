@@ -1224,4 +1224,37 @@ export const caseStudiesData = [
       },
     ],
   },
+  {
+    title: "Automating Stamp Validation for MOFA with AI and LLM Technology",
+    benefitsData: [
+      {
+        title: "Efficiency",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Joy8lovdUGDbyzcPt5aIElLJ6SxmBdQChFqfvn",
+        description:
+          "Handles large volumes of documents with seamless API integrations.",
+      },
+      {
+        title: "Accuracy",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JooiPOCBVT8rIHWv7BJMYazNZbEA2phydeqPVU",
+        description:
+          "Improved precision in detecting and validating stamps and signatures.",
+      },
+      {
+        title: "Scalability",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JodXMdjanTKYG3xD0yZ2H6r7WBSuNPQnmkpi4R",
+        description:
+          "Reduced time for stamp validation with automated workflows.",
+      },
+      {
+        title: "Comprehensive Control",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoplYMJz3cTLVPIyFzkuiaCOnK7jHv6DbBN1MR",
+        description:
+          "Centralized validation rules and reporting for better compliance.",
+      },
+    ],
+  },
 ];
