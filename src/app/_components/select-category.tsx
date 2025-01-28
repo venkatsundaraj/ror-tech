@@ -32,13 +32,13 @@ const SelectCategory = <T extends Record<string, any>>({
         {...register(name)}
         id={name.toString()}
         className={cn(
-          "flex h-10 w-full items-center justify-between rounded-md  bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+          "flex h-10 w-full items-center justify-between rounded-md  bg-primary px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
           className
         )}
         {...props}
       >
         {category.map((item, index) => (
-          <option value={item} key={index}>
+          <option className="text-primary" value={item} key={index}>
             {item}
           </option>
         ))}

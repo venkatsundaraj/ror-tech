@@ -4,7 +4,7 @@ import { Icon } from "./icons";
 const features: { title: string; description: string; icon: Icon }[] = [
   {
     title: "Customer-Centric Approach",
-    icon: "WorldClassPartnerships",
+    icon: "CustomerCentricApproach",
     description:
       "We prioritize our clients' needs and work collaboratively to deliver tailored solutions that drive real business value. We engage with our clients more as partners than as vendors. We co-invest with them to solve their complex business challenges on a continuous basis.",
   },
