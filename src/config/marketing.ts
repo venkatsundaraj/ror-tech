@@ -1191,4 +1191,37 @@ export const caseStudiesData = [
       },
     ],
   },
+  {
+    title: "Accelerating Claims Processing for Next-Gen Motor Insurance",
+    benefitsData: [
+      {
+        title: "Faster Processing",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jonjh0MlowYUd8PNaxkbQMZDjCOh9TreziRGso",
+        description:
+          "Reduced time for processing and settling claims by automating manual workflows.",
+      },
+      {
+        title: "Part-Level Data",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8Jo1ddtmr70qbOPj8Tsk5mVUfgcHQGxF92ZJAln",
+        description:
+          "Enabled precise part-level data extraction and AI-based recommendations, improving decision-making.",
+      },
+      {
+        title: "Error Reduction",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoKxAPC1Fhz8TfXUsR9owmHPc3EAgSiNGMQ7tB",
+        description:
+          "Eliminated manual data entry errors, ensuring accurate claim processing.",
+      },
+      {
+        title: "Streamlined Operations",
+        image:
+          "https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoExMaBoR3SVOvYsnBF5ut4o72mbMrehXAwgcx",
+        description:
+          "Centralized document classification and storage, creating a seamless end-to-end digitization process.",
+      },
+    ],
+  },
 ];
