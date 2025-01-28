@@ -71,14 +71,14 @@ const StickyScaleContainerDuplicate: FC<
   return (
     <section
       ref={sectionRef}
-      className="w-screen min-h-[125vh] md:min-h-[125vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
+      className="w-screen min-h-[105vh] md:min-h-[105vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
       <div className="w-full min-h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
         <div
           ref={containerRef}
           className={cn(
-            "w-full h-[100%]  absolute transition-all duration-300 ease-out py-5 md:py-8 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10",
+            "w-full h-[100%] hidden absolute transition-all duration-300 ease-out py-5 md:py-8 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10",
             scrollValue < 40 ? "" : ""
           )}
         >
@@ -102,10 +102,10 @@ const StickyScaleContainerDuplicate: FC<
 
         <div
           className={cn(
-            "w-full h-[85%] md:h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 mt-32",
-            scrollValue > 40
-              ? "opacity-1 translate-x-0"
-              : "opacity-0 translate-x-0"
+            "w-full h-[85%] md:h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 mt-32 opacity-1 translate-x-0"
+            // scrollValue > 0
+            //   ? "opacity-1 translate-x-0"
+            //   : "opacity-0 translate-x-0"
           )}
         >
           <h2 className="text-[28px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight">
@@ -125,13 +125,11 @@ const StickyScaleContainerDuplicate: FC<
           <section
             key={index}
             className={cn(
-              "w-full h-[105%]  self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl",
-              scrollValue < 40
-                ? "scale-0 translate-y-full"
-                : "scale-1 translate-y-0",
-              currentState === index && scrollValue > 40
-                ? "opacity-1"
-                : "opacity-0"
+              "w-full h-[105%]  self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl scale-1 translate-y-0",
+              // scrollValue < 0
+              //   ? "scale-0 translate-y-full"
+              //   : "scale-1 translate-y-0",
+              currentState === index ? "opacity-1" : "opacity-0"
             )}
           >
             <div className="w-full">
