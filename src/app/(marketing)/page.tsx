@@ -21,6 +21,7 @@ import AnalyzeAndPredict from "@/config/animated-svg/databrianwire2.json";
 import ScaleAndSecure from "@/config/animated-svg/datapiechart10.json";
 import Icon3 from "@/config/animated-svg/datatri1.json";
 import Icon4 from "@/config/animated-svg/databox-2.json";
+import StickyScaleContainerDuplicateTwo from "@/app/_components/sticky-scroll-container-duplicate-two";
 import Icon5 from "@/config/animated-svg/datalinebox1.json";
 import Icon6 from "@/config/animated-svg/dataheight1.json";
 import Link from "next/link";
@@ -69,7 +70,7 @@ const page = async function ({}: pageProps) {
     <>
       <ScrollToHash />
       <BackgroundSvgStatic />
-      <StickyScaleContainerDuplicate />
+      <StickyScaleContainerDuplicateTwo />
 
       <HorizontalSectionDuplicate />
 

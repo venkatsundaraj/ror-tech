@@ -13,10 +13,10 @@ const tileContent = [
   "Powering businesses for governments and corporates.",
   "Association with leading technologies.",
 ];
-interface StickyScaleContainerDuplicateProps {}
+interface StickyScaleContainerDuplicateTwoProps {}
 
-const StickyScaleContainerDuplicate: FC<
-  StickyScaleContainerDuplicateProps
+const StickyScaleContainerDuplicateTwo: FC<
+  StickyScaleContainerDuplicateTwoProps
 > = ({}) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const [scrollValue, setScrollValue] = useState<number>(0);
@@ -73,7 +73,7 @@ const StickyScaleContainerDuplicate: FC<
       ref={sectionRef}
       className="w-screen min-h-[100vh] md:min-h-[100vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
-      <div className="w-full min-h-[100vh] flex items-center justify-center sticky top-[0px] left-0 ">
+      <div className="w-full min-h-[100vh] flex flex-col items-start justify-start sticky top-[0px] left-0 ">
         {/* List of sections */}
         <div
           ref={containerRef}
@@ -102,17 +102,17 @@ const StickyScaleContainerDuplicate: FC<
 
         <div
           className={cn(
-            "w-full h-[85%] md:h-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out p-5 md:px10 md:py-2 absolute top-0 2xl:top-10 left-0 mt-32 opacity-1 translate-x-0"
+            "w-full flex flex-col items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out  md:px10 md:py-2 top-0 2xl:top-10 left-0 mt-32 opacity-1 translate-x-0"
             // scrollValue > 0
             //   ? "opacity-1 translate-x-0"
             //   : "opacity-0 translate-x-0"
           )}
         >
-          <h2 className="text-[28px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight">
+          <h2 className="text-[28px] font-heading md:text-[38px] font-normal text-[#2D2F6A]  leading-tight min-h-[220px]">
             Digital transformational experts in
             {/* <TileTextSection /> */}
             <TypingAnimation
-              className="text-[28px]  md:text-[38px]"
+              className="text-[28px]  md:text-[38px] "
               tileContent={tileContent}
             />
           </h2>
@@ -120,64 +120,54 @@ const StickyScaleContainerDuplicate: FC<
             Simple. Scaleable. Secure. Compliant. Cost-Effective.
           </span>
         </div>
-
-        {heroSectionData.map((section, index) => (
-          <section
-            key={index}
-            className={cn(
-              "w-full h-[100%] md:h-[100%] xl:h-[100%] 2xl:h-[95%]  self-end flex flex-col items-center justify-end  transition-all duration-[1000ms] ease-out absolute top-0 left-0 mb-[-20px] rounded-3xl scale-1 translate-y-0",
-              // scrollValue < 0
-              //   ? "scale-0 translate-y-full"
-              //   : "scale-1 translate-y-0",
-              currentState === index ? "opacity-1" : "opacity-0"
-            )}
-          >
-            <div className="w-full">
-              <div
-                className={cn(
-                  "flex  items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap",
-                  scrollValue < 40 ? "" : ""
-                )}
-              >
-                <div className="flex flex-col items-start justify-center p-5 md:px-10  md:py-12">
-                  <h1 className="max-w-lg gap-4 font-normal leading-tight text-left text-foreground font-heading text-tertiary_heading mb-4">
-                    Maximizing the value of your ecosystem data.
-                  </h1>
-                  <h1 className="max-w-lg gap-4 font-normal leading-tight text-center text-foreground font-heading text-primary_heading">
-                    {section.title}
-                  </h1>
-                  <p className="text-tertiary_heading mb-3 font-paragraph font-medium text-foreground">
-                    {section.description}
-                  </p>
-                  <span className="text-subtitle_heading font-paragraph hidden font-normal text-foreground">
-                    {section.subText}
-                  </span>
+        <div className=" relative w-full min-h-[400px]">
+          {heroSectionData.map((section, index) => (
+            <section
+              key={index}
+              className={cn(
+                "w-full flex flex-col items-center justify-end  transition-all duration-[1000ms] absolute ease-out top-0 left-0 mb-[-20px] rounded-3xl scale-1 translate-y-0",
+                // scrollValue < 0
+                //   ? "scale-0 translate-y-full"
+                //   : "scale-1 translate-y-0",
+                currentState === index ? "opacity-1" : "opacity-0"
+              )}
+            >
+              <div className="w-full">
+                <div
+                  className={cn(
+                    "flex  items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap",
+                    scrollValue < 40 ? "" : ""
+                  )}
+                >
+                  <div className="flex flex-col items-start justify-center p-5 md:px-10  md:py-12">
+                    <h1 className="max-w-lg gap-4 font-normal leading-tight text-left text-foreground font-heading text-tertiary_heading mb-4">
+                      Maximizing the value of your ecosystem data.
+                    </h1>
+                    <h1 className="max-w-lg gap-4 font-normal leading-tight text-center text-foreground font-heading text-primary_heading">
+                      {section.title}
+                    </h1>
+                    <p className="text-tertiary_heading mb-3 font-paragraph font-medium text-foreground">
+                      {section.description}
+                    </p>
+                    <span className="text-subtitle_heading font-paragraph hidden font-normal text-foreground">
+                      {section.subText}
+                    </span>
+                  </div>
+                  <SvgTransition
+                    scrollProgress={scrollValue}
+                    currentValue={currentState}
+                  />
                 </div>
-                <SvgTransition
-                  scrollProgress={scrollValue}
-                  currentValue={currentState}
-                />
               </div>
-            </div>
-          </section>
-        ))}
-
-        {/* {scrollValue > 40 ? (
-          <SvgTransition
-            scrollProgress={scrollValue}
-            currentValue={currentState}
-          />
-        ) : null} */}
+            </section>
+          ))}
+        </div>
       </div>
-
-      {/* <div className="absolute w-full h-[30vh] sticky to" /> */}
-
-      {/* <RandomCircles /> */}
     </section>
   );
 };
 
-export default StickyScaleContainerDuplicate;
+export default StickyScaleContainerDuplicateTwo;
 
 interface CircleProps {
   cx: number;
