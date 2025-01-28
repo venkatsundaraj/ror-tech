@@ -73,7 +73,7 @@ const StickyScaleContainerDuplicateTwo: FC<
       ref={sectionRef}
       className="w-screen min-h-[100vh] md:min-h-[100vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-10"
     >
-      <div className="w-full min-h-[100vh] flex flex-col items-start justify-start sticky top-[0px] left-0 ">
+      <div className="w-full min-h-[100vh] flex flex-col items-start justify-start md:justify-center sticky top-[0px] left-0 ">
         {/* List of sections */}
         <div
           ref={containerRef}
