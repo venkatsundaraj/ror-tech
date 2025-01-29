@@ -5,12 +5,14 @@ interface VideoBackgroundProps {
   videoSrc: string;
   children?: React.ReactNode;
   className: string;
+  classForVideo?: string;
 }
 
 const VideoBackground: React.FC<VideoBackgroundProps> = ({
   videoSrc,
   children,
   className,
+  classForVideo,
 }) => {
   return (
     <div
@@ -21,7 +23,10 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className={cn(
+          "absolute top-0 left-0 w-full h-full object-cover object-center z-0",
+          classForVideo
+        )}
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.

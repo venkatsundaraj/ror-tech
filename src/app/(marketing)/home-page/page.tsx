@@ -38,6 +38,7 @@ import ResourcesCardDuplicate from "@/app/_components/resource-card-duplicate";
 import { db } from "@/server/db";
 import { caseStudiesTable } from "@/server/db/schema";
 import SvgTabAnimation from "@/app/_components/svg-tab-animation";
+import StickyScaleContainerDuplicateThree from "@/app/_components/sticky-scroll-container-three";
 
 const iconArray = [Icon3, Icon4, Icon2, Icon6, Icon1, Icon5];
 
@@ -71,7 +72,7 @@ const page = async function ({}: pageProps) {
     <>
       <ScrollToHash />
       <BackgroundSvgStatic />
-      <StickyScaleContainerDuplicateTwo />
+      <StickyScaleContainerDuplicateThree />
       <SvgTabAnimation />
       <HorizontalSectionDuplicate />
       <EndToEndCarouselDuplicate endToEndData={endToEndData} />

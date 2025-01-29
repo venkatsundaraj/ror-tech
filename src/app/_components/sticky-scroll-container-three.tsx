@@ -9,15 +9,15 @@ import { useInView } from "framer-motion";
 import TypingAnimation from "@/app/_components/typing-animation";
 
 const tileContent = [
-  "in governments and corporates.",
-  "with next generation digital technologies like Gen AI/ML.",
-  "in association with leading digital technologies.",
+  "Next generation digital technologies like Gen AI and machine learning.",
+  "Powering businesses for governments and corporates.",
+  "Association with leading technologies.",
 ];
 import VideoBackground from "@/app/_components/video-background";
-interface StickyScaleContainerDuplicateTwoProps {}
+interface StickyScaleContainerDuplicateThreeProps {}
 
-const StickyScaleContainerDuplicateTwo: FC<
-  StickyScaleContainerDuplicateTwoProps
+const StickyScaleContainerDuplicateThree: FC<
+  StickyScaleContainerDuplicateThreeProps
 > = ({}) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const [scrollValue, setScrollValue] = useState<number>(0);
@@ -72,25 +72,24 @@ const StickyScaleContainerDuplicateTwo: FC<
   return (
     <section
       ref={sectionRef}
-      className="w-screen min-h-[100vh] md:min-h-[100vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-0"
+      className="w-screen min-h-[100vh] md:min-h-[100vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12"
     >
       <div className="absolute z-10 w-full h-full bg-black/50" />
       <VideoBackground
         className="absolute left-0 top-0 w-full h-full z-0"
-        videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoeEIRqjkPwMTcIi8YbR5XGove2xk3VlsyFmu1"
-        classForVideo="object-[0%_100%]"
+        videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoPYEc6FKj6Opsn1uPzRZy4cUX0oD37gNBif8w"
       />
       <div className="container min-h-[100vh] flex flex-col items-start justify-end md:justify-end sticky top-[0px] left-0 z-20">
         <div
           className={cn(
-            "w-full flex flex-col  items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out  md:px10 md:py-2 top-0 2xl:top-10 left-0 mt-32 opacity-1 translate-x-0  static"
+            "w-full flex flex-col  items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out  md:px10 md:py-2 top-0 2xl:top-10 left-0 mt-32 opacity-1 translate-x-0"
           )}
         >
           <h2 className="text-[28px] font-heading md:text-[38px] font-normal text-foreground  leading-tight min-h-[220px]">
-            Effecting digital transformation
+            Digital transformational experts in
             {/* <TileTextSection /> */}
             <TypingAnimation
-              className="text-[28px]  md:text-[38px] bg-[#F7F3F7] text-secondary"
+              className="text-[28px]  md:text-[38px] bg-white text-primary"
               tileContent={tileContent}
             />
           </h2>
@@ -103,7 +102,7 @@ const StickyScaleContainerDuplicateTwo: FC<
   );
 };
 
-export default StickyScaleContainerDuplicateTwo;
+export default StickyScaleContainerDuplicateThree;
 
 interface CircleProps {
   cx: number;

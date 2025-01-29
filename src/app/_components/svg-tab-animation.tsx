@@ -8,17 +8,9 @@ import { heroSectionData } from "@/config/marketing";
 import { useInView } from "framer-motion";
 import TypingAnimation from "@/app/_components/typing-animation";
 
-const tileContent = [
-  "in governments and corporates.",
-  "with next generation digital technologies like Gen AI/ML.",
-  "in association with leading digital technologies.",
-];
-import VideoBackground from "@/app/_components/video-background";
-interface StickyScaleContainerDuplicateTwoProps {}
+interface pageProps {}
 
-const StickyScaleContainerDuplicateTwo: FC<
-  StickyScaleContainerDuplicateTwoProps
-> = ({}) => {
+const SvgTabAnimation: FC<pageProps> = function () {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const [scrollValue, setScrollValue] = useState<number>(0);
   const [currentStage, setcurrentStage] = useState<number>(0);
@@ -68,42 +60,56 @@ const StickyScaleContainerDuplicateTwo: FC<
   const valueHandler = function (value: number) {
     setcurrentStage(value);
   };
-
   return (
-    <section
-      ref={sectionRef}
-      className="w-screen min-h-[100vh] md:min-h-[100vh] bg-transparent bg-fixed flex items-start justify-center relative px-4 md:px-12 z-0"
-    >
-      <div className="absolute z-10 w-full h-full bg-black/50" />
-      <VideoBackground
-        className="absolute left-0 top-0 w-full h-full z-0"
-        videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoeEIRqjkPwMTcIi8YbR5XGove2xk3VlsyFmu1"
-        classForVideo="object-[0%_100%]"
-      />
-      <div className="container min-h-[100vh] flex flex-col items-start justify-end md:justify-end sticky top-[0px] left-0 z-20">
-        <div
-          className={cn(
-            "w-full flex flex-col  items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out  md:px10 md:py-2 top-0 2xl:top-10 left-0 mt-32 opacity-1 translate-x-0  static"
-          )}
-        >
-          <h2 className="text-[28px] font-heading md:text-[38px] font-normal text-foreground  leading-tight min-h-[220px]">
-            Effecting digital transformation
-            {/* <TileTextSection /> */}
-            <TypingAnimation
-              className="text-[28px]  md:text-[38px] bg-[#F7F3F7] text-secondary"
-              tileContent={tileContent}
-            />
-          </h2>
-          <span className="w-[300px] hidden md:w-[800px] text-subtitle_heading font-paragraph text-left font-normal text-primary">
-            Simple. Scaleable. Secure. Compliant. Cost-Effective.
-          </span>
-        </div>
+    <section className="relative w-screen overflow-x-hidden min-h-[400px] py-16">
+      <div className="container relative ">
+        {heroSectionData.map((section, index) => (
+          <div
+            key={index}
+            className={cn(
+              "w-full flex flex-col items-center justify-end  transition-all duration-[1000ms] absolute ease-out top-0 left-0 mb-[-20px] rounded-3xl scale-1 translate-y-0",
+              // scrollValue < 0
+              //   ? "scale-0 translate-y-full"
+              //   : "scale-1 translate-y-0",
+              currentState === index ? "opacity-1" : "opacity-0"
+            )}
+          >
+            <div className="w-full">
+              <div
+                className={cn(
+                  "flex  items-center w-full justify-between transition-all bg-secondary  rounded-3xl flex-wrap md:flex-nowrap",
+                  scrollValue < 40 ? "" : ""
+                )}
+              >
+                <div className="flex flex-col items-start justify-center p-5 md:px-10  md:py-12">
+                  <h1 className="max-w-lg gap-4 font-normal leading-tight text-left text-foreground font-heading text-tertiary_heading mb-4">
+                    Maximizing the value of your <br />
+                    ecosystem data.
+                  </h1>
+                  <h1 className="max-w-lg gap-4 font-normal leading-tight text-center text-foreground font-heading text-primary_heading">
+                    {section.title}
+                  </h1>
+                  <p className="text-tertiary_heading mb-3 font-paragraph font-medium text-foreground">
+                    {section.description}
+                  </p>
+                  <span className="text-subtitle_heading font-paragraph hidden font-normal text-foreground">
+                    {section.subText}
+                  </span>
+                </div>
+                <SvgTransition
+                  scrollProgress={scrollValue}
+                  currentValue={currentState}
+                />
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default StickyScaleContainerDuplicateTwo;
+export default SvgTabAnimation;
 
 interface CircleProps {
   cx: number;
