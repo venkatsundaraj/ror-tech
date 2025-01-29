@@ -121,20 +121,16 @@ export const caseStudyData: EndToEndData = [
 
 export const socialMediaIcons: SocialMediaIcons = [
   {
-    image: "Instagram",
-    url: "#",
-  },
-  {
-    image: "Facebook",
-    url: "#",
-  },
-  {
     image: "Twitter",
-    url: "#",
+    url: "https://x.com/ror_tech",
   },
   {
-    image: "Youtube",
-    url: "#",
+    image: "Instagram",
+    url: "https://www.instagram.com/ror.technologies/",
+  },
+  {
+    image: "Linkedin",
+    url: "https://www.linkedin.com/company/ror-technologies/?viewAsMember=true",
   },
 ];
 export const ourDifferentiatorContent: { title: string; imgPath: string }[] = [

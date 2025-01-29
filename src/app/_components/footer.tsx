@@ -60,7 +60,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
 
                     return (
                       <li key={i} className="flex items-center justify-center">
-                        <Link href={item.url}>
+                        <Link href={item.url} target="_blank">
                           <Icon className="w-8 h-8 p-1 rounded-full bg-foreground cursor-pointer" />
                         </Link>
                       </li>
@@ -92,7 +92,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
             className="text-extra_paragraph_heading font-paragraph font-normal text-foreground max-w-xl"
             href={"#"}
           >
-            Terms and Conditions
+            Privacy Policy
           </Link>
         </div>
       </div>
