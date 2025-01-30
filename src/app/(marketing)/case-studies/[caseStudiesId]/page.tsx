@@ -50,7 +50,7 @@ const page = async ({ params }: pageProps) => {
 
         <div className="flex items-center justify-between absolute bottom-[25px] md:bottom-[100px] left-[25px] md:left-[100px]">
           <div className="flex items-start flex-col justify-center gap-4 md:gap-4">
-            <div className="flex items-center justify-center  gap-2 flex-nowrap">
+            <div className="flex items-center justify-center  gap-2 md:flex-nowrap">
               {post.category
                 .split("-")
                 .map((word) => word.trim())

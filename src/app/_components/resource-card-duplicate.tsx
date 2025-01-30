@@ -53,76 +53,8 @@ const ResourcesCardDuplicate: FC<ResourcesCardDuplicateProps> = ({
   }, [api]);
 
   return (
-    <Carousel
-      id="resources"
-      className=""
-      setApi={setApi}
-      opts={{
-        align: "start",
-        loop: true,
-        active: true,
-        duration: 100,
-      }}
-      plugins={[
-        Autoplay({
-          delay: 4000,
-          // stopOnInteraction: false,
-        }),
-      ]}
-    >
-      <CarouselContent className="w-screen h-screen pl-0 ml-0">
-        {Array.from(caseStudy).map((item, i) => (
-          <CarouselItem key={i} className=" pl-0">
-            <div
-              className={cn(
-                "w-full h-full border-b-primary-foreground flex items-center justify-center py-16 md:py-24 bg-cover bg-no-repeat bg-center absolute"
-              )}
-            >
-              <Image
-                src={item.fileUrl}
-                alt={item.title}
-                width="1620"
-                priority
-                quality={100}
-                height="1400"
-                className="w-full h-full object-cover absolute"
-              />
-              <div className="container h-full flex items-start justify-end flex-col z-10">
-                <div
-                  key={i}
-                  className="flex flex-col items-center justify-center"
-                >
-                  <div className="flex items-start justify-between gap-2 flex-col px-4 py-8">
-                    <h4 className="text-tertiary_heading leading-tight font-heading font-normal  text-primary max-w-xl mb-4">
-                      {item.title}
-                    </h4>
-                    <h4 className="text-paragraph_heading leading-tight font-heading font-normal hidden text-primary max-w-xl">
-                      {item.description}
-                    </h4>
-                    <Link
-                      className={cn(
-                        buttonVariants({ variant: "outline" }),
-                        " font-paragraph bg-primary  font-normal text-foreground hover:bg-primary/90 hover:text-foreground rounded-full  "
-                      )}
-                      href={`/case-studies/${slugify(item.title)}`}
-                    >
-                      Read More
-                      <Icons.ArrowRight className="-rotate-45" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <div className="flex items-center justify-center gap-2 absolute bottom-[24px] right-[24px] z-10">
-        <CarouselPrevious className="translate-y-0 left-0 right-initial top-initial relative border-none bg-foreground/80 text-primary" />
-        <h2 className="text-primary">{`${current}/${count}`}</h2>
-        <CarouselNext className="translate-y-0 left-0 right-initial top-initial relative border-none bg-foreground/80 text-primary" />
-      </div>
-
-      <div className="flex flex-col container items-start justify-start gap-2 absolute top-0 left-1/2 -translate-x-[50%] w-full h-1/2 py-16 md:py-24">
+    <>
+      <div className="flex flex-col container items-start justify-start relative">
         <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
           Winning Strategies
         </h2>
@@ -131,7 +63,76 @@ const ResourcesCardDuplicate: FC<ResourcesCardDuplicateProps> = ({
           stories for our clients across various industries.
         </span>
       </div>
-    </Carousel>
+      <Carousel
+        id="resources"
+        className=""
+        setApi={setApi}
+        opts={{
+          align: "start",
+          loop: true,
+          active: true,
+          duration: 100,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 4000,
+            // stopOnInteraction: false,
+          }),
+        ]}
+      >
+        <CarouselContent className="w-screen h-screen pl-0 ml-0">
+          {Array.from(caseStudy).map((item, i) => (
+            <CarouselItem key={i} className=" pl-0">
+              <div
+                className={cn(
+                  "w-full h-full border-b-primary-foreground flex items-center justify-center py-16 md:py-24 bg-cover bg-no-repeat bg-center absolute"
+                )}
+              >
+                <Image
+                  src={item.fileUrl}
+                  alt={item.title}
+                  width="1620"
+                  priority
+                  quality={100}
+                  height="1400"
+                  className="w-full h-full object-cover absolute"
+                />
+                <div className="container h-full flex items-start justify-end flex-col z-10">
+                  <div
+                    key={i}
+                    className="flex flex-col items-center justify-center"
+                  >
+                    <div className="flex items-start justify-between gap-2 flex-col px-4 py-8">
+                      <h4 className="text-tertiary_heading leading-tight font-heading font-normal  text-primary max-w-xl mb-4">
+                        {item.title}
+                      </h4>
+                      <h4 className="text-paragraph_heading leading-tight font-heading font-normal hidden text-primary max-w-xl">
+                        {item.description}
+                      </h4>
+                      <Link
+                        className={cn(
+                          buttonVariants({ variant: "outline" }),
+                          " font-paragraph bg-primary  font-normal text-foreground hover:bg-primary/90 hover:text-foreground rounded-full  "
+                        )}
+                        href={`/case-studies/${slugify(item.title)}`}
+                      >
+                        Read More
+                        <Icons.ArrowRight className="-rotate-45" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className="flex items-center justify-center gap-2 absolute bottom-[24px] right-[24px] z-10">
+          <CarouselPrevious className="translate-y-0 left-0 right-initial top-initial relative border-none bg-foreground/80 text-primary" />
+          <h2 className="text-primary">{`${current}/${count}`}</h2>
+          <CarouselNext className="translate-y-0 left-0 right-initial top-initial relative border-none bg-foreground/80 text-primary" />
+        </div>
+      </Carousel>
+    </>
   );
 };
 
