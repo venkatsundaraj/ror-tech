@@ -79,13 +79,13 @@ const StickyScaleContainerDuplicateThree: FC<
         className="absolute left-0 top-0 w-full h-full z-0"
         videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoPYEc6FKj6Opsn1uPzRZy4cUX0oD37gNBif8w"
       />
-      <div className="container min-h-[100vh] flex flex-col items-start justify-end md:justify-end sticky top-[0px] left-0 z-20">
+      <div className="container min-h-[100vh] flex flex-col md:items-start items-center justify-center md:justify-end sticky top-[0px] left-0 z-20">
         <div
           className={cn(
             "w-full flex flex-col  items-start justify-start gap-3 transition-all duration-300 delay-200 ease-out  md:px10 md:py-2 top-0 2xl:top-10 left-0 mt-32 opacity-1 translate-x-0"
           )}
         >
-          <h2 className="text-[28px] font-heading md:text-[38px] font-normal text-foreground  leading-tight min-h-[220px]">
+          <h2 className="text-[28px] font-heading md:text-[38px] text-center md:text-left font-normal text-foreground  leading-tight min-h-[220px]">
             Digital transformational experts in
             {/* <TileTextSection /> */}
             <TypingAnimation

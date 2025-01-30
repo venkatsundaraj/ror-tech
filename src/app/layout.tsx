@@ -20,6 +20,14 @@ const paragraph = Kanit({
 export const metadata: Metadata = {
   title: "ROR Technologies",
   description: "Homepage | ROR Technologies",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon.png",
+    },
+  ],
 };
 
 export default function RootLayout({

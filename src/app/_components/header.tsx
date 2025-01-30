@@ -20,7 +20,7 @@ const Header: FC<HeaderProps> = ({}) => {
   return (
     <header
       className={cn(
-        "flex flex-row backdrop-blur bg-foreground items-center justify-between gap-8 py-4 z-20 px-10 border-b fixed w-screen top-0 ",
+        "flex flex-row backdrop-blur bg-foreground items-center justify-between gap-8 py-4 z-30 px-10 border-b fixed w-screen top-0 ",
         true && "justify-between"
       )}
     >

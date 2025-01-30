@@ -20,7 +20,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
   return (
     <footer
       id="who-we-are"
-      className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24 relative"
+      className="bg-gradient-to-tr from-primary to-secondary flex items-center justify-center flex-col pt-16 md:pt-24 relative w-screen overflow-x-hidden"
     >
       {children}
       <WavePattern className="absolute z-[1]" />
@@ -72,13 +72,19 @@ const Footer: FC<FooterProps> = ({ children }) => {
           <ul className="grid grid-cols-2 gap-3">
             {mainNavContents.map((item, i) => (
               <li key={i} className="min-w-[200px]">
-                <Link className="text-foreground" href={item.href}>
+                <Link
+                  className="text-foreground font-paragraph text-paragraph_heading hover:underline"
+                  href={item.href}
+                >
                   {item.title}
                 </Link>
               </li>
             ))}
             <li className="min-w-[200px]">
-              <Link className="text-foreground" href={"/contact-us"}>
+              <Link
+                className="text-foreground font-paragraph text-paragraph_heading hover:underline"
+                href={"/contact-us"}
+              >
                 Contact Us
               </Link>
             </li>
@@ -90,7 +96,7 @@ const Footer: FC<FooterProps> = ({ children }) => {
           </span>
           <Link
             className="text-extra_paragraph_heading font-paragraph font-normal text-foreground max-w-xl"
-            href={"#"}
+            href={"/privacy-policy"}
           >
             Privacy Policy
           </Link>

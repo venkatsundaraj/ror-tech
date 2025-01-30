@@ -61,7 +61,7 @@ const SvgTabAnimation: FC<pageProps> = function () {
     setcurrentStage(value);
   };
   return (
-    <section className="relative w-screen overflow-x-hidden min-h-[400px] py-16">
+    <section className="relative w-screen overflow-x-hidden min-h-[620px] md:min-h-[400px] px-4 md:px-0 py-16">
       <div className="container relative ">
         {heroSectionData.map((section, index) => (
           <div

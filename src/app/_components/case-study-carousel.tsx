@@ -69,11 +69,10 @@ const CaseStudyCarousel: FC<CaseStudyCarouselProps> = ({ caseStudy }) => {
       plugins={[
         Autoplay({
           delay: 4000,
-          // stopOnInteraction: false,
         }),
       ]}
     >
-      <CarouselContent className="w-full h-[80vh] max-h-[700px] pl-0 ml-0 ">
+      <CarouselContent className="w-full h-[70vh] max-h-[700px] pl-0 ml-0 ">
         {Array.from(caseStudy).map((item, i) => (
           <CarouselItem key={i} className=" pl-0">
             <div
@@ -141,7 +140,7 @@ const CaseStudyCarousel: FC<CaseStudyCarouselProps> = ({ caseStudy }) => {
       </div>
 
       <div className="flex container items-start justify-start gap-2 absolute top-0 left-1/2 -translate-x-[50%] w-full h-1/2 py-16 md:py-24">
-        <h2 className="max-w-lg uppercase font-normal mb-6 md:mb-12 leading-tight text-left text-primary font-heading text-paragraph_heading px-4 md:px-0">
+        <h2 className="max-w-lg uppercase font-normal mb-6 md:mb-12 leading-tight text-left text-primary font-heading text-paragraph_heading px-4 md:px-4">
           Featured Case Studies
         </h2>
       </div>
