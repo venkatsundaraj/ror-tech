@@ -84,11 +84,18 @@ const page = async function ({}: pageProps) {
               Driving Digital Transformation
             </h4>
             <span className="text-extra_subtitle_heading font-paragraph font-normal text-foreground max-w-xl">
-              At ROR Technologies, part of Ducont Systems, we are global leaders
-              in digital transformation, specializing in turning your data into
-              a game-changing asset. Our expertise helps organizations adapt,
-              thrive, and lead in an ever-evolving market—maximizing business
-              value with every move.
+              At ROR Technologies, part of{" "}
+              <Link
+                href={"https://www.ducont.com/"}
+                className="underline "
+                target="_blank"
+              >
+                Ducont Systems
+              </Link>
+              , we are global leaders in digital transformation, specializing in
+              turning your data into a game-changing asset. Our expertise helps
+              organizations adapt, thrive, and lead in an ever-evolving
+              market—maximizing business value with every move.
             </span>
             <span className="text-paragraph_heading font-paragraph font-normal text-foreground max-w-2xl hidden">
               Contact us today to learn more about our services and how we can
