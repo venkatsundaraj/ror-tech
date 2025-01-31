@@ -40,7 +40,8 @@ const page: FC<pageProps> = ({}) => {
           </div>
         </div>
         <VideoBackground
-          className="absolute left-0 top-0 w-full h-full z-0"
+          className="absolute left-0 top-0 w-full h-full z-0 "
+          classForVideo="object-right md:object-cover"
           videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoOo0UkQaAN2xy7u8gkcnHmWrtVoJiaswfYqBK"
         />
       </section>

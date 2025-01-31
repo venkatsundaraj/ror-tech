@@ -77,7 +77,7 @@ const StickyScaleContainerDuplicateThree: FC<
       <div className="absolute z-10 w-full h-full bg-black/50" />
       <VideoBackground
         className="absolute left-0 top-0 w-full h-full z-0"
-        videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JoPYEc6FKj6Opsn1uPzRZy4cUX0oD37gNBif8w"
+        videoSrc="https://opyj1m0rbr.ufs.sh/f/QRaE9TmLS8JofNLFyuXHOZbh2CjGeXqfwlSxucmzViUyQR8F"
       />
       <div className="container min-h-[100vh] flex flex-col md:items-start items-center justify-center md:justify-end sticky top-[0px] left-0 z-20">
         <div
