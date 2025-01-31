@@ -110,6 +110,16 @@ const page = async function ({}: pageProps) {
             >
               About Us
             </Link>
+
+            <a
+              href={"https://www.ducont.com/"}
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "rounded-sm font-light border border-foreground !text-foreground font-paragraph text-subtitle_heading px-8 py-3 mt-4 transition-all duration-300"
+              )}
+            >
+              Ducont - Our Parent Organisation
+            </a>
           </div>
         </div>
       </Footer>
