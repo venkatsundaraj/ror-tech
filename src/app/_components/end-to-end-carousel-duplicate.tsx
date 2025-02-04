@@ -29,7 +29,7 @@ const EndToEndCarouselDuplicate: React.FC<EndToEndCarouselDuplicateProps> =
             transformation is efficiently handled.
           </span>
           <Carousel className="w-full">
-            <CarouselContent className="-ml-1 gap-4 cursor-grab">
+            <CarouselContent className="-ml-1 gap-4 py-2 md:px-3 cursor-grab">
               {endToEndData.length
                 ? Array.from(endToEndData).map((item, i) => (
                     <CarouselItem

@@ -54,7 +54,7 @@ const ResourcesCardDuplicate: FC<ResourcesCardDuplicateProps> = ({
 
   return (
     <>
-      <div className="flex flex-col container items-start justify-start relative">
+      <div className="flex flex-col container items-start justify-start relative pt-24">
         <h2 className="w-full font-normal leading-tight text-left text-primary font-heading text-secondary_heading ">
           Winning Strategies
         </h2>

@@ -99,12 +99,12 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
                     </SheetTrigger>
                     <SheetContent className="py-8 md:py-16">
                       <SheetHeader>
-                        <SheetTitle className="!text-secondary_heading text-left leading-tight font-heading font-normal text-primary mb-4">
+                        <SheetTitle className="!text-tertiary_heading text-left leading-tight font-heading font-normal text-primary mb-4">
                           {item?.title}
                         </SheetTitle>
                       </SheetHeader>
                       <div className="flex flex-col items-start justify-start gap-4">
-                        <ul className="flex flex-col items-start justify-start gap-2 w-full">
+                        <ul className="flex flex-col items-start justify-start gap-0 w-full">
                           {item?.solutions.map((listItem, i) => (
                             <li
                               className="text-popover py-3 text-paragraph_heading font-heading last:border-0  border-b border-popover w-full"
@@ -115,7 +115,7 @@ const HorizontalSectionDuplicate: FC<HorizontalSectionDuplicateProps> =
                           ))}
                         </ul>
                       </div>
-                      <span className="text-center flex mt-4 md:mt-8 text-extra_subtitle_heading font-paragraph font-light">
+                      <span className="text-center flex mt-2 md:mt-3 text-extra_subtitle_heading font-paragraph font-light">
                         {item?.services}
                       </span>
                       <p className="text-center w-full">
